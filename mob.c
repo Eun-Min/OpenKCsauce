@@ -24,3 +24,14 @@ if(choose == 1)
             		Sleep(1000);
 			system("cls");
 		}
+if(choose == 2)
+		{
+            		f = 0;
+			system("cls");
+			Sleep(2000);
+			printf("[고블린에게서 도망쳤다]\n");
+			Sleep(2000);
+			printf("[쿨타임 10초]\n");
+			Sleep(10000);
+			system("cls");
+		}
