@@ -54,3 +54,6 @@ if(choose == 3)
 			}
 				
 			
+if(choose == 4){
+	// please modify this tab    (skill tab)
+}
