@@ -3,7 +3,7 @@
 #include <stdib.h>
 #include <conio.h>
 #include <windows.h>
-
+// 아 모르겟다..
 using namespace std;
 
 void gotoxy(int x, int y);
@@ -31,7 +31,7 @@ void main(){
 	do{
 		nEndcount =0;
 		gotoxy(0,0);
-		
+
 		}
 		for(i=0,i<8,i=i+1){
 			for(j=0; j<15; j=j+1){
@@ -40,13 +40,13 @@ void main(){
 				case 0:
 				cout << " ";
 				break;
-				
+
 				case 1:
 				cout << "□";
 				break;
 
 				case 3:
-				cout << "○" ; 
+				cout << "○" ;
 
 				case 5:
 				{
@@ -61,7 +61,3 @@ void main(){
 			}
 		}
 	}
-		
-
-
-		
