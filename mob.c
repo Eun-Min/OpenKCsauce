@@ -18,9 +18,9 @@ if(choose == 1)
 			{
 			hp -= mobattack - dex;
           		}
-			printf("[고블린에게 %d의 데미지를 주었다!]\n",randattack+str);
+			printf("[몬스터에게 %d의 데미지를 주었다!]\n",randattack+str);
 			Sleep(1000);
-			printf("[고블린에게 %d의 피해를 입었다!]\n",mobattack-dex);
+			printf("[몬스터에게 %d의 피해를 입었다!]\n",mobattack-dex);
             		Sleep(1000);
 			system("cls");
 		}
