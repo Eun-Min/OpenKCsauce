@@ -258,39 +258,9 @@ if(choose == 4){
                          if(firebomb == 1){printf("[2]파이어 봄 - hp 1500 소모\n");}
                          if(killing == 1){printf("[3]킬링 애로우 - hp 10000 소모\n");}
                          printf("[4]나가기\n");
-                         scanf("%d",&skillc);
-		  }
-	 	if(shot != 1 && firebomb != 1 && killing != 1) // part2 - skill1
-                         {
-                                      if(skillc == 1)
-                                      {
-                                      system("cls");
-                                      printf("[잘못된 선택입니다]\n");
-                                      printf("[패널티 10초]\n");
-                                      Sleep(10000);
-                                      system("cls");
-                                      }
-                                      
-                                      if(skillc == 2)
-                                      {
-                                      system("cls");
-                                      printf("[잘못된 선택입니다]\n");
-                                      printf("[패널티 10초]\n");
-                                      Sleep(10000);
-                                      system("cls");
-                                      }
-                                      
-                                      if(skillc == 3)
-                                      {
-                                      system("cls");
-                                      printf("[잘못된 선택입니다]\n");
-                                      printf("[패널티 10초]\n");
-                                      Sleep(10000);
-                                      system("cls");
-                                      }
-                         }
-	
-                         if(shot == 1 && firebomb != 1 && killing != 1)
+                         scanf("%d",&skillc);	
+			  
+                         if(shot == 1 && firebomb != 1 && killing != 1) // part2 - skill1
                          {
                                       if(skillc == 1)
                                       {
@@ -334,5 +304,179 @@ if(choose == 4){
                                       system("cls");
                                       }
                          } 
+			if(shot == 1 && firebomb == 1 && killing != 1) // part2 - skill2 
+                         {
+                                      if(skillc == 1)
+                                      {
+                                      system("cls");
+                                      printf("[더블 샷 발동!]\n");
+                                      Sleep(2000);
+                                      randattack = rand() % str+1;
+			                          mobhp -= randattack*2 + str;
+                                      hp -= 200;
+			                          printf("[%d의 데미지를 주었다!]\n",randattack+str);
+			                          Sleep(1000);
+                                      randattack = rand() % str+1;
+			                          mobhp -= randattack*2 + str;
+			                          mobattack = rand() % 50+1;
+			                          if(mobattack-dex >= 0)
+			                          {
+			                          hp -= mobattack - dex;
+                                      }
+			                          printf("[%d의 데미지를 주었다!]\n",randattack+str);
+			                          Sleep(1000);
+			                          printf("[%d의 피해를 입었다!]\n",mobattack-dex);
+                                      Sleep(1000);
+			                          system("cls"); 
+                                      }
+                                      
+                                      if(skillc == 2)
+                                      {
+                                      system("cls");
+                                      printf("[파이어 봄 발동!]\n");
+                                      Sleep(2000);
+                                      randattack = rand() % str+1;
+			                          mobhp -= randattack*4 + str;
+			                          mobattack = rand() % 50+1;
+			                          if(mobattack-dex >= 0)
+			                          {
+			                          hp -= mobattack - dex;
+                                      }
+                                      hp -= 1500;
+			                          printf("[%d의 데미지를 주었다!]\n",randattack+str*4);
+			                          Sleep(1000);
+			                          printf("[%d의 피해를 입었다!]\n",mobattack-dex);
+                                      Sleep(1000);
+			                          system("cls");
+                                      }
+                                      
+                                      if(skillc == 3)
+                                      {
+                                      system("cls");
+                                      printf("[잘못된 선택입니다]\n");
+                                      printf("[패널티 10초]\n");
+                                      Sleep(10000);
+                                      system("cls");
+                                      }
+                         } 
+                         
+                         if(shot == 1 && firebomb == 1 && killing == 1) // part2 - skill3
+                         {
+                                      if(skillc == 1)
+                                      {
+									  system("cls");
+                                      printf("[더블 샷 발동!]\n");
+                                      Sleep(2000);
+                                      randattack = rand() % str+1;
+			                          mobhp -= randattack*2 + str;
+                                      hp -= 200;
+			                          printf("[%d의 데미지를 주었다!]\n",randattack+str);
+			                          Sleep(1000);
+                                      randattack = rand() % str+1;
+			                          mobhp -= randattack*2 + str;
+			                          mobattack = rand() % 50+1;
+			                          if(mobattack-dex >= 0)
+			                          {
+			                          hp -= mobattack - dex;
+                                      }
+			                          printf("[%d의 데미지를 주었다!]\n",randattack+str);
+			                          Sleep(1000);
+			                          printf("[%d의 피해를 입었다!]\n",mobattack-dex);
+                                      Sleep(1000);
+			                          system("cls"); 
+                                      }
+                                      
+                                      if(skillc == 2)
+                                      {
+                                      system("cls");
+                                      printf("[파이어 봄 발동!]\n");
+                                      Sleep(2000);
+                                      randattack = rand() % str+1;
+			                          mobhp -= randattack*4 + str;
+			                          mobattack = rand() % 50+1;
+			                          if(mobattack-dex >= 0)
+			                          {
+			                          hp -= mobattack - dex;
+                                      }
+                                      hp -= 1500;
+			                          printf("[%d의 데미지를 주었다!]\n",randattack+str*4);
+			                          Sleep(1000);
+			                          printf("[%d의 피해를 입었다!]\n",mobattack-dex);
+                                      Sleep(1000);
+			                          system("cls");
+                                      }
+                                      
+                                      if(skillc == 3)
+                                      {
+                                      system("cls");
+                                      printf("[킬링애로우 발동!]\n");
+                                      Sleep(2000);
+                                      system("cls");
+                                      printf("킬!\n");
+                                      Sleep(500);
+                                      printf("링!\n");
+                                      Sleep(500);
+                                      printf("애!\n");
+                                      Sleep(500);
+                                      printf("로!\n");
+                                      Sleep(500);
+                                      printf("우!\n"); 
+                                      Sleep(500);
+                                      Sleep(2000);
+                                      randattack = rand() % str+1;
+			                          mobhp -= randattack/2 + str;
+			                          printf("[%d의 데미지를 주었다!]\n",randattack+str/2);
+			                          Sleep(100);
+                                      randattack = rand() % str+1;
+			                          mobhp -= randattack/2 + str;
+			                          printf("[%d의 데미지를 주었다!]\n",randattack+str/2);
+			                          Sleep(100);
+                                      randattack = rand() % str+1;
+			                          mobhp -= randattack/2 + str;
+			                          printf("[%d의 데미지를 주었다!]\n",randattack+str/2);
+			                          Sleep(100);
+                                      randattack = rand() % str+1;
+			                          mobhp -= randattack/2 + str;
+			                          printf("[%d의 데미지를 주었다!]\n",randattack+str/2);
+			                          Sleep(100);
+                                      randattack = rand() % str+1;
+			                          mobhp -= randattack/2 + str;
+			                          printf("[%d의 데미지를 주었다!]\n",randattack+str/2);
+			                          Sleep(100);
+                                      randattack = rand() % str+1;
+			                          mobhp -= randattack/2 + str;
+			                          printf("[%d의 데미지를 주었다!]\n",randattack+str/2);
+			                          Sleep(100);
+                                      randattack = rand() % str+1;
+			                          mobhp -= randattack/2 + str;
+			                          printf("[%d의 데미지를 주었다!]\n",randattack+str/2);
+			                          Sleep(100);
+                                      randattack = rand() % str+1;
+			                          mobhp -= randattack/2 + str;
+			                          printf("[%d의 데미지를 주었다!]\n",randattack+str/2);
+			                          Sleep(100);
+                                      randattack = rand() % str+1;
+			                          mobhp -= randattack/2 + str;
+			                          printf("[%d의 데미지를 주었다!]\n",randattack+str/2);
+			                          Sleep(1000);
+			                          printf("[마지막 이닷!]\n");
+                                      Sleep(1000); 
+                                      randattack = rand() % str+1;
+			                          mobhp -= randattack*10 + str;
+			                          printf("[%d의 데미지를 주었다!]\n",randattack+str*10);
+			                          Sleep(1000);
+			                          mobattack = rand() % 50+1;
+			                          if(mobattack-dex >= 0)
+			                          {
+			                          hp -= mobattack - dex;
+                                      }
+                                      hp -= 10000;
+			                          printf("[%d의 피해를 입었다!]\n",mobattack-dex);
+                                      Sleep(1000);
+			                          system("cls");
+                                      }
+                         } 
+                  }
+  }
 		}
 }
