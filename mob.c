@@ -288,6 +288,51 @@ if(choose == 4){
                                       Sleep(10000);
                                       system("cls");
                                       }
+                         }
+	
+                         if(shot == 1 && firebomb != 1 && killing != 1)
+                         {
+                                      if(skillc == 1)
+                                      {
+                                      system("cls");
+                                      printf("[더블 샷 발동!]\n");
+                                      Sleep(2000);
+                                      randattack = rand() % str+1;
+			                          mobhp -= randattack*2 + str;
+                                      hp -= 200;
+			                          printf("[%d의 데미지를 주었다!]\n",randattack+str);
+			                          Sleep(1000);
+                                      randattack = rand() % str+1;
+			                          mobhp -= randattack*2 + str;
+			                          mobattack = rand() % 50+1;
+			                          if(mobattack-dex >= 0)
+			                          {
+			                          hp -= mobattack - dex;
+                                      }
+			                          printf("[%d의 데미지를 주었다!]\n",randattack+str);
+			                          Sleep(1000);
+			                          printf("[%d의 피해를 입었다!]\n",mobattack-dex);
+                                      Sleep(1000);
+			                          system("cls"); 
+                                      }
+                                      
+                                      if(skillc == 2)
+                                      {
+                                      system("cls");
+                                      printf("[잘못된 선택입니다]\n");
+                                      printf("[패널티 10초]\n");
+                                      Sleep(10000);
+                                      system("cls");
+                                      }
+                                      
+                                      if(skillc == 3)
+                                      {
+                                      system("cls");
+                                      printf("[잘못된 선택입니다]\n");
+                                      printf("[패널티 10초]\n");
+                                      Sleep(10000);
+                                      system("cls");
+                                      }
                          } 
 		}
 }
