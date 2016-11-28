@@ -1,6 +1,6 @@
 if(exp >= 100)
     {
-      if(lev == 0)
+      if(lev == 0) // when level is 0
       {
         level = 2;
         lev += 1;
@@ -10,7 +10,7 @@ if(exp >= 100)
     }
     if(exp >= 400)
     {
-      if(lev == 1)
+      if(lev == 1) //when level is 1
       {
         level = 3;
         lev += 1;
@@ -20,7 +20,7 @@ if(exp >= 100)
     }
     if(exp >= 800)
     {
-      if(lev == 2)
+      if(lev == 2) //when level is 2
       {
         level = 4;
         lev += 1;
@@ -30,7 +30,7 @@ if(exp >= 100)
     }
     if(exp >= 1500)
     {
-      if(lev == 3)
+      if(lev == 3) //when level is 3
       {
         level = 5;
         lev += 1;
@@ -41,7 +41,7 @@ if(exp >= 100)
     }
     if(exp >= 2200)
     {
-      if(lev == 4)
+      if(lev == 4) //when level is 4
       {
         level = 6;
         lev += 1;
@@ -52,7 +52,7 @@ if(exp >= 100)
     }
     if(exp >= 3000)
     {
-      if(lev == 5)
+      if(lev == 5) //when level is 5
       {
         level = 7;
         lev += 1;
@@ -63,7 +63,7 @@ if(exp >= 100)
     }
     if(exp >= 4000)
     {
-      if(lev == 6)
+      if(lev == 6) //when level is 6
       {
         level = 8;
         lev += 1;
