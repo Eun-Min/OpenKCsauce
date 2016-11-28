@@ -1,4 +1,12 @@
- // Amor & Weapon.version1
+// Amor & Weapon.version1
+//part like weapons of the game
 
- if(weapon == 0){printf("[WEAPON : ¸Ç¼Õ]\n");} if(weapon == 1){printf("[WEAPON : Çã¸§ÇÑ°Ë]\n");}if(weapon == 2){printf("[WEAPON : ¾µ¸¸ÇÑ°Ë]\n");}if(weapon == 3){printf("[WEAPON : ºê·ĞÁî¼Òµå]\n");}
-  if(armor == 0){printf("[ARMOR : Çã¸§ÇÑ¿Ê]\n\n");}if(armor == 1){printf("[ARMOR : Æò»óº¹]\n\n");}if(armor == 2){printf("[ARMOR : Çã¸§ÇÑ °©¿Ê]\n\n");}if(armor == 3){printf("[ARMOR : ¾µ¸¸ÇÑ°©¿Ê]\n\n");}
+if(weapon == 0){printf("[WEAPON : ë§¨ì†]\n");}
+if(weapon == 1){printf("[WEAPON : í—ˆë¦„í•œê²€]\n");}
+if(weapon == 2){printf("[WEAPON : ì“¸ë§Œí•œê²€]\n");}
+if(weapon == 3){printf("[WEAPON : ë¸Œë¡ ì¦ˆì†Œë“œ]\n");}
+
+if(armor == 0){printf("[ARMOR : í—ˆë¦„í•œì˜·]\n\n");}
+if(armor == 1){printf("[ARMOR : í‰ìƒë³µ]\n\n");}
+if(armor == 2){printf("[ARMOR : í—ˆë¦„í•œ ê°‘ì˜·]\n\n");}
+if(armor == 3){printf("[ARMOR : ì“¸ë§Œí•œê°‘ì˜·]\n\n");}
