@@ -58,7 +58,7 @@ if(choose == 3)
 if(choose == 4){
 		if(choose == 4)
 		{
-                  if(job == 1 || job == 2)
+                  if(job == 1 || job == 2) // part 1
                   {
                          system("cls");
                          printf("[사용할 스킬을 고르세요]\n");
