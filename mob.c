@@ -67,6 +67,46 @@ if(choose == 4){
                          if(killattack == 1){printf("[3]파멸의흔적 - hp 10000 소모\n");}
                          printf("[4]나가기\n");
                          scanf("%d",&skillc);
+			  if(twoattack == 1 && threeattack != 1 && killattack != 1) // part 1 - skill 1
+                         {
+                                      if(skillc == 1)
+                                      {
+                                      system("cls");
+                                      printf("[이중 콤보 발동!]\n");
+                                      Sleep(2000);
+                                      randattack = rand() % str+1;
+			                          mobhp -= randattack*2 + str;
+			                          mobattack = rand() % 50+1;
+			                          if(mobattack-dex >= 0)
+			                          {
+			                          hp -= mobattack - dex;
+                                      }
+                                      hp -= 200;
+			                          printf("[%d의 데미지를 주었다!]\n",randattack+str*2);
+			                          Sleep(1000);
+			                          printf("[%d의 피해를 입었다!]\n",mobattack-dex);
+                                      Sleep(1000);
+			                          system("cls"); 
+                                      }
+                                      
+                                      if(skillc == 2)
+                                      {
+                                      system("cls");
+                                      printf("[잘못된 선택입니다]\n");
+                                      printf("[패널티 10초]\n");
+                                      Sleep(10000);
+                                      system("cls");
+                                      }
+                                      
+                                      if(skillc == 3)
+                                      {
+                                      system("cls");
+                                      printf("[잘못된 선택입니다]\n");
+                                      printf("[패널티 10초]\n");
+                                      Sleep(10000);
+                                      system("cls");
+                                      }
+                         } 
 			 // fill this tab (making skill status)
 		  }
 		  if(job == 3 || job == 4) // part 2
