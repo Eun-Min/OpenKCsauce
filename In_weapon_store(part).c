@@ -12,11 +12,11 @@ if(menu == 2){
 	if(npc1 == 1){printf("[NPC of weapon : Welcome.]\n");}
 	if(npc1 == 2){printf("[NPC of weapon : I sell only best of best weapons in my store.]\n");}
 	if(npc1 == 3){printf("[NPC of weapon : If you don't have money at all, get out of here.]\n");}
-	printf("[1]허름한검<1레벨> - 1000Gold\n");
-	printf("[2]쓸만한검<3레벨> - 2500Gold\n");
-	printf("[3]브론즈소드<5레벨> - 3800Gold\n");
-	printf("[4]아이언소드<8레벨> - 5200Gold\n"); 
-	printf("[5]아만다디움소드<10레벨> - 7500Gold\n"); 
+	printf("[1]허름한검<1level> - 1000Gold\n");
+	printf("[2]쓸만한검<3level> - 2500Gold\n");
+	printf("[3]브론즈소드<5level> - 3800Gold\n");
+	printf("[4]아이언소드<8level> - 5200Gold\n"); 
+	printf("[5]아만다디움소드<10level> - 7500Gold\n"); 
 	printf("[6]exit\n");
 	scanf("%d",&store1);
 			
@@ -29,7 +29,7 @@ if(menu == 2){
 	system("cls");
 	printf("[buying weapons...]\n");
 	Sleep(3000);
-	printf("[NPC of weapon : 사줘서 고맙네. 잘가게나 친구!]\n");
+	printf("[NPC of weapon : Thank you for buying it. Bye buddy!]\n");
 	gold -= 1000;
 	str = 15;
 	weapon = 1;
@@ -39,7 +39,7 @@ if(menu == 2){
 	else
 	{
 	system("cls");
-	printf("[레벨이 맞지 않습니.]\n");
+	printf("[you need more levels.]\n");
 	Sleep(2000);
 	system("cls");
 	}
@@ -62,7 +62,7 @@ if(menu == 2){
 					system("cls");
 					printf("[buying weapons...]\n");
 					Sleep(3000);
-					printf("[NPC of weapon : 사줘서 고맙네. 잘가게나 친구!]\n");
+					printf("[NPC of weapon : Thank you for buying it. Bye buddy!!]\n");
 					gold -= 2500;
 					str = 21;
 					weapon = 2;
@@ -72,7 +72,7 @@ if(menu == 2){
 					else
 					{
 						system("cls");
-						printf("[레벨이 맞지 않습니다]\n");
+						printf("[you need more levels.]\n");
 						Sleep(2000);
 						system("cls");
 					}
@@ -95,7 +95,7 @@ if(menu == 2){
 					system("cls");
 					printf("[buying weapons...]\n");
 					Sleep(3000);
-					printf("[NPC of weapon : 사줘서 고맙네. 잘가게나 친구!]\n");
+					printf("[NPC of weapon : Thank you for buying it. Bye buddy!]\n");
 					gold -= 3800;
 					str = 30;
 					weapon = 3;
@@ -105,7 +105,7 @@ if(menu == 2){
 					else
 					{
 						system("cls");
-						printf("[레벨이 맞지 않습니다]\n");
+						printf("[you need more levels.]\n");
 						Sleep(2000);
 						system("cls");
 					}
@@ -128,7 +128,7 @@ if(menu == 2){
 					system("cls");
 					printf("[buying weapons...]\n");
 					Sleep(3000);
-					printf("[NPC of weapon : 사줘서 고맙네. 잘가게나 친구!]\n");
+					printf("[NPC of weapon : Thank you for buying it. Bye buddy!]\n");
 					gold -= 5200;
 					str = 38;
 					weapon = 4;
@@ -138,7 +138,7 @@ if(menu == 2){
 					else
 					{
 						system("cls");
-						printf("[레벨이 맞지 않습니다]\n");
+						printf("[you need more levels.]\n");
 						Sleep(2000);
 						system("cls");
 					}
@@ -161,7 +161,7 @@ if(menu == 2){
 					system("cls");
 					printf("[buying weapons...]\n");
 					Sleep(3000);
-					printf("[NPC of weapon : 사줘서 고맙네. 잘가게나 친구!]\n");
+					printf("[NPC of weapon : Thank you for buying it. Bye buddy!]\n");
 					gold -= 7500;
 					str = 45;
 					weapon = 5;
@@ -171,7 +171,7 @@ if(menu == 2){
 					else
 					{
 						system("cls");
-						printf("[레벨이 맞지 않습니다]\n");
+						printf("[you need more levels.]\n");
 						Sleep(2000);
 						system("cls");
 					}
