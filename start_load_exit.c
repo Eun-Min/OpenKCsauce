@@ -8,19 +8,19 @@ printf("[1.start]\n[2.bring the previous record]\n[3.exit]\n");
 	{
 		system("cls");
 		Sleep(2000);
-		printf("게임을 불러옵니다.\n");
+		printf("bring the previous record.\n");
 		Sleep(1000);
 		system("cls");
-		printf("게임을 불러옵니다..\n");
+		printf("bring the previous record..\n");
 		Sleep(1000);
 		system("cls");
-		printf("게임을 불러옵니다...\n");
+		printf("bring the previous record...\n");
 		Sleep(1000);
 		system("cls");
-		printf("게임을 불러옵니다....\n");
+		printf("bring the previous record....\n");
 		Sleep(1000);
 		system("cls");
-		printf("게임을 불러옵니다.....\n");
+		printf("bring the previous record.....\n");
 		Sleep(1000);
 		system("cls");
 		Sleep(1000);
@@ -49,7 +49,7 @@ printf("[1.start]\n[2.bring the previous record]\n[3.exit]\n");
 	
 	if(a == 2)
     {
-         printf("[저장했을 때 얻은 코드를 입력해주세요]\n");
+         printf("[Enter your code that gets when saved.\n");
          scanf("%d",&load);
 	}
 	
