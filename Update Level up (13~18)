@@ -1,6 +1,6 @@
     if(exp >= 50000)
     {
-      if(lev == 13)
+      if(lev == 13) //when level is 13
       {
         level = 15;
         lev += 1;
@@ -11,7 +11,7 @@
     }
     if(exp >= 80000)
     {
-      if(lev == 14)
+      if(lev == 14) //when level is 14
       {
         level = 16;
         lev += 1;
@@ -22,7 +22,7 @@
     }
     if(exp >= 120000)
     {
-      if(lev == 15)
+      if(lev == 15) //when level is 15
       {
         level = 17;
         lev += 1;
@@ -33,7 +33,7 @@
     }
     if(exp >= 160000)
     {
-      if(lev == 16)
+      if(lev == 16) //when level is 16
       {
         level = 18;
         lev += 1;
@@ -44,7 +44,7 @@
     }
     if(exp >= 200000)
     {
-      if(lev == 17)
+      if(lev == 17) //when level is 17
       {
         level = 19;
         lev += 1;
@@ -55,7 +55,7 @@
     }
     if(exp >= 250000)
     {
-      if(lev == 18)
+      if(lev == 18) //when level is 18
       {
         level = 20;
         lev += 1;
