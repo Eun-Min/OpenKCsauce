@@ -248,6 +248,35 @@ if(choose == 4){
 			                          system("cls");
                                       }
                          } 
+			  if(twoattack != 1 && threeattack != 1 && killattack != 1) // no skill
+                         {
+                                      if(skillc == 1)
+                                      {
+                                      system("cls");
+                                      printf("[잘못된 선택입니다]\n");
+                                      printf("[패널티 10초]\n");
+                                      Sleep(10000);
+                                      system("cls");
+                                      }
+                                      
+                                      if(skillc == 2)
+                                      {
+                                      system("cls");
+                                      printf("[잘못된 선택입니다]\n");
+                                      printf("[패널티 10초]\n");
+                                      Sleep(10000);
+                                      system("cls");
+                                      }
+                                      
+                                      if(skillc == 3)
+                                      {
+                                      system("cls");
+                                      printf("[잘못된 선택입니다]\n");
+                                      printf("[패널티 10초]\n");
+                                      Sleep(10000);
+                                      system("cls");
+                                      }
+                         } 
                   }
 		  }
 		  if(job == 3 || job == 4) // part 2
@@ -475,8 +504,37 @@ if(choose == 4){
                                       Sleep(1000);
 			                          system("cls");
                                       }
+        	                 } 
+	                  }
+ 		 }
+		 if(shot != 1 && firebomb != 1 && killing != 1) // no skill
+                         {
+                                      if(skillc == 1)
+                                      {
+                                      system("cls");
+                                      printf("[잘못된 선택입니다]\n");
+                                      printf("[패널티 10초]\n");
+                                      Sleep(10000);
+                                      system("cls");
+                                      }
+                                      
+                                      if(skillc == 2)
+                                      {
+                                      system("cls");
+                                      printf("[잘못된 선택입니다]\n");
+                                      printf("[패널티 10초]\n");
+                                      Sleep(10000);
+                                      system("cls");
+                                      }
+                                      
+                                      if(skillc == 3)
+                                      {
+                                      system("cls");
+                                      printf("[잘못된 선택입니다]\n");
+                                      printf("[패널티 10초]\n");
+                                      Sleep(10000);
+                                      system("cls");
+                                      }
                          } 
-                  }
-  }
-		}
+	}
 }
