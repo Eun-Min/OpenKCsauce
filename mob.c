@@ -26,6 +26,7 @@ if(choose == 1)
 		}
 if(choose == 2)
 		{
+
             		f = 0;
 			system("cls");
 			Sleep(2000);
