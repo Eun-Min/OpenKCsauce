@@ -259,7 +259,35 @@ if(choose == 4){
                          if(killing == 1){printf("[3]킬링 애로우 - hp 10000 소모\n");}
                          printf("[4]나가기\n");
                          scanf("%d",&skillc);
-                         // fill this tab (making skill status)
 		  }
+	 	if(shot != 1 && firebomb != 1 && killing != 1) // part2 - skill1
+                         {
+                                      if(skillc == 1)
+                                      {
+                                      system("cls");
+                                      printf("[잘못된 선택입니다]\n");
+                                      printf("[패널티 10초]\n");
+                                      Sleep(10000);
+                                      system("cls");
+                                      }
+                                      
+                                      if(skillc == 2)
+                                      {
+                                      system("cls");
+                                      printf("[잘못된 선택입니다]\n");
+                                      printf("[패널티 10초]\n");
+                                      Sleep(10000);
+                                      system("cls");
+                                      }
+                                      
+                                      if(skillc == 3)
+                                      {
+                                      system("cls");
+                                      printf("[잘못된 선택입니다]\n");
+                                      printf("[패널티 10초]\n");
+                                      Sleep(10000);
+                                      system("cls");
+                                      }
+                         } 
 		}
 }
