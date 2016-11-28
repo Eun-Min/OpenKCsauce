@@ -55,5 +55,18 @@ if(choose == 3)
 				
 			
 if(choose == 4){
-	// please modify this tab    (skill tab)
+		if(choose == 4)
+		{
+                  if(job == 1 || job == 2)
+                  {
+                         system("cls");
+                         printf("[사용할 스킬을 고르세요]\n");
+                         if(twoattack == 1){printf("[1]이단콤보 - hp 200 소모\n");}
+                         if(threeattack == 1){printf("[2]삼단가르기 - hp 1500 소모\n");}
+                         if(killattack == 1){printf("[3]파멸의흔적 - hp 10000 소모\n");}
+                         printf("[4]나가기\n");
+                         scanf("%d",&skillc);
+			 // fill this tab (making skill status)
+		  }
+		}
 }
