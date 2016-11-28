@@ -69,5 +69,16 @@ if(choose == 4){
                          scanf("%d",&skillc);
 			 // fill this tab (making skill status)
 		  }
+		  if(job == 3 || job == 4) // part 2
+                  {
+                         system("cls");
+                         printf("[사용할 스킬을 고르세요]\n");
+                         if(shot == 1){printf("[1]더블샷 - hp 200 소모\n");}
+                         if(firebomb == 1){printf("[2]파이어 봄 - hp 1500 소모\n");}
+                         if(killing == 1){printf("[3]킬링 애로우 - hp 10000 소모\n");}
+                         printf("[4]나가기\n");
+                         scanf("%d",&skillc);
+                         // fill this tab (making skill status)
+		  }
 		}
 }
