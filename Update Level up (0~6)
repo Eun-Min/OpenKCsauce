@@ -1,0 +1,74 @@
+if(exp >= 100)
+    {
+      if(lev == 0)
+      {
+        level = 2;
+        lev += 1;
+        hp = 150;
+        mhp = 150;
+      }
+    }
+    if(exp >= 400)
+    {
+      if(lev == 1)
+      {
+        level = 3;
+        lev += 1;
+        hp = 200;
+        mhp = 200;
+      }
+    }
+    if(exp >= 800)
+    {
+      if(lev == 2)
+      {
+        level = 4;
+        lev += 1;
+        hp = 300;
+        mhp = 300;
+      }
+    }
+    if(exp >= 1500)
+    {
+      if(lev == 3)
+      {
+        level = 5;
+        lev += 1;
+        hp = 450;
+        mhp = 450;
+        sp += 1;
+      }
+    }
+    if(exp >= 2200)
+    {
+      if(lev == 4)
+      {
+        level = 6;
+        lev += 1;
+        hp = 650;
+        mhp = 650;
+        sp += 1;
+      }
+    }
+    if(exp >= 3000)
+    {
+      if(lev == 5)
+      {
+        level = 7;
+        lev += 1;
+        hp = 900;
+        mhp = 900;
+        sp += 1;
+      }
+    }
+    if(exp >= 4000)
+    {
+      if(lev == 6)
+      {
+        level = 8;
+        lev += 1;
+        hp = 1200;
+        mhp = 1200;
+        sp += 1;
+      }
+    }
