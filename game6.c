@@ -24,8 +24,8 @@ int main(void)
  int mobhp;
  int mobmhp;
  int menu;
- int attack; // ±âº»°ø°İ·Â
- int randattack; // ±âº»°ø°İ·Â ·£´ı
+ int attack; // ê¸°ë³¸ê³µê²©ë ¥
+ int randattack; // ê¸°ë³¸ê³µê²©ë ¥ ëœë¤
  int a;
  int b;
  int c;
@@ -39,26 +39,26 @@ int main(void)
  int mobattack;
  int randa; 
 
- printf("[1.½ÃÀÛÇÏ±â]\n[2.Á¾·áÇÏ±â]\n");
+ printf("[1.ì‹œì‘í•˜ê¸°]\n[2.ì¢…ë£Œí•˜ê¸°]\n");
  scanf("%d",&a);
 
  if(a == 1)
  {
   system("cls");
   Sleep(2000);
-  printf("°ÔÀÓÀ» ºÒ·¯¿É´Ï´Ù.\n");
+  printf("ê²Œì„ì„ ë¶ˆëŸ¬ì˜µë‹ˆë‹¤.\n");
   Sleep(1000);
   system("cls");
-  printf("°ÔÀÓÀ» ºÒ·¯¿É´Ï´Ù..\n");
+  printf("ê²Œì„ì„ ë¶ˆëŸ¬ì˜µë‹ˆë‹¤..\n");
   Sleep(1000);
   system("cls");
-  printf("°ÔÀÓÀ» ºÒ·¯¿É´Ï´Ù...\n");
+  printf("ê²Œì„ì„ ë¶ˆëŸ¬ì˜µë‹ˆë‹¤...\n");
   Sleep(1000);
   system("cls");
-  printf("°ÔÀÓÀ» ºÒ·¯¿É´Ï´Ù....\n");
+  printf("ê²Œì„ì„ ë¶ˆëŸ¬ì˜µë‹ˆë‹¤....\n");
   Sleep(1000);
   system("cls");
-  printf("°ÔÀÓÀ» ºÒ·¯¿É´Ï´Ù.....\n");
+  printf("ê²Œì„ì„ ë¶ˆëŸ¬ì˜µë‹ˆë‹¤.....\n");
   Sleep(1000);
   system("cls");
   Sleep(1000);
@@ -83,18 +83,18 @@ int main(void)
 
  while(b == 1)
  {
-  //·¹º§ 1 °íºí¸°
+  //ë ˆë²¨ 1 ê³ ë¸”ë¦°
  while(f == 1)
  {
-  printf("[°íºí¸° Ã¼·Â : %d / %d]\n",mobhp,mobmhp);
-  printf("[³ªÀÇ Ã¼·Â : %d / %d]\n",hp,mhp);
-  printf("[1]°ø°İ\n[2]µµ¸Á\n\n");
+  printf("[ê³ ë¸”ë¦° ì²´ë ¥ : %d / %d]\n",mobhp,mobmhp);
+  printf("[ë‚˜ì˜ ì²´ë ¥ : %d / %d]\n",hp,mhp);
+  printf("[1]ê³µê²©\n[2]ë„ë§\n\n");
   scanf("%d",&choose);
 
   if(choose == 1)
   {
    system("cls");
-   printf("[°ø°İÇÏ¿´´Ù]\n\a");
+   printf("[ê³µê²©í•˜ì˜€ë‹¤]\n\a");
    Sleep(2000);
    if(weapon == 0){randattack = rand() % str+1;}
    mobhp -= randattack + str;
@@ -103,9 +103,9 @@ int main(void)
    {
    hp -= mobattack - dex;
             }
-   printf("[°íºí¸°¿¡°Ô %dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n\a",randattack+str);
+   printf("[ê³ ë¸”ë¦°ì—ê²Œ %dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n\a",randattack+str);
    Sleep(1000);
-   printf("[°íºí¸°¿¡°Ô %dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n\a",mobattack-dex);
+   printf("[ê³ ë¸”ë¦°ì—ê²Œ %dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n\a",mobattack-dex);
             Sleep(1000);
    system("cls");
   }
@@ -115,9 +115,9 @@ int main(void)
             f = 0;
    system("cls");
    Sleep(2000);
-   printf("[°íºí¸°¿¡°Ô¼­ µµ¸ÁÃÆ´Ù]\n");
+   printf("[ê³ ë¸”ë¦°ì—ê²Œì„œ ë„ë§ì³¤ë‹¤]\n");
    Sleep(2000);
-   printf("[ÄğÅ¸ÀÓ 10ÃÊ]\n");
+   printf("[ì¿¨íƒ€ì„ 10ì´ˆ]\n");
    Sleep(10000);
    system("cls");
   }
@@ -126,8 +126,8 @@ int main(void)
   {
             f = 0;
    system("cls");
-   printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-   printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+   printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+   printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
    gold -= gold/2;
    Sleep(2000);
    system("cls");
@@ -138,10 +138,10 @@ int main(void)
             f = 0; 
    system("cls");
    Sleep(2000);
-   printf("[½Â¸®ÇÏ¿´½À´Ï´Ù]");
+   printf("[ìŠ¹ë¦¬í•˜ì˜€ìŠµë‹ˆë‹¤]");
    getgold = rand() % 40+1;
    getexp = rand() % 30+1;
-   printf("[°ñµå + %d / °æÇèÄ¡ + %d È¹µæ]\n",getgold,getexp);
+   printf("[ê³¨ë“œ + %d / ê²½í—˜ì¹˜ + %d íšë“]\n",getgold,getexp);
    gold += getgold;
    exp += getexp;
    Sleep(2000);
@@ -152,25 +152,25 @@ int main(void)
   {
               system("cls");
               Sleep(1000);
-              printf("[´ç½ÅÀº Á×¾ú½À´Ï´Ù]");
+              printf("[ë‹¹ì‹ ì€ ì£½ì—ˆìŠµë‹ˆë‹¤]");
               Sleep(1000);
               system("cls");
               f = 0;
         } 
  }
  
-  //·¹º§ 2 °íºí¸°ÅõÃ´º´ 
+  //ë ˆë²¨ 2 ê³ ë¸”ë¦°íˆ¬ì²™ë³‘ 
  while(f == 2)
  {
-  printf("[°íºí¸°ÅõÃ´º´ Ã¼·Â : %d / %d]\n",mobhp,mobmhp);
-  printf("[³ªÀÇ Ã¼·Â : %d / %d]\n",hp,mhp);
-  printf("[1]°ø°İ\n[2]µµ¸Á\n\n");
+  printf("[ê³ ë¸”ë¦°íˆ¬ì²™ë³‘ ì²´ë ¥ : %d / %d]\n",mobhp,mobmhp);
+  printf("[ë‚˜ì˜ ì²´ë ¥ : %d / %d]\n",hp,mhp);
+  printf("[1]ê³µê²©\n[2]ë„ë§\n\n");
   scanf("%d",&choose);
 
   if(choose == 1)
   {
    system("cls");
-   printf("[°ø°İÇÏ¿´´Ù]\n\a");
+   printf("[ê³µê²©í•˜ì˜€ë‹¤]\n\a");
 
    Sleep(2000);
    if(weapon == 0){randattack = rand() % str+1;}
@@ -180,9 +180,9 @@ int main(void)
    {
    hp -= mobattack - dex;
             }
-   printf("[°íºí¸°ÅõÃ´º´¿¡°Ô %dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n\a",randattack+str);
+   printf("[ê³ ë¸”ë¦°íˆ¬ì²™ë³‘ì—ê²Œ %dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n\a",randattack+str);
    Sleep(1000);
-   printf("[°íºí¸°ÅõÃ´º´¿¡°Ô %dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n\a",mobattack-dex);
+   printf("[ê³ ë¸”ë¦°íˆ¬ì²™ë³‘ì—ê²Œ %dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n\a",mobattack-dex);
             Sleep(1000);
    system("cls");
   }
@@ -192,9 +192,9 @@ int main(void)
             f = 0;
    system("cls");
    Sleep(2000);
-   printf("[°íºí¸°ÅõÃ´º´¿¡°Ô¼­ µµ¸ÁÃÆ´Ù]\n");
+   printf("[ê³ ë¸”ë¦°íˆ¬ì²™ë³‘ì—ê²Œì„œ ë„ë§ì³¤ë‹¤]\n");
    Sleep(2000);
-   printf("[ÄğÅ¸ÀÓ 10ÃÊ]\n");
+   printf("[ì¿¨íƒ€ì„ 10ì´ˆ]\n");
    Sleep(10000);
    system("cls");
   }
@@ -203,8 +203,8 @@ int main(void)
   {
             f = 0;
    system("cls");
-   printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-   printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+   printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+   printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
    gold -= gold/2;
    Sleep(2000);
    system("cls");
@@ -215,10 +215,10 @@ int main(void)
             f = 0; 
    system("cls");
    Sleep(2000);
-   printf("[½Â¸®ÇÏ¿´½À´Ï´Ù]");
+   printf("[ìŠ¹ë¦¬í•˜ì˜€ìŠµë‹ˆë‹¤]");
    getgold = rand() % 70+1;
    getexp = rand() % 60+1;
-   printf("[°ñµå + %d / °æÇèÄ¡ + %d È¹µæ]\n",getgold,getexp);
+   printf("[ê³¨ë“œ + %d / ê²½í—˜ì¹˜ + %d íšë“]\n",getgold,getexp);
    gold += getgold;
    exp += getexp;
    Sleep(2000);
@@ -229,25 +229,25 @@ int main(void)
   {
               system("cls");
               Sleep(1000);
-              printf("[´ç½ÅÀº Á×¾ú½À´Ï´Ù]");
+              printf("[ë‹¹ì‹ ì€ ì£½ì—ˆìŠµë‹ˆë‹¤]");
               Sleep(1000);
               system("cls");
               f = 0;
         } 
  }
  
- //·¹º§ 3 °íºí¸°½ÊÀå 
+ //ë ˆë²¨ 3 ê³ ë¸”ë¦°ì‹­ì¥ 
  while(f == 3)
  {
-  printf("[°íºí¸°½ÊÀå Ã¼·Â : %d / %d]\n",mobhp,mobmhp);
-  printf("[³ªÀÇ Ã¼·Â : %d / %d]\n",hp,mhp);
-  printf("[1]°ø°İ\n[2]µµ¸Á\n\n");
+  printf("[ê³ ë¸”ë¦°ì‹­ì¥ ì²´ë ¥ : %d / %d]\n",mobhp,mobmhp);
+  printf("[ë‚˜ì˜ ì²´ë ¥ : %d / %d]\n",hp,mhp);
+  printf("[1]ê³µê²©\n[2]ë„ë§\n\n");
   scanf("%d",&choose);
 
   if(choose == 1)
   {
    system("cls");
-   printf("[°ø°İÇÏ¿´´Ù]\n\a");
+   printf("[ê³µê²©í•˜ì˜€ë‹¤]\n\a");
 
    Sleep(2000);
    if(weapon == 0){randattack = rand() % str+1;}
@@ -257,9 +257,9 @@ int main(void)
    {
    hp -= mobattack - dex;
             }
-   printf("[°íºí¸°½ÊÀå¿¡°Ô %dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n\a",randattack+str);
+   printf("[ê³ ë¸”ë¦°ì‹­ì¥ì—ê²Œ %dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n\a",randattack+str);
    Sleep(1000);
-   printf("[°íºí¸°½ÊÀå¿¡°Ô %dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n\a",mobattack-dex);
+   printf("[ê³ ë¸”ë¦°ì‹­ì¥ì—ê²Œ %dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n\a",mobattack-dex);
             Sleep(1000);
    system("cls");
   }
@@ -269,9 +269,9 @@ int main(void)
             f = 0;
    system("cls");
    Sleep(2000);
-   printf("[°íºí¸°½ÊÀå¿¡°Ô¼­ µµ¸ÁÃÆ´Ù]\n");
+   printf("[ê³ ë¸”ë¦°ì‹­ì¥ì—ê²Œì„œ ë„ë§ì³¤ë‹¤]\n");
    Sleep(2000);
-   printf("[ÄğÅ¸ÀÓ 10ÃÊ]\n");
+   printf("[ì¿¨íƒ€ì„ 10ì´ˆ]\n");
    Sleep(10000);
    system("cls");
   }
@@ -280,8 +280,8 @@ int main(void)
   {
             f = 0;
    system("cls");
-   printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-   printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+   printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+   printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
    gold -= gold/2;
    Sleep(2000);
    system("cls");
@@ -292,10 +292,10 @@ int main(void)
             f = 0; 
    system("cls");
    Sleep(2000);
-   printf("[½Â¸®ÇÏ¿´½À´Ï´Ù]");
+   printf("[ìŠ¹ë¦¬í•˜ì˜€ìŠµë‹ˆë‹¤]");
    getgold = rand() % 100+1;
    getexp = rand() % 80+1;
-   printf("[°ñµå + %d / °æÇèÄ¡ + %d È¹µæ]\n",getgold,getexp);
+   printf("[ê³¨ë“œ + %d / ê²½í—˜ì¹˜ + %d íšë“]\n",getgold,getexp);
    gold += getgold;
    exp += getexp;
    Sleep(2000);
@@ -306,7 +306,7 @@ int main(void)
   {
               system("cls");
               Sleep(1000);
-              printf("[´ç½ÅÀº Á×¾ú½À´Ï´Ù]");
+              printf("[ë‹¹ì‹ ì€ ì£½ì—ˆìŠµë‹ˆë‹¤]");
               Sleep(1000);
               system("cls");
               f = 0;
@@ -318,17 +318,17 @@ int main(void)
   printf("[HP : %d / %d]\n",hp,mhp);
   printf("[EXP : %d]\n",exp);
   printf("[GOLD : %d]\n",gold);
-  if(weapon == 0){printf("[WEAPON : ¸Ç¼Õ]\n");} if(weapon == 1){printf("[WEAPON : Çã¸§ÇÑ°Ë]\n");}if(weapon == 2){printf("[WEAPON : ¾µ¸¸ÇÑ°Ë]\n");}if(weapon == 3){printf("[WEAPON : ºê·ĞÁî¼Òµå]\n");}
-  if(armor == 0){printf("[ARMOR : Çã¸§ÇÑ¿Ê]\n\n");}if(armor == 1){printf("[ARMOR : Æò»óº¹]\n\n");}if(armor == 2){printf("[ARMOR : Çã¸§ÇÑ °©¿Ê]\n\n");}if(armor == 3){printf("[ARMOR : ¾µ¸¸ÇÑ°©¿Ê]\n\n");}
+  if(weapon == 0){printf("[WEAPON : ë§¨ì†]\n");} if(weapon == 1){printf("[WEAPON : í—ˆë¦„í•œê²€]\n");}if(weapon == 2){printf("[WEAPON : ì“¸ë§Œí•œê²€]\n");}if(weapon == 3){printf("[WEAPON : ë¸Œë¡ ì¦ˆì†Œë“œ]\n");}
+  if(armor == 0){printf("[ARMOR : í—ˆë¦„í•œì˜·]\n\n");}if(armor == 1){printf("[ARMOR : í‰ìƒë³µ]\n\n");}if(armor == 2){printf("[ARMOR : í—ˆë¦„í•œ ê°‘ì˜·]\n\n");}if(armor == 3){printf("[ARMOR : ì“¸ë§Œí•œê°‘ì˜·]\n\n");}
   printf("[STR : %d]\n",str);
   printf("[DEX : %d]\n\n",dex);
 
-  printf("[1]´øÀüÀÔÀå\n");
-  printf("[2]°ÔÀÓÁ¾·á\n");
+  printf("[1]ë˜ì „ì…ì¥\n");
+  printf("[2]ê²Œì„ì¢…ë£Œ\n");
   scanf("%d",&menu);
     }
 
-  //·¹º§ ¾÷
+  //ë ˆë²¨ ì—…
   if(exp >= 100)
   {
    if(lev == 0)
@@ -419,33 +419,33 @@ int main(void)
     mhp = 2000;
    }
   }
-  //·¹º§ ¾÷ ³¡
+  //ë ˆë²¨ ì—… ë
 
-  //´øÀüÀÔÀå
+  //ë˜ì „ì…ì¥
   if(menu == 1)
   {
            monster = rand() % 3+1;
    system("cls");
    Sleep(1000);
-   printf("[´øÀüÀ» ¼±ÅÃÇØÁÖ¼¼¿ä]\n\n");
-   printf("[1]°íºí¸°ÀÇ ½£\n");
-   printf("[2]³ª°¡±â\n");
+   printf("[ë˜ì „ì„ ì„ íƒí•´ì£¼ì„¸ìš”]\n\n");
+   printf("[1]ê³ ë¸”ë¦°ì˜ ìˆ²\n");
+   printf("[2]ë‚˜ê°€ê¸°\n");
    scanf("%d",&c);
 
-   //[LV1~LV4]°íºí¸°ÀÇ½£
+   //[LV1~LV4]ê³ ë¸”ë¦°ì˜ìˆ²
    if(c == 1)
    {
     system("cls");
-    printf("´øÀü ÀÔÀå Áß...");
+    printf("ë˜ì „ ì…ì¥ ì¤‘...");
     Sleep(2500);
-    if(monster == 1){printf("[°íºí¸°ÀÌ ³ªÅ¸³µ½À´Ï´Ù! - LV 1]\n");}if(monster == 2){printf("[°íºí¸°ÅõÃ´º´ÀÌ ³ªÅ¸³µ½À´Ï´Ù! - LV 2]\n");}if(monster == 3){printf("[°íºí¸°½ÊÀåÀÌ ³ªÅ¸³µ½À´Ï´Ù! - LV 3]\n");}
-    printf("[1]½Î¿î´Ù\n[2]µµ¸ÁÄ£´Ù\n");
+    if(monster == 1){printf("[ê³ ë¸”ë¦°ì´ ë‚˜íƒ€ë‚¬ìŠµë‹ˆë‹¤! - LV 1]\n");}if(monster == 2){printf("[ê³ ë¸”ë¦°íˆ¬ì²™ë³‘ì´ ë‚˜íƒ€ë‚¬ìŠµë‹ˆë‹¤! - LV 2]\n");}if(monster == 3){printf("[ê³ ë¸”ë¦°ì‹­ì¥ì´ ë‚˜íƒ€ë‚¬ìŠµë‹ˆë‹¤! - LV 3]\n");}
+    printf("[1]ì‹¸ìš´ë‹¤\n[2]ë„ë§ì¹œë‹¤\n");
     scanf("%d",&e);
 
-    //½Î¿ìÀÚ
+    //ì‹¸ìš°ì
     if(e == 1)
     {
-     //·¹º§1 °íºí¸°
+     //ë ˆë²¨1 ê³ ë¸”ë¦°
      if(monster == 1)
      {
                        mobhp = 50;
@@ -454,7 +454,7 @@ int main(void)
       f = 1;
      }
 
-     //·¹º§2 °íºí¸°ÅõÃ´º´
+     //ë ˆë²¨2 ê³ ë¸”ë¦°íˆ¬ì²™ë³‘
      else if(monster == 2)
      {
                         mobhp = 80;
@@ -463,7 +463,7 @@ int main(void)
       f = 2;
      }
 
-     //·¹º§3 °íºí¸°½ÊÀå
+     //ë ˆë²¨3 ê³ ë¸”ë¦°ì‹­ì¥
      else if(monster == 3)
      {
                         mobhp = 130;
@@ -473,13 +473,13 @@ int main(void)
      }
     }
 
-    //µµ¸ÁÄ¡ÀÚ
+    //ë„ë§ì¹˜ì
     if(e == 2)
     {
      system("cls");
-     printf("[µµ¸ÁÃÆ´Ù]\n");
+     printf("[ë„ë§ì³¤ë‹¤]\n");
      Sleep(2000);
-     printf("[ÄğÅ¸ÀÓ 10ÃÊ]\n");
+     printf("[ì¿¨íƒ€ì„ 10ì´ˆ]\n");
      Sleep(10000);
      system("cls");
     }
@@ -487,42 +487,39 @@ int main(void)
     if(e != 1 && e != 2)
     {
      system("cls");
-     printf("[Àß¸ø ¼±ÅÃÇÏ¿´½À´Ï´Ù]\n");
+     printf("[ì˜ëª» ì„ íƒí•˜ì˜€ìŠµë‹ˆë‹¤]\n");
      Sleep(1000);
-     printf("[ÄğÅ¸ÀÓ 10ÃÊ]\n");
+     printf("[ì¿¨íƒ€ì„ 10ì´ˆ]\n");
      Sleep(10000);
      system("cls");
     }
    }
-   //°íºí¸°ÀÇ ½£ ³¡
+   // End of the woods of Goblin
 
    if(c == 2)
    {
     system("cls");
    }
 
-   //´øÀüÀÔ±¸¿¡¼­ ³ª°¡±â
+   // Exit on the entrance of Dungeon
    if(c != 1 && c != 2)
    {
     system("cls");
-    printf("[Àß¸ø ¼±ÅÃÇÏ¿´½À´Ï´Ù]\n");
+    printf("[WRONG CHOICE]\n");
     Sleep(2000);
     system("cls");
    }
-   //³¡
+   //End
   }
 
   
 
-  //°ÔÀÓÁ¾·á
+  //terminate the game
   if(menu == 5)
   {
    return 0;
   }
-  //°ÔÀÓÁ¾·á³¡
+  //terminate the game
  }
 }
-
-// [ÃâÃ³] [C¾ğ¾î]RPG ¸¸µé±â 99ÆÛ ¼º°ø|ÀÛ¼ºÀÚ À§½Ã
-
 
