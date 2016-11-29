@@ -1,10 +1,10 @@
 		if(menu == 4)
 		{
 			system("cls");
-			printf("[포션을 구입하시겠습니까?]\n");
-			printf("[1]1개 - 200골드\n");
-			printf("[2]5개 = 900골드\n");
-			printf("[3]나가기\n");
+			printf("[Do you want to buy potions?]\n");
+			printf("[1]1 - 200GOLD\n");
+			printf("[2]5 = 900GOLD\n");
+			printf("[3]EXIT\n");
 			scanf("%d",&h);
 
 			if(h == 1)
@@ -14,7 +14,7 @@
 				if(gold >= 200)
 				{
 					system("cls");
-					printf("[포션 1개를 구입하였습니다]");
+					printf("[you bought one potion.]");
 					potion += 1;
 					gold -= 200;
 					Sleep(2000);
@@ -23,7 +23,7 @@
 				else
 				{
 					system("cls");
-					printf("[돈이 부족합니다]");
+					printf("[you don't have enough money.]");
 					Sleep(2000);
 					system("cls");
 				}
@@ -31,7 +31,7 @@
                 else
                 {
                     system("cls");
-                    printf("[5개 이상 소지시 구입이 불가능 합니다]\n");
+                    printf("[If having more than five potions, you can't buy any more.]\n");
                     Sleep(2000);
                     system("cls");
                 } 
@@ -44,7 +44,7 @@
 				if(gold >= 900)
 				{
 					system("cls");
-					printf("[포션 5개를 구입하였습니다]");
+					printf("[you bought five potions.]");
 					potion += 5;
 					gold -= 900;
 					Sleep(2000);
@@ -58,7 +58,7 @@
 				else
 				{
 					system("cls");
-					printf("[돈이 부족합니다]");
+					printf("[you don't have enough money.]");
 					Sleep(2000);
 					system("cls");
 				}
@@ -66,7 +66,7 @@
                 else
                 {
                     system("cls");
-                    printf("[5개 이상 소지시 구입이 불가능 합니다]\n");
+                    printf("[If having more than five potions, you can't buy any more.]\n");
                     Sleep(2000);
                     system("cls");
                 } 
@@ -79,7 +79,7 @@
 			if(h == 1 && h == 2 && h == 3)
 			{
 				system("cls");
-				printf("[잘못입력하셨습니다]");
+				printf("[WRONG CHOICE]");
 				Sleep(2000);
 				system("cls");
 			}
