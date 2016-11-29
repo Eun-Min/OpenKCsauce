@@ -1,4 +1,4 @@
-// 몬스터 정보
+// information about monster
 {
 		printf("[Monster HP : %d / %d]\n",mobhp,mobmhp); // [monster hp]
 		printf("[My HP : %d / %d]\n",hp,mhp); // [hero hp]
