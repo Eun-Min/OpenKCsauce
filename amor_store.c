@@ -2,7 +2,7 @@ if(menu == 3)
 		{
 			system("cls");
 			Sleep(1000);
-			printf("[방어구상점 입장중.]\r");
+			printf("[방어구상점 입장중.]\r"); //entering the armor store
 			Sleep(1000);
 			printf("[방어구상점 입장중..]\r");
 			Sleep(1000);
@@ -10,11 +10,14 @@ if(menu == 3)
 			Sleep(1000);
 			
 			npc2 = rand() % 3+1;
-			if(npc2 == 1){printf("[방어구상인 : 어서오세요~]\n");} if(npc2 == 2){printf("[방어구상인 : 저희 가게는 최고의 방어구를 자랑한답니다]\n");} if(npc2 == 3){printf("[방어구상인 : 만약 돈이 없다면 나가주세요]\n");}
+			if(npc2 == 1){printf("[방어구상인 : 어서오세요~]\n");} // Welcome
+			if(npc2 == 2){printf("[방어구상인 : 저희 가게는 최고의 방어구를 자랑한답니다]\n");} // I deal with best of best protetive gear in our store.
+			if(npc2 == 3){printf("[방어구상인 : 만약 돈이 없다면 나가주세요]\n");} // if having no money, get out
+	
 			printf("[1]평상복<1레벨> - 3000골드\n");
 			printf("[2]허름한 갑옷<3레벨> - 5500골드\n");
-			printf("[3]쓸만한 갑옷<5레벨> - 9000골드\n");
-			printf("[4]철 갑옷<8레벨> - 12000골드\n");
+			printf("[3]쓸만한 갑옷<5레벨> - 9000골드\n"); // useful armor
+			printf("[4]철 갑옷<8레벨> - 12000골드\n"); // iron armor
 			printf("[5]나가기\n");
 			scanf("%d",&store2);
 			
@@ -27,7 +30,7 @@ if(menu == 3)
 					system("cls");
 					printf("[방어구구입중...]\n");
 					Sleep(3000);
-					printf("[방어구상인 : 고맙습니다. 안녕히가세요~]\n");
+					printf("[방어구상인 : 고맙습니다. 안녕히가세요~]\n"); //Thank you. HAVE A nice day!
 					gold -= 3000;
 					dex = 15;
 					armor = 1;
