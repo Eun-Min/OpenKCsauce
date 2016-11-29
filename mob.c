@@ -36,7 +36,7 @@ if(choose == 2)
 			Sleep(10000);
 			system("cls");
 		}
-// 레벨 당 포션회복수치
+// 레벨업 당 포션회복수치
 
 if(choose == 3)	
 		{
