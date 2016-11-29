@@ -2,9 +2,9 @@
 		if(menu == 6)
 		{
 			system("cls");
-			printf("[퀘스트 목록]\n");
-			printf("[1]고블린 5마리 처치\n");
-			printf("=보상 - 300GOLD 50EX=\n");
+			printf("[Quest list]\n");
+			printf("[1]Kill five Goblins\n");
+			printf("=Compensation- 300GOLD 50EX=\n");
 			printf("[2]EXIT\n");
 			scanf("%d",&quest);
 
