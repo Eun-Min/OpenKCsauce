@@ -2,10 +2,10 @@
 		if(menu == 6)
 		{
 			system("cls");
-			printf("[Äù½ºÆ® ¸ñ·Ï]\n");
-			printf("[1]°íºí¸° 5¸¶¸® Ã³Ä¡\n");
-			printf("=º¸»ó - 300°ñµå 50°æÇèÄ¡=\n");
-			printf("[2]³ª°¡±â\n");
+			printf("[í€˜ìŠ¤íŠ¸ ëª©ë¡]\n");
+			printf("[1]ê³ ë¸”ë¦° 5ë§ˆë¦¬ ì²˜ì¹˜\n");
+			printf("=ë³´ìƒ - 300GOLD 50EX=\n");
+			printf("[2]EXIT\n");
 			scanf("%d",&quest);
 
 			if(quest == 1)
@@ -13,30 +13,30 @@
 				if(q2 == 5)
 				{
 					system("cls");
-					printf("[Äù½ºÆ®¸¦ ¿Ï·áÇÏ¿´½À´Ï´Ù]\n");
+					printf("[Complete the quest.]\n");
 					Sleep(2000);
-					printf("[300 °ñµå 50 °æÇèÄ¡ È¹µæ]\n");
+					printf("[300 GOLD 50 EX ]\n");
 					gold += 300;
 					exp += 50;
 					q = 0;
 					q2 = 0;
 					starting == 0;
-				}
+		
 				else
 				{
 					if(starting == 0)
 					{
 						system("cls");
-						printf("[Äù½ºÆ®¸¦ (´Ù½Ã)¹ŞÀ¸½Ã°Ú½À´Ï±î?]\n");
-						printf("[1]³×\n[2]¾Æ´Ï¿ä\n");
+						printf("[Do you want to get this quest again?]\n");
+						printf("[1]Yes\n[2]No\n");
 						scanf("%d",&co);
 
 						if(co == 1)
 						{
 							starting = 1;
-							q = 1; // 1¹øÄù½ºÆ®
-							q2 = 0; // ÀâÀº È½¼ö ÃÊ±âÈ­
-							printf("[Äù½ºÆ®°¡ ½ÃÀÛµÇ¾ú½À´Ï´Ù]\n");
+							q = 1; // 1ë²ˆí€˜ìŠ¤íŠ¸
+							q2 = 0; // ì¡ì€ íšŸìˆ˜ ì´ˆê¸°í™”
+							printf("[The quest is started.]\n");
 							Sleep(2000);
 							system("cls");
 						}
@@ -49,7 +49,7 @@
 						if(co == 1 && co == 2)
 						{
 							system("cls");
-							printf("[Àß¸øÀÔ·ÂÇÏ¼Ì½À´Ï´Ù]\n");
+							printf("[WRONG INPUT]\n");
 							Sleep(2000);
 							system("cls");
 						}
@@ -57,7 +57,7 @@
 					else
 					{
 						system("cls");
-						printf("[´Ù¸¥ Äù½ºÆ®°¡ ÁøÇà ÁßÀÔ´Ï´Ù]\n");
+						printf("[Other quest has already been doing.]\n");
 						Sleep(2000);
 						system("cls");
 					}
@@ -71,7 +71,7 @@
 			if(quest == 1 && quest == 2)
 			{
 				system("cls");
-				printf("[Àß¸øÀÔ·ÂÇÏ¼Ì½À´Ï´Ù]\n");
+				printf("[WRONG INPUT]\n");
 				Sleep(2000);
 				system("cls");
 			}
