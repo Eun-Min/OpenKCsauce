@@ -1,10 +1,10 @@
 if(menu == 5)
 		{
 			system("cls");
-			printf("[여관에 오신 것을 환영합니다]");
+			printf("[Welcome to the shelter.]");
 			Sleep(2000);
 			system("cls");
-			printf("[쉬는중...]");
+			printf("[taking a rest...]");
 			Sleep(2000);
 			system("cls");
 
@@ -128,7 +128,7 @@ if(menu == 5)
 				mhp = 20000;
 			}
 
-			printf("[체력이 회복되었습니다]\n");
+			printf("[complete recovering your HP.]\n");
 			Sleep(2000);
 			system("cls");
 		}
