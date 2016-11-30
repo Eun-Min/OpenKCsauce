@@ -1,5 +1,14 @@
+------frame------
 # monster 
 -Name	: 
 -LV	: 
 -HP	: 
--Power	: 
+-Power	:
+-----------------
+
+
+# monster 1
+-Name	: Goblin
+-LV	: 1
+-HP	: 50
+-Power	: 3
