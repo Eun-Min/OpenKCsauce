@@ -1,0 +1,5 @@
+# monster 
+-Name	: 
+-LV	: 
+-HP	: 
+-Power	: 
