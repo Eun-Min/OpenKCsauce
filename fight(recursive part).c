@@ -321,8 +321,14 @@ int main(void)
   printf("[HP : %d / %d]\n",hp,mhp);
   printf("[EXP : %d]\n",exp);
   printf("[GOLD : %d]\n",gold);
-  if(weapon == 0){printf("[WEAPON : 맨손]\n");} if(weapon == 1){printf("[WEAPON : 허름한검]\n");}if(weapon == 2){printf("[WEAPON : 쓸만한검]\n");}if(weapon == 3){printf("[WEAPON : 브론즈소드]\n");}
-  if(armor == 0){printf("[ARMOR : 허름한옷]\n\n");}if(armor == 1){printf("[ARMOR : 평상복]\n\n");}if(armor == 2){printf("[ARMOR : 허름한 갑옷]\n\n");}if(armor == 3){printf("[ARMOR : 쓸만한갑옷]\n\n");}
+  if(weapon == 0){printf("[WEAPON : 맨손]\n");}
+  if(weapon == 1){printf("[WEAPON : 허름한검]\n");}
+  if(weapon == 2){printf("[WEAPON : 쓸만한검]\n");}
+  if(weapon == 3){printf("[WEAPON : 브론즈소드]\n");}
+  if(armor == 0){printf("[ARMOR : 허름한옷]\n\n");}
+  if(armor == 1){printf("[ARMOR : 평상복]\n\n");}
+  if(armor == 2){printf("[ARMOR : 허름한 갑옷]\n\n");}
+  if(armor == 3){printf("[ARMOR : 쓸만한갑옷]\n\n");}
   printf("[STR : %d]\n",str);
   printf("[DEX : %d]\n\n",dex);
 
@@ -441,7 +447,9 @@ int main(void)
     system("cls");
     printf("던전 입장 중...");
     Sleep(2500);
-    if(monster == 1){printf("[고블린이 나타났습니다! - LV 1]\n");}if(monster == 2){printf("[고블린투척병이 나타났습니다! - LV 2]\n");}if(monster == 3){printf("[고블린십장이 나타났습니다! - LV 3]\n");}
+    if(monster == 1){printf("[고블린이 나타났습니다! - LV 1]\n");}
+    if(monster == 2){printf("[고블린투척병이 나타났습니다! - LV 2]\n");}
+    if(monster == 3){printf("[고블린십장이 나타났습니다! - LV 3]\n");}
     printf("[1]싸운다\n[2]도망친다\n");
     scanf("%d",&e);
 
@@ -476,13 +484,13 @@ int main(void)
      }
     }
 
-    //도망치자
+    //we choose to escape
     if(e == 2)
     {
      system("cls");
-     printf("[도망쳤다]\n");
+     printf("[we are escaped from monster]\n");
      Sleep(2000);
-     printf("[쿨타임 10초]\n");
+     printf("[COOL TIME 10s]\n");
      Sleep(10000);
      system("cls");
     }
@@ -490,9 +498,9 @@ int main(void)
     if(e != 1 && e != 2)
     {
      system("cls");
-     printf("[잘못 선택하였습니다]\n");
+     printf("[Wrong choice]\n");
      Sleep(1000);
-     printf("[쿨타임 10초]\n");
+     printf("[COOL TIME 10s]\n");
      Sleep(10000);
      system("cls");
     }
@@ -514,9 +522,6 @@ int main(void)
    }
    //End
   }
-
-  
-
   //terminate the game
   if(menu == 5)
   {
