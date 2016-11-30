@@ -12,3 +12,10 @@
 -LV	: 1
 -HP	: 50
 -Power	: 3
+
+
+# monster 2
+-Name	: Goblin Thrower
+-LV	: 2
+-HP	: 100
+-Power	: 6
