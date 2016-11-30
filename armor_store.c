@@ -1,3 +1,5 @@
+// ** Armor store
+
 if(menu == 3)
 		{
 			system("cls");
