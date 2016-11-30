@@ -1,8 +1,8 @@
 if(menu == 7)
         {
                 system("cls");
-                printf("[무엇으로 전직하시겠습니까?]\n");
-                printf("[1]전사 - 1차전직[5레벨]\n[2]파이터 - 각성[20레벨]\n[3]궁수 - 1차전직[5레벨]\n[4]헌터 - 각성[20레벨]\n");
+                printf("[what job do you want to have?]\n");
+                printf("[1]전사 - 1차전직[5level]\n[2]파이터 - 각성[20level]\n[3]궁수 - 1차전직[5level]\n[4]헌터 - 각성[20level]\n");
                 scanf("%d",&jobs);
                          
                 if(jobs == 1)
