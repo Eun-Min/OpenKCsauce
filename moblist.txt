@@ -26,3 +26,10 @@
 -LV	: 3
 -HP	: 100
 -Power	: 12
+
+
+# monster 4
+-Name	: Slime
+-LV	: 4
+-HP	: 200
+-Power	: 10
