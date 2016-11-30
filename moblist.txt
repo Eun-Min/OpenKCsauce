@@ -19,3 +19,10 @@
 -LV	: 2
 -HP	: 100
 -Power	: 6
+
+
+# monster 3
+-Name	: Burning Goblin
+-LV	: 3
+-HP	: 100
+-Power	: 12
