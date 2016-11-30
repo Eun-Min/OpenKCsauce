@@ -1,3 +1,6 @@
+// fight with monsters
+// this code is iterated
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<windows.h>
@@ -24,8 +27,8 @@ int main(void)
  int mobhp;
  int mobmhp;
  int menu;
- int attack; // 기본공격력
- int randattack; // 기본공격력 랜덤
+ int attack; // basic attack power
+ int randattack; // basic attack power random
  int a;
  int b;
  int c;
@@ -39,26 +42,26 @@ int main(void)
  int mobattack;
  int randa; 
 
- printf("[1.시작하기]\n[2.종료하기]\n");
+ printf("[1.start]\n[2.exit]\n");
  scanf("%d",&a);
 
  if(a == 1)
  {
   system("cls");
   Sleep(2000);
-  printf("게임을 불러옵니다.\n");
+  printf("bring files of game.\n");
   Sleep(1000);
   system("cls");
-  printf("게임을 불러옵니다..\n");
+  printf("bring files of game..\n");
   Sleep(1000);
   system("cls");
-  printf("게임을 불러옵니다...\n");
+  printf("bring files of game...\n");
   Sleep(1000);
   system("cls");
-  printf("게임을 불러옵니다....\n");
+  printf("bring files of game....\n");
   Sleep(1000);
   system("cls");
-  printf("게임을 불러옵니다.....\n");
+  printf("bring files of game.....\n");
   Sleep(1000);
   system("cls");
   Sleep(1000);
@@ -83,18 +86,18 @@ int main(void)
 
  while(b == 1)
  {
-  //레벨 1 고블린
+  // level1 monster : Goblin
  while(f == 1)
  {
-  printf("[고블린 체력 : %d / %d]\n",mobhp,mobmhp);
-  printf("[나의 체력 : %d / %d]\n",hp,mhp);
-  printf("[1]공격\n[2]도망\n\n");
+  printf("[Goblin HP : %d / %d]\n",mobhp,mobmhp);
+  printf("[My HP : %d / %d]\n",hp,mhp);
+  printf("[1]attack\n[2]escape\n\n");
   scanf("%d",&choose);
 
   if(choose == 1)
   {
    system("cls");
-   printf("[공격하였다]\n\a");
+   printf("[Monster is hit]\n\a");
    Sleep(2000);
    if(weapon == 0){randattack = rand() % str+1;}
    mobhp -= randattack + str;
@@ -103,9 +106,9 @@ int main(void)
    {
    hp -= mobattack - dex;
             }
-   printf("[고블린에게 %d의 데미지를 주었다!]\n\a",randattack+str);
+   printf("[Goblin is damaged with %d !]\n\a",randattack+str); // error 뜰거같다
    Sleep(1000);
-   printf("[고블린에게 %d의 피해를 입었다!]\n\a",mobattack-dex);
+   printf("[Goblin is damaged with %d !!]\n\a",mobattack-dex);
             Sleep(1000);
    system("cls");
   }
@@ -115,9 +118,9 @@ int main(void)
             f = 0;
    system("cls");
    Sleep(2000);
-   printf("[고블린에게서 도망쳤다]\n");
+   printf("[I am escaped from Goblin]\n");
    Sleep(2000);
-   printf("[쿨타임 10초]\n");
+   printf("[Cool time 10s]\n");
    Sleep(10000);
    system("cls");
   }
@@ -126,8 +129,8 @@ int main(void)
   {
             f = 0;
    system("cls");
-   printf("[잘못된 선택이므로 패널티를 받고 되돌아갑니다]\n");
-   printf("[패널티 골드 대량 감소]\n");
+   printf("[Penalty is given and you are returned to previous state as wrong choice.]\n");
+   printf("[Penalty : a decrease of GOLD]\n");
    gold -= gold/2;
    Sleep(2000);
    system("cls");
@@ -138,10 +141,10 @@ int main(void)
             f = 0; 
    system("cls");
    Sleep(2000);
-   printf("[승리하였습니다]");
+   printf("[Win]");
    getgold = rand() % 40+1;
    getexp = rand() % 30+1;
-   printf("[골드 + %d / 경험치 + %d 획득]\n",getgold,getexp);
+   printf("[GOLD + %d / EX + %d acquisiiton\n",getgold,getexp);
    gold += getgold;
    exp += getexp;
    Sleep(2000);
@@ -152,7 +155,7 @@ int main(void)
   {
               system("cls");
               Sleep(1000);
-              printf("[당신은 죽었습니다]");
+              printf("[you are died]");
               Sleep(1000);
               system("cls");
               f = 0;
