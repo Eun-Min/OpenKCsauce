@@ -4,23 +4,23 @@ if(menu == 3)
 		{
 			system("cls");
 			Sleep(1000);
-			printf("[¹æ¾î±¸»óÁ¡ ÀÔÀåÁß.]\r"); //entering the armor store
+			printf("[entering the armor store.]\r"); 
 			Sleep(1000);
-			printf("[¹æ¾î±¸»óÁ¡ ÀÔÀåÁß..]\r");
+			printf("[entering the armor store..]\r");
 			Sleep(1000);
-			printf("[¹æ¾î±¸»óÁ¡ ÀÔÀåÁß...]\r");
+			printf("[entering the armor store...]\r");
 			Sleep(1000);
 			
 			npc2 = rand() % 3+1;
-			if(npc2 == 1){printf("[¹æ¾î±¸»óÀÎ : ¾î¼­¿À¼¼¿ä~]\n");} // Welcome
-			if(npc2 == 2){printf("[¹æ¾î±¸»óÀÎ : ÀúÈñ °¡°Ô´Â ÃÖ°íÀÇ ¹æ¾î±¸¸¦ ÀÚ¶ûÇÑ´ä´Ï´Ù]\n");} // I deal with best of best protetive gear in our store.
-			if(npc2 == 3){printf("[¹æ¾î±¸»óÀÎ : ¸¸¾à µ·ÀÌ ¾ø´Ù¸é ³ª°¡ÁÖ¼¼¿ä]\n");} // if having no money, get out of here
+			if(npc2 == 1){printf("[merchant of armor store : Welcome~]\n");}
+			if(npc2 == 2){printf("[merchant of armor store : I deal with best of best protetive gear in our store.]\n");}
+			if(npc2 == 3){printf("[merchant of armor store : if having no money, get out of here]\n");}
 	
-			printf("[1]Æò»óº¹<1·¹º§> - 3000°ñµå\n");
-			printf("[2]Çã¸§ÇÑ °©¿Ê<3·¹º§> - 5500°ñµå\n");
-			printf("[3]¾µ¸¸ÇÑ °©¿Ê<5·¹º§> - 9000°ñµå\n"); // useful armor
-			printf("[4]Ã¶ °©¿Ê<8·¹º§> - 12000°ñµå\n"); // iron armor
-			printf("[5]³ª°¡±â\n");
+			printf("[1]í‰ìƒë³µ<1level> - 3000GOLD\n");
+			printf("[2]í—ˆë¦„í•œ ê°‘ì˜·<3level> - 5500GOLD\n");
+			printf("[3]ì“¸ë§Œí•œ ê°‘ì˜·<5level> - 9000GOLD\n"); // useful armor
+			printf("[4]ì²  ê°‘ì˜·<8level> - 12000GOLD\n"); // iron armor
+			printf("[5]Exit\n");
 			scanf("%d",&store2);
 			
 			if(store2 == 1)
@@ -30,9 +30,9 @@ if(menu == 3)
 					if(level >= 1)
 					{
 					system("cls");
-					printf("[¹æ¾î±¸±¸ÀÔÁß...]\n");
+					printf("[buying protective gear...]\n");
 					Sleep(3000);
-					printf("[¹æ¾î±¸»óÀÎ : °í¸¿½À´Ï´Ù. ¾È³çÈ÷°¡¼¼¿ä~]\n"); //Thank you. HAVE A nice day!
+					printf("[merchant of armor store : Thank you. HAVE A nice day! ]\n"); 
 					gold -= 3000;
 					dex = 15;
 					armor = 1;
@@ -42,7 +42,7 @@ if(menu == 3)
 					else
 					{
 						system("cls");
-						printf("[·¹º§ÀÌ ¸ÂÁö ¾Ê½À´Ï´Ù]\n");
+						printf("[ë ˆë²¨ì´ ë§ì§€ ì•ŠìŠµë‹ˆë‹¤]\n");
 						Sleep(2000);
 						system("cls");
 					}
@@ -50,7 +50,7 @@ if(menu == 3)
 				else
 				{
 					system("cls");
-					printf("[¹æ¾î±¸»óÀÎ : µ·ÀÌ ºÎÁ·ÇÏ½Ã³×¿ä]\n");
+					printf("[merchant of armor store : ëˆì´ ë¶€ì¡±í•˜ì‹œë„¤ìš”]\n");
 					Sleep(2000);
 					system("cls");
 				}
@@ -63,9 +63,9 @@ if(menu == 3)
 					if(level >= 3)
 					{
 					system("cls");
-					printf("[¹æ¾î±¸±¸ÀÔÁß...]\n");
+					printf("[ë°©ì–´êµ¬êµ¬ì…ì¤‘...]\n");
 					Sleep(3000);
-					printf("[¹æ¾î±¸»óÀÎ : °í¸¿½À´Ï´Ù. ¾È³çÈ÷°¡¼¼¿ä~]\n");
+					printf("[merchant of armor store : Thank you. HAVE A nice day!]\n");
 					gold -= 5500;
 					dex = 21;
 					armor = 2;
@@ -75,7 +75,7 @@ if(menu == 3)
 					else
 					{
 						system("cls");
-						printf("[·¹º§ÀÌ ¸ÂÁö ¾Ê½À´Ï´Ù]\n");
+						printf("[ë ˆë²¨ì´ ë§ì§€ ì•ŠìŠµë‹ˆë‹¤]\n");
 						Sleep(2000);
 						system("cls");
 					}
@@ -83,7 +83,7 @@ if(menu == 3)
 				else
 				{
 					system("cls");
-					printf("[¹æ¾î±¸»óÀÎ : µ·ÀÌ ºÎÁ·ÇÏ½Ã³×¿ä]\n");
+					printf("[merchant of armor store : ëˆì´ ë¶€ì¡±í•˜ì‹œë„¤ìš”]\n");
 					Sleep(2000);
 					system("cls");
 				}
@@ -96,9 +96,9 @@ if(menu == 3)
 					if(level >= 5)
 					{
 					system("cls");
-					printf("[¹æ¾î±¸±¸ÀÔÁß...]\n");
+					printf("[ë°©ì–´êµ¬êµ¬ì…ì¤‘...]\n");
 					Sleep(3000);
-					printf("[¹æ¾î±¸»óÀÎ : °í¸¿½À´Ï´Ù. ¾È³çÈ÷°¡¼¼¿ä~]\n");
+					printf("[merchant of armor store : Thank you. HAVE A nice day!]\n");
 					gold -= 9000;
 					dex = 30;
 					armor = 3;
@@ -108,7 +108,7 @@ if(menu == 3)
 					else
 					{
 						system("cls");
-						printf("[·¹º§ÀÌ ¸ÂÁö ¾Ê½À´Ï´Ù]\n");
+						printf("[ë ˆë²¨ì´ ë§ì§€ ì•ŠìŠµë‹ˆë‹¤]\n");
 						Sleep(2000);
 						system("cls");
 					}
@@ -116,7 +116,7 @@ if(menu == 3)
 				else
 				{
 					system("cls");
-					printf("[¹æ¾î±¸»óÀÎ : µ·ÀÌ ºÎÁ·ÇÏ½Ã³×¿ä]\n");
+					printf("[merchant of armor store : ëˆì´ ë¶€ì¡±í•˜ì‹œë„¤ìš”]\n");
 					Sleep(2000);
 					system("cls");
 				}
@@ -129,9 +129,9 @@ if(menu == 3)
 					if(level >= 8)
 					{
 					system("cls");
-					printf("[¹æ¾î±¸±¸ÀÔÁß...]\n");
+					printf("[ë°©ì–´êµ¬êµ¬ì…ì¤‘...]\n");
 					Sleep(3000);
-					printf("[¹æ¾î±¸»óÀÎ : °í¸¿½À´Ï´Ù. ¾È³çÈ÷°¡¼¼¿ä~]\n");
+					printf("[merchant of armor store : Thank you. HAVE A nice day!]\n");
 					gold -= 12000;
 					dex = 35;
 					armor = 4;
@@ -141,7 +141,7 @@ if(menu == 3)
 					else
 					{
 						system("cls");
-						printf("[·¹º§ÀÌ ¸ÂÁö ¾Ê½À´Ï´Ù]\n");
+						printf("[ë ˆë²¨ì´ ë§ì§€ ì•ŠìŠµë‹ˆë‹¤]\n");
 						Sleep(2000);
 						system("cls");
 					}
@@ -149,7 +149,7 @@ if(menu == 3)
 				else
 				{
 					system("cls");
-					printf("[¹æ¾î±¸»óÀÎ : µ·ÀÌ ºÎÁ·ÇÏ½Ã³×¿ä]\n");
+					printf("[merchant of armor store : ëˆì´ ë¶€ì¡±í•˜ì‹œë„¤ìš”]\n");
 					Sleep(2000);
 					system("cls");
 				}
@@ -163,7 +163,7 @@ if(menu == 3)
 			if(store2 != 1 && store2 != 2 && store2 != 3 && store2 != 4 && store2 != 5)
 			{
 				system("cls");
-				printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
+				printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
 				system("cls");
 			}
 		}
