@@ -6,3 +6,8 @@
    system("cls");
    printf("[쉬는중...]");
    Sleep(2000);
+               if(level == 1)
+            {
+                hp = 100;
+                mhp = 100;
+            }
