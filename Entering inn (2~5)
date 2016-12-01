@@ -11,3 +11,23 @@
                 hp = 100;
                 mhp = 100;
             }
+   if(level == 2)
+   {
+    hp = 150;
+    mhp = 150;
+   }
+   if(level == 3)
+   {
+    hp = 200;
+    mhp = 200;
+   }
+   if(level == 4)
+   {
+    hp = 300;
+    mhp = 300;
+   }
+   if(level == 5)
+   {
+    hp = 450;
+    mhp = 450;
+   }
