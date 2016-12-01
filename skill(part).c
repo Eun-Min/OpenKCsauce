@@ -3,7 +3,7 @@
 			if(jobs == 1 || jobs == 2)
 			{
                     system("cls");
-                    printf("[무슨 스킬을 찍으시겠습니까?]\n");
+                    printf("[무슨 스킬을 찍으시겠습니까?]\n"); // What skills would you like to take?
                     printf("[SP : %d]\n",sp);
                     printf("[GOLD : %d]\n",gold);
                     printf("[1]skill name1 <SP 3 , GOLD 2000>\n");
@@ -18,7 +18,7 @@
                                    if(gold >= 2000)
                                    {
                                            system("cls");
-                                           printf("[스킬을 배웠습니다]\n");
+                                           printf("[스킬을 배웠습니다]\n"); // Learned skill. 
                                            twoattack = 1;
                                            sp -= 3;
                                            gold -= 2000;
@@ -28,7 +28,7 @@
                                    else
                                    {
                                        system("cls");
-                                       printf("[골드가 부족합니다]\n");
+                                       printf("[골드가 부족합니다]\n"); // Gold is scarce.
                                        Sleep(2000); 
                                        system("cls");
                                    }
@@ -36,7 +36,7 @@
                              else
                              {
                                  system("cls");
-                                 printf("[스킬포인트가 부족합니다]\n");
+                                 printf("[스킬포인트가 부족합니다]\n"); // Skill lacks skill points.
                                  Sleep(2000); 
                                  system("cls");
                              }
