@@ -83,11 +83,11 @@ int intro (void)
 			system("cls");
 			printf("\n\n");
 			printf("                    ┏━━━━━━━━━━━━━━━━━┓\n");
-			printf("                    ┃            전략 삼국지           ┃\n");
+			printf("                    ┃      게임       ┃\n");
 			printf("                    ┗━━━━━━━━━━━━━━━━━┛\n\n\n");
-			printf("               ┏━━━━━━━━━━━━━━━━━━━━━━┓\n");
-			printf("               ┃ [1]게임시작  [2]로드  [3]종료  [4]크레딧   ┃\n");
-			printf("               ┗━━━━━━━━━━━━━━━━━━━━━━┛\n");
+			printf("               ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\n");
+			printf("               ┃ [1]게임시작  [2]로드  [3]종료┃\n");
+			printf("               ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\n");
 
 			select = getch();
 
@@ -138,15 +138,15 @@ int charmake (void)
 	{
 
 		printf("\n\n  ▶ %s님의 성향을 선택하세요 ◀\n\n",name);
-		printf("       ┏━━━━━━━━┓\n");
-		printf("       ┃                ┃\n");
-		printf("       ┃   [1] 전투형   ┃\n");
-		printf("       ┃                ┃\n");
-		printf("       ┃   [2] 내정형   ┃\n");
-		printf("       ┃                ┃\n");
-		printf("       ┃   [3] 외교형   ┃\n");
-		printf("       ┃                ┃\n");
-		printf("       ┗━━━━━━━━┛\n");
+		printf("       ┏━━━━━━━━━━━━━━━━━━┓\n");
+		printf("       ┃                  ┃\n");
+		printf("       ┃   [1] 전투형     ┃\n");
+		printf("       ┃                  ┃\n");
+		printf("       ┃   [2] 내정형     ┃\n");
+		printf("       ┃                  ┃\n");
+		printf("       ┃   [3] 외교형     ┃\n");
+		printf("       ┃                  ┃\n");
+		printf("       ┗━━━━━━━━━━━━━━━━━━┛\n");
 
 		select=getch();
 		if(select=='1'){
