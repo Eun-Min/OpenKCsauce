@@ -35,8 +35,15 @@
 -Power	: 10
 
 
-# monster 
+# monster 5
 -Name	: Stump
 -LV	: 5
 -HP	: 200
+-Power	: 15
+
+
+# monster 6
+-Name	: Boogie
+-LV	: 6
+-HP	: 250
 -Power	: 15
