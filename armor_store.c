@@ -17,9 +17,9 @@ if(menu == 3)
 			if(npc2 == 3){printf("[merchant of armor store : if having no money, get out of here]\n");}
 	
 			printf("[1]평상복<1level> - 3000GOLD\n");
-			printf("[2]허름한 갑옷<3level> - 5500GOLD\n");
-			printf("[3]쓸만한 갑옷<5level> - 9000GOLD\n"); // useful armor
-			printf("[4]철 갑옷<8level> - 12000GOLD\n"); // iron armor
+			printf("[2]허름한 armor<3level> - 5500GOLD\n");
+			printf("[3]useful armor<5level> - 9000GOLD\n");
+			printf("[4]Iron armor<8level> - 12000GOLD\n"); 
 			printf("[5]Exit\n");
 			scanf("%d",&store2);
 			
@@ -42,7 +42,7 @@ if(menu == 3)
 					else
 					{
 						system("cls");
-						printf("[레벨이 맞지 않습니다]\n");
+						printf("[you need more level]\n");
 						Sleep(2000);
 						system("cls");
 					}
@@ -50,7 +50,7 @@ if(menu == 3)
 				else
 				{
 					system("cls");
-					printf("[merchant of armor store : 돈이 부족하시네요]\n");
+					printf("[merchant of armor store : you don't have enough money]\n");
 					Sleep(2000);
 					system("cls");
 				}
@@ -63,7 +63,7 @@ if(menu == 3)
 					if(level >= 3)
 					{
 					system("cls");
-					printf("[방어구구입중...]\n");
+					printf("[buying protective gear...]\n");
 					Sleep(3000);
 					printf("[merchant of armor store : Thank you. HAVE A nice day!]\n");
 					gold -= 5500;
@@ -75,7 +75,7 @@ if(menu == 3)
 					else
 					{
 						system("cls");
-						printf("[레벨이 맞지 않습니다]\n");
+						printf("[[you need more level]\n");
 						Sleep(2000);
 						system("cls");
 					}
@@ -83,7 +83,7 @@ if(menu == 3)
 				else
 				{
 					system("cls");
-					printf("[merchant of armor store : 돈이 부족하시네요]\n");
+					printf("[merchant of armor store : you don't have enough money]\n");
 					Sleep(2000);
 					system("cls");
 				}
@@ -96,7 +96,7 @@ if(menu == 3)
 					if(level >= 5)
 					{
 					system("cls");
-					printf("[방어구구입중...]\n");
+					printf("[buying protective gear...]\n");
 					Sleep(3000);
 					printf("[merchant of armor store : Thank you. HAVE A nice day!]\n");
 					gold -= 9000;
@@ -108,7 +108,7 @@ if(menu == 3)
 					else
 					{
 						system("cls");
-						printf("[레벨이 맞지 않습니다]\n");
+						printf("[[you need more level]\n");
 						Sleep(2000);
 						system("cls");
 					}
@@ -116,7 +116,7 @@ if(menu == 3)
 				else
 				{
 					system("cls");
-					printf("[merchant of armor store : 돈이 부족하시네요]\n");
+					printf("[merchant of armor store : you don't have enough money]\n");
 					Sleep(2000);
 					system("cls");
 				}
@@ -129,7 +129,7 @@ if(menu == 3)
 					if(level >= 8)
 					{
 					system("cls");
-					printf("[방어구구입중...]\n");
+					printf("[buying protective gear...]\n");
 					Sleep(3000);
 					printf("[merchant of armor store : Thank you. HAVE A nice day!]\n");
 					gold -= 12000;
@@ -141,7 +141,7 @@ if(menu == 3)
 					else
 					{
 						system("cls");
-						printf("[레벨이 맞지 않습니다]\n");
+						printf("[you need more level]\n");
 						Sleep(2000);
 						system("cls");
 					}
@@ -149,7 +149,7 @@ if(menu == 3)
 				else
 				{
 					system("cls");
-					printf("[merchant of armor store : 돈이 부족하시네요]\n");
+					printf("[merchant of armor store : you don't have enough money]\n");
 					Sleep(2000);
 					system("cls");
 				}
@@ -163,7 +163,7 @@ if(menu == 3)
 			if(store2 != 1 && store2 != 2 && store2 != 3 && store2 != 4 && store2 != 5)
 			{
 				system("cls");
-				printf("[잘못된 선택입니다]\n");
+				printf("[Wrong Choice]\n");
 				system("cls");
 			}
 		}
