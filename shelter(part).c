@@ -1,3 +1,5 @@
+// shelter(menu 5)
+// level per recovery figures
 if(menu == 5)
 		{
 			system("cls");
