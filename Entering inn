@@ -1,0 +1,8 @@
+  if(menu == 4)
+  {
+   system("cls");
+   printf("[여관에 오신 것을 환영합니다]");
+   Sleep(2000);
+   system("cls");
+   printf("[쉬는중...]");
+   Sleep(2000);
