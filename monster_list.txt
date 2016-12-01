@@ -54,3 +54,10 @@
 -LV	: 7
 -HP	: 250
 -Power	: 18
+
+
+# monster 8
+-Name	: Snail
+-LV	: 8
+-HP	: 300
+-Power	: 18
