@@ -61,3 +61,10 @@
 -LV	: 8
 -HP	: 300
 -Power	: 18
+
+
+# monster 9
+-Name	: Dragon
+-LV	: 9
+-HP	: 400
+-Power	: 20
