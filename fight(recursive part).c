@@ -165,15 +165,15 @@ int main(void)
   //레벨 2 고블린투척병 
  while(f == 2)
  {
-  printf("[고블린투척병 체력 : %d / %d]\n",mobhp,mobmhp);
-  printf("[나의 체력 : %d / %d]\n",hp,mhp);
-  printf("[1]공격\n[2]도망\n\n");
+  printf("[the developed Goblin HP : %d / %d]\n",mobhp,mobmhp);
+  printf("[My Hp : %d / %d]\n",hp,mhp);
+  printf("[1]attack\n[2]escape\n\n");
   scanf("%d",&choose);
 
   if(choose == 1)
   {
    system("cls");
-   printf("[공격하였다]\n\a");
+   printf("[we hit the monster]\n\a");
 
    Sleep(2000);
    if(weapon == 0){randattack = rand() % str+1;}
@@ -195,9 +195,9 @@ int main(void)
             f = 0;
    system("cls");
    Sleep(2000);
-   printf("[고블린투척병에게서 도망쳤다]\n");
+   printf("[we are escaped from the developed Goblin]\n");
    Sleep(2000);
-   printf("[쿨타임 10초]\n");
+   printf("[COOLTIME 10s]\n");
    Sleep(10000);
    system("cls");
   }
@@ -207,7 +207,7 @@ int main(void)
             f = 0;
    system("cls");
    printf("[잘못된 선택이므로 패널티를 받고 되돌아갑니다]\n");
-   printf("[패널티 골드 대량 감소]\n");
+   printf("[a decline of GOLE]\n");
    gold -= gold/2;
    Sleep(2000);
    system("cls");
@@ -218,10 +218,10 @@ int main(void)
             f = 0; 
    system("cls");
    Sleep(2000);
-   printf("[승리하였습니다]");
+   printf("[WIN]");
    getgold = rand() % 70+1;
    getexp = rand() % 60+1;
-   printf("[골드 + %d / 경험치 + %d 획득]\n",getgold,getexp);
+   printf("[GOLD + %d / EX + %d aqcuisition]\n",getgold,getexp);
    gold += getgold;
    exp += getexp;
    Sleep(2000);
@@ -232,7 +232,7 @@ int main(void)
   {
               system("cls");
               Sleep(1000);
-              printf("[당신은 죽었습니다]");
+              printf("[you died]");
               Sleep(1000);
               system("cls");
               f = 0;
@@ -243,8 +243,8 @@ int main(void)
  while(f == 3)
  {
   printf("[고블린십장 체력 : %d / %d]\n",mobhp,mobmhp);
-  printf("[나의 체력 : %d / %d]\n",hp,mhp);
-  printf("[1]공격\n[2]도망\n\n");
+  printf("[My HP : %d / %d]\n",hp,mhp);
+  printf("[1]attack\n[2]escape\n\n");
   scanf("%d",&choose);
 
   if(choose == 1)
@@ -295,7 +295,7 @@ int main(void)
             f = 0; 
    system("cls");
    Sleep(2000);
-   printf("[승리하였습니다]");
+   printf("[WIN]");
    getgold = rand() % 100+1;
    getexp = rand() % 80+1;
    printf("[골드 + %d / 경험치 + %d 획득]\n",getgold,getexp);
@@ -321,7 +321,7 @@ int main(void)
   printf("[HP : %d / %d]\n",hp,mhp);
   printf("[EXP : %d]\n",exp);
   printf("[GOLD : %d]\n",gold);
-  if(weapon == 0){printf("[WEAPON : 맨손]\n");}
+  if(weapon == 0){printf("[WEAPON : hand]\n");}
   if(weapon == 1){printf("[WEAPON : 허름한검]\n");}
   if(weapon == 2){printf("[WEAPON : 쓸만한검]\n");}
   if(weapon == 3){printf("[WEAPON : 브론즈소드]\n");}
@@ -332,12 +332,12 @@ int main(void)
   printf("[STR : %d]\n",str);
   printf("[DEX : %d]\n\n",dex);
 
-  printf("[1]던전입장\n");
-  printf("[2]게임종료\n");
+  printf("[1]entrance the dungeon\n");
+  printf("[2]exit the game\n");
   scanf("%d",&menu);
     }
 
-  //레벨 업
+  //level up
   if(exp >= 100)
   {
    if(lev == 0)
@@ -428,24 +428,24 @@ int main(void)
     mhp = 2000;
    }
   }
-  //레벨 업 끝
+  //Finish level up
 
-  //던전입장
+  //entrance into dungeon
   if(menu == 1)
   {
            monster = rand() % 3+1;
    system("cls");
    Sleep(1000);
-   printf("[던전을 선택해주세요]\n\n");
-   printf("[1]고블린의 숲\n");
-   printf("[2]나가기\n");
+   printf("[choose the dungeon]\n\n");
+   printf("[1]the woods of Goblin\n");
+   printf("[2]exit\n");
    scanf("%d",&c);
 
-   //[LV1~LV4]고블린의숲
+   //[LV1~LV4]the woods of Goblin
    if(c == 1)
    {
     system("cls");
-    printf("던전 입장 중...");
+    printf("entering the dungeon...");
     Sleep(2500);
     if(monster == 1){printf("[고블린이 나타났습니다! - LV 1]\n");}
     if(monster == 2){printf("[고블린투척병이 나타났습니다! - LV 2]\n");}
@@ -453,10 +453,10 @@ int main(void)
     printf("[1]싸운다\n[2]도망친다\n");
     scanf("%d",&e);
 
-    //싸우자
+    //Fight
     if(e == 1)
     {
-     //레벨1 고블린
+     //lv1 Goblin
      if(monster == 1)
      {
                        mobhp = 50;
@@ -465,7 +465,7 @@ int main(void)
       f = 1;
      }
 
-     //레벨2 고블린투척병
+     //lv2 the developed Goblin 고블린투척병
      else if(monster == 2)
      {
                         mobhp = 80;
@@ -474,7 +474,7 @@ int main(void)
       f = 2;
      }
 
-     //레벨3 고블린십장
+     //lv3 the chief workman of Goblin
      else if(monster == 3)
      {
                         mobhp = 130;
