@@ -33,3 +33,10 @@
 -LV	: 4
 -HP	: 200
 -Power	: 10
+
+
+# monster 
+-Name	: Stump
+-LV	: 5
+-HP	: 200
+-Power	: 15
