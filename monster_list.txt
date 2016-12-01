@@ -47,3 +47,10 @@
 -LV	: 6
 -HP	: 250
 -Power	: 15
+
+
+# monster 7
+-Name	: Golem
+-LV	: 7
+-HP	: 250
+-Power	: 18
