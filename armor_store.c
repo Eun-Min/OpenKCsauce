@@ -16,8 +16,8 @@ if(menu == 3)
 			if(npc2 == 2){printf("[merchant of armor store : I deal with best of best protetive gear in our store.]\n");}
 			if(npc2 == 3){printf("[merchant of armor store : if having no money, get out of here]\n");}
 	
-			printf("[1]평상복<1level> - 3000GOLD\n");
-			printf("[2]허름한 armor<3level> - 5500GOLD\n");
+			printf("[1]casual wear<1level> - 3000GOLD\n");
+			printf("[2]humble armor<3level> - 5500GOLD\n");
 			printf("[3]useful armor<5level> - 9000GOLD\n");
 			printf("[4]Iron armor<8level> - 12000GOLD\n"); 
 			printf("[5]Exit\n");
