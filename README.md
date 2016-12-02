@@ -1,7 +1,8 @@
 ## Synopsis
 
-Our project is making RPG during this semester.
-we are focusing on fighting game.
+Our project is making RPG during this semester.      
+This game is text based game with text-image map.     
+we are focusing on fighting game.      
 For example, fighting with monsters, getting items through monsters , and developing your own character.
 
 ## Code Example
