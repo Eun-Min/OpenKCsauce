@@ -75,3 +75,10 @@
 -LV	: 10
 -HP	: 400
 -Power	: 25
+
+
+# monster 11
+-Name	: Frog
+-LV	: 11
+-HP	: 400
+-Power	: 30
