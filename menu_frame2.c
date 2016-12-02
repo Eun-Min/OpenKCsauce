@@ -5,7 +5,7 @@ int insystem (void)
 	{
 		system ("cls");
 		printf("\n\n\n\n");
-		printf(" 			  ┏━━━━━━━━━━━━━━━━━━━━┓\n");
+		printf(" 			┏━━━━━━━━━━━━━━━━━━━━┓\n");
 		printf("			     ┃                    ┃\n");
 		printf("			     ┃      ◆ 메 뉴 ◆    ┃\n");
 		printf("			     ┃                    ┃\n");
@@ -55,9 +55,6 @@ int insystem (void)
 		{
 			printf("\nWrong keyword Press any key");getch();
 		}
-
-
 	}
-
 	return 0;
 }
