@@ -68,3 +68,10 @@
 -LV	: 9
 -HP	: 400
 -Power	: 20
+
+
+# monster 10
+-Name	: Wolf
+-LV	: 10
+-HP	: 400
+-Power	: 25
