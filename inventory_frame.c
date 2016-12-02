@@ -1,0 +1,15 @@
+	printf("\n\n\n\n");
+	printf("                        ┏━━━━━━━━━━━━━━━━━━━━━━━┓\n");
+	printf("                        ┃                       ┃\n");
+	printf("                        ┃       인 벤 토 리      ┃\n");
+	printf("                        ┃                       ┃\n");
+	printf("                        ┣━━━━━━━━━━━━━━━━━━━━━━━┫\n");
+	printf("                        ┃                       ┃\n");
+	printf("                        ┃    [1 %6s SLOT]       ┃\n",snm1);
+	printf("                        ┃                       ┃\n");
+	printf("                        ┃    [2 %6s SLOT]       ┃\n",snm2);
+	printf("                        ┃                       ┃\n");
+	printf("                        ┃    [3 %6s SLOT]       ┃\n",snm3);
+	printf("                        ┃                       ┃\n");
+	printf("                        ┗━━━━━━━━━━━━━━━━━━━━━━━┛\n");
+	select=getch();
