@@ -5,23 +5,23 @@ int insystem (void)
 	{
 		system ("cls");
 		printf("\n\n\n\n");
-		printf(" 			     ┏━━━━━━━━━━┓\n");
+		printf(" 			     ┏━━━━━━━━━━━━━━━━━━━━┓\n");
 		printf("			     ┃                    ┃\n");
-		printf("			     ┃   ◆ 시 스 템 ◆   ┃\n");
+		printf("			     ┃      ◆ 메 뉴 ◆    ┃\n");
 		printf("			     ┃                    ┃\n");
-		printf("			     ┠──────────┨\n");
+		printf("			     ┠─────────━━━━━━━━━ ─┨\n");
 		printf("			     ┃                    ┃\n");
-		printf("			     ┃    [1] 세 이 브    ┃\n");
+		printf("			     ┃     [1] 저 장      ┃\n");
 		printf("			     ┃                    ┃\n");
 		printf("			     ┃    [2] 로    드    ┃\n");
 		printf("			     ┃                    ┃\n");
 		printf("	 		     ┃    [3] 종    료    ┃\n");
-		printf("			     ┃                    ┃\n");
+		printf("			     ┃                   ┃\n");
 		printf("			     ┃    [4] 게임으로    ┃\n");
-		printf("			     ┃                    ┃\n");
+		printf("			     ┃                   ┃\n");
 		printf("			     ┃    [5] 메인메뉴    ┃\n");
-		printf("			     ┃                    ┃\n");
-		printf("			     ┗━━━━━━━━━━┛\n");
+		printf("			     ┃                   ┃\n");
+		printf("			     ┗━━━━━━━━━━━━━━━━━━━┛\n");
 
 		select=getch();
 		if (select=='1')
@@ -61,5 +61,3 @@ int insystem (void)
 
 	return 0;
 }
-
-int save
