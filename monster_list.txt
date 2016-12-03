@@ -89,3 +89,10 @@
 -LV	: 12
 -HP	: 500
 -Power	: 30
+
+
+# monster 13
+-Name	: Teacher
+-LV	: 13
+-HP	: 500
+-Power	: 33
