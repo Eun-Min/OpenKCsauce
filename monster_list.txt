@@ -82,3 +82,10 @@
 -LV	: 11
 -HP	: 400
 -Power	: 30
+
+
+# monster 12
+-Name	: Pig
+-LV	: 12
+-HP	: 500
+-Power	: 30
