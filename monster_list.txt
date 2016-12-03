@@ -96,3 +96,10 @@
 -LV	: 13
 -HP	: 500
 -Power	: 33
+
+
+# monster 14
+-Name	: Student
+-LV	: 14
+-HP	: 550
+-Power	: 33
