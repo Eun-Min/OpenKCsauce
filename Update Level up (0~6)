@@ -1,3 +1,5 @@
+// level up(0~6)
+
 if(exp >= 100)
     {
       if(lev == 0) // when level is 0
