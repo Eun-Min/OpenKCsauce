@@ -2,14 +2,14 @@
 		{
 			system("cls");
 			Sleep(1000);
-			printf("[던전을 선택해주세요]\n\n");
-			printf("[1]고블린의 숲 <1~2>\n");
-			printf("[2]코볼트 유적지 <2~5>\n");
+			printf("[던전을 선택해주세요]\n\n"); // choice the dungeon 
+			printf("[1]고블린의 숲 <1~2>\n"); // goblin forest
+k			printf("[2]코볼트 유적지 <2~5>\n"); // 	
 			printf("[3]요정의 숲 <5~8>\n"); 
 			printf("[4]나가기\n");
 			scanf("%d",&c);
 
-			//[LV1~LV2]고블린의숲
+			//[LV1~LV2]고블린의숲 
 			if(c == 1)
 			{
              	monster = rand() % 3+1;
