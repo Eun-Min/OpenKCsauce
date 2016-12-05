@@ -48,4 +48,4 @@ If you help our project to be developed, contact us please.
 
 ## License
 
--
+- MIT License.
