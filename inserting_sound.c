@@ -8,7 +8,7 @@
 #define SOUND_FILE_NAME ".\\res\\APPLAUSE.wav"
  
 int main(int argc, char* argv[]){
-    printf("아무 키나 입력하시면 소리 재생이 멈춥니다.\n");
+    printf("아무 키나 입력하시면 소리 재생이 멈춥니다.\n"); // If you press any key, playback will stop.
     PlaySound(TEXT(SOUND_FILE_NAME), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
     while (!_kbhit());
     PlaySound(NULL, 0, 0);
