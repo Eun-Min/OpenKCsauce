@@ -14,7 +14,7 @@ if(menu == 7)
                                  printf("[전사로 전직하였습니다]\n"); // chang job(warrior)
                                  job = 1;
                                  Sleep(2000);
-                                 printf("[스킬을 찍으실 수 있습니다]\n"); // You can take skill.
+                                 printf("[스킬을 찍으실 수 있습니다]\n"); // you can take skill.
                         }
                         else
                         {
@@ -32,10 +32,10 @@ if(menu == 7)
 							if(job == 1)
 							{
                                  system("cls");
-                                 printf("[파이터로 각성하였습니다]\n");
+                                 printf("[파이터로 각성하였습니다]\n"); // you can be awakened by a fighter.
                                  job = 2;
                                  Sleep(2000);
-                                 printf("[각성스킬을 찍으실 수 있습니다]\n"); 
+                                 printf("[각성스킬을 찍으실 수 있습니다]\n"); // you can take waked up skill.
 							}
 							else
 							{
@@ -59,10 +59,10 @@ if(menu == 7)
                         if(level >= 5)
                         {
                                  system("cls");
-                                 printf("[궁수로 전직하였습니다]\n");
+                                 printf("[궁수로 전직하였습니다]\n"); // change to archer.
                                  job = 3;
                                  Sleep(2000);
-                                 printf("[스킬을 찍으실 수 있습니다]\n"); 
+                                 printf("[스킬을 찍으실 수 있습니다]\n"); // you can take skill
                         }
                         else
                         {
@@ -80,10 +80,10 @@ if(menu == 7)
 							if(job == 3)
 							{
                                  system("cls");
-                                 printf("[헌터로 각성하였습니다]\n");
+                                 printf("[헌터로 각성하였습니다]\n"); // you were awakened by hunter.
                                  job = 4;
                                  Sleep(2000);
-                                 printf("[각성스킬을 찍으실 수 있습니다]\n"); 
+                                 printf("[각성스킬을 찍으실 수 있습니다]\n"); // you can take waked up skill.
 							}
 							else
 							{
