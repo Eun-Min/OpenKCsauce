@@ -4,7 +4,7 @@ if(menu == 2){
 	printf("[entering in weapon store.]\r");
 	Sleep(1000);
 	printf("[entering in weapon store..]\r");
-	Sleep(1000);
+	Sleep(1000);       
 	printf("[entering in weapon store...]\r");
 	Sleep(1000);
 		
@@ -12,12 +12,12 @@ if(menu == 2){
 	if(npc1 == 1){printf("[NPC of weapon : Welcome.]\n");}
 	if(npc1 == 2){printf("[NPC of weapon : I sell only best of best weapons in my store.]\n");}
 	if(npc1 == 3){printf("[NPC of weapon : If you don't have money at all, get out of here.]\n");}
-	printf("[1]허름한검<1level> - 1000Gold\n");
-	printf("[2]쓸만한검<3level> - 2500Gold\n");
-	printf("[3]브론즈소드<5level> - 3800Gold\n");
-	printf("[4]아이언소드<8level> - 5200Gold\n"); 
-	printf("[5]아만다디움소드<10level> - 7500Gold\n"); 
-	printf("[6]exit\n");
+	printf("[1]허름한검<1level> - 1000Gold\n"); // humble sword<lv.1> - 1000Gold
+	printf("[2]쓸만한검<3level> - 2500Gold\n"); // useful sword<lv.3> - 2500Gold
+	printf("[3]브론즈소드<5level> - 3800Gold\n"); // bronze sword<lv.5> - 3800Gold
+	printf("[4]아이언소드<8level> - 5200Gold\n"); // Iron sword<lv.8> - 5200Gold
+	printf("[5]아만다디움소드<10level> - 7500Gold\n");  // Amantadium sword<lv.10> - 7500Gold
+	printf("[6]exit\n"); // Exit
 	scanf("%d",&store1);
 			
 	if(store1 == 1)
