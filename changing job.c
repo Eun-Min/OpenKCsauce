@@ -3,17 +3,18 @@ if(menu == 7)
                 system("cls");
                 printf("[what job do you want to have?]\n");
                 printf("[1]전사 - 1차전직[5level]\n[2]파이터 - 각성[20level]\n[3]궁수 - 1차전직[5level]\n[4]헌터 - 각성[20level]\n[5]마법사 - 1차전직[5level]\n[6]힐러 - 각성[20level");
-                scanf("%d",&jobs);
+			// [1]warrior - 1st change job[5level]; [2]fighter - wake up[20level]; [3]archer - 1st change job[5level]; [4]hunter - wake up[20level]; [5]wizard - 1st change job[5level]; [6]Healer - wake up[20level]
+		scanf("%d",&jobs);
                          
                 if(jobs == 1)
                 {
                         if(level >= 5)
                         {
                                  system("cls");
-                                 printf("[전사로 전직하였습니다]\n");
+                                 printf("[전사로 전직하였습니다]\n"); // chang job(warrior)
                                  job = 1;
                                  Sleep(2000);
-                                 printf("[스킬을 찍으실 수 있습니다]\n"); 
+                                 printf("[스킬을 찍으실 수 있습니다]\n"); // You can take skill.
                         }
                         else
                         {
