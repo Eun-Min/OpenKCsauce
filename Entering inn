@@ -1,10 +1,11 @@
+  // Entering inn
   if(menu == 4)
   {
    system("cls");
-   printf("[여관에 오신 것을 환영합니다]");
+   printf("[여관에 오신 것을 환영합니다]"); // Welcome to the inn
    Sleep(2000);
    system("cls");
-   printf("[쉬는중...]");
+   printf("[쉬는중...]"); // Resting...
    Sleep(2000);
    system("cls");
                if(level == 1)
@@ -57,7 +58,7 @@
     hp = 2000;
     mhp = 2000;
    }
-   printf("[체력이 회복되었습니다]\n");
+   printf("[체력이 회복되었습니다]\n"); // hp is fulled
    Sleep(2000);
    system("cls");
   }
