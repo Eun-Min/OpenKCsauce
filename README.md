@@ -34,10 +34,6 @@ To develop our ablility to be accustomed to use opensources and work together
 
 Without Installation
 
-## API Reference
-
--
-
 ## Tests
 
 We update videos
@@ -46,6 +42,20 @@ We update videos
 
 If you help our project to be developed, contact us please.
 
+## TODO
+
+- [X] Basic Code Architecture
+- [ ] Opening
+- [X] Monster Data
+- [ ] Skill Data
+- [ ] Consume Item Data
+- [X] Battle System
+- [X] Item Shop
+- [ ] World Map
+- [ ] Save / Restore
+- [ ] Translate
+
 ## License
 
-- MIT License.
+[MIT License](LICENSE)
+
