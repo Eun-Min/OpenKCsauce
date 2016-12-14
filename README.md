@@ -1,9 +1,34 @@
-## Synopsis
+## Our Project
 
-Our project is making RPG during this semester.      
-This game is text based game with text-image map.     
-we are focusing on fighting game.      
+● Name of Project
+undefined until now.
+
+● Name of Team
+Open KetChup Sauce
+
+## Contributors
+
+<current team members>
+
+-Eun-Min Pak
+-Yeong-jun Ko
+-Dong-hyun Kim
+-Jun-Woo Kim
+
+<people who will contribute afterwords>
+
+If you help our project to be developed, Welcome your help.
+
+## Synopsis
+  
+● Goal of project
+
+-making RPG during this semester(about three months).    
+-text based game with text-image map.     
+-we are focusing on fighting game.      
 For example, fighting with monsters, getting items through monsters , and developing your own character.
+
+● Directing point of project
 
 ## Code Example
 
@@ -25,7 +50,6 @@ For example, fighting with monsters, getting items through monsters , and develo
  printf("[1.start ]\n[2. terminate]\n");
  scanf("%d",&a);
 
-
 ## Motivation
 
 To develop our ablility to be accustomed to use opensources and work together
@@ -34,13 +58,13 @@ To develop our ablility to be accustomed to use opensources and work together
 
 Without Installation
 
-## Tests
+## Results
 
-We update videos
+We update videos or with other things
 
-## Contributors
+## Future plan 
 
-If you help our project to be developed, contact us please.
+undefined
 
 ## TODO
 
