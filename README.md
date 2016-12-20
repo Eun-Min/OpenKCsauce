@@ -17,7 +17,7 @@ Open KetChup Sauce
 
 ## HISTORY
 
-Textcube is based on online publishing platform 'Tattertools,' started by JH in 2004, developed by TNC in 2005 and GPLized in 2006. Tatter Network Foundation (TNF) developed Tattertools with TNC from Apr. 2006. Needlworks/TNF was dedicated to Tattertools' development from Nov. 2006, and started developing 'Project S2' as its successor. 'Textcube' was named by YJ Park, and made its debut in Aug. 2007.
+CHOP is based on various RPG game in command of window. 'CHOP' was named by our team members, and made its debut in Dec. 2016.
 
 
 ## REQUIREMENTS (CURRENT VERSION)
@@ -36,9 +36,9 @@ CHOP supports various environments
 -Jun-Woo Kim  
   
 <Github address of team members>  
-[Eun-Min Pak](https://Eun-Min.github.io)
-[Yeong-jun Ko](https://young6900.github.io)
-[Jun-Woo Kim](https://popple1101.github.io)
+[Eun-Min Pak](https://Eun-Min.github.io)  
+[Yeong-jun Ko](https://young6900.github.io)  
+[Jun-Woo Kim](https://popple1101.github.io)  
 [Dong-hyun Kim](https://kimDDong.github.io)  
 
 <people who will contribute afterwords>
@@ -64,21 +64,12 @@ For example, fighting with monsters, getting items through monsters , and develo
 
     int attack; // basic attack power
     int randattack; // basic attack power random
- int a;
- int b;
- int c;
- int d;
- int e;
- int f;
- int g;
- int h;
- int i;
- int choose;
- int mobattack;
- int randa; 
-
- printf("[1.start ]\n[2. terminate]\n");
- scanf("%d",&a);
+    int a;
+    int b;
+    int c;
+    int d;
+    int e;
+    int f;
 
 
 ## Motivation
@@ -88,7 +79,12 @@ To develop our ablility to be accustomed to use opensources and work together
 
 ## Installation
 
-Without Installation
+Enjoy this game Without Installation !
+
+
+## Testing
+
+Recommend using dev c++ program or cmd
 
 
 ## Results
@@ -127,4 +123,4 @@ https://github.com/Eun-Min/OpenKCsauce/wiki
 ## License
 
 [MIT License](LICENSE)
-[![License](https://img.shields.io/badge/license-GPLv2-green.svg)](https://ocw.mit.edu/index.htm)
+![license](https://img.shields.io/github/license/rastapasta/pokemon-go-mitm-node.svg)
