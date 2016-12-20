@@ -1,3 +1,4 @@
+// map.c ê°€ í•„ìš”
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
@@ -35,8 +36,8 @@ int main(void)
 	int menu;
 	int npc1;
 	int npc2;
-	int attack; // ±âº»°ø°İ·Â
-	int randattack; // ±âº»°ø°İ·Â ·£´ı
+	int attack; // ê¸°ë³¸ê³µê²©ë ¥
+	int randattack; // ê¸°ë³¸ê³µê²©ë ¥ ëœë¤
 	int a;
 	int b;
 	int c;
@@ -68,26 +69,26 @@ int main(void)
   int killing;
   int skillc;
 
-	printf("[1.½ÃÀÛÇÏ±â]\n[2.ºÒ·¯¿À±â]\n[3.Á¾·áÇÏ±â]\n");
+	printf("[1.ì‹œì‘í•˜ê¸°]\n[2.ë¶ˆëŸ¬ì˜¤ê¸°]\n[3.ì¢…ë£Œí•˜ê¸°]\n");
 	scanf("%d",&a);
 
 	if(a == 1)
 	{
 		system("cls");
 		Sleep(2000);
-		printf("°ÔÀÓÀ» ºÒ·¯¿É´Ï´Ù.\n");
+		printf("ê²Œì„ì„ ë¶ˆëŸ¬ì˜µë‹ˆë‹¤.\n");
 		Sleep(1000);
 		system("cls");
-		printf("°ÔÀÓÀ» ºÒ·¯¿É´Ï´Ù..\n");
+		printf("ê²Œì„ì„ ë¶ˆëŸ¬ì˜µë‹ˆë‹¤..\n");
 		Sleep(1000);
 		system("cls");
-		printf("°ÔÀÓÀ» ºÒ·¯¿É´Ï´Ù...\n");
+		printf("ê²Œì„ì„ ë¶ˆëŸ¬ì˜µë‹ˆë‹¤...\n");
 		Sleep(1000);
 		system("cls");
-		printf("°ÔÀÓÀ» ºÒ·¯¿É´Ï´Ù....\n");
+		printf("ê²Œì„ì„ ë¶ˆëŸ¬ì˜µë‹ˆë‹¤....\n");
 		Sleep(1000);
 		system("cls");
-		printf("°ÔÀÓÀ» ºÒ·¯¿É´Ï´Ù.....\n");
+		printf("ê²Œì„ì„ ë¶ˆëŸ¬ì˜µë‹ˆë‹¤.....\n");
 		Sleep(1000);
 		system("cls");
 		Sleep(1000);
@@ -116,7 +117,7 @@ int main(void)
 
 	if(a == 2)
     {
-         printf("[ÀúÀåÇßÀ» ¶§ ¾òÀº ÄÚµå¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä]\n");
+         printf("[ì €ì¥í–ˆì„ ë•Œ ì–»ì€ ì½”ë“œë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”]\n");
          scanf("%d",&load);
 
          if(load == 151)
@@ -518,19 +519,19 @@ int main(void)
 
 	while(b == 1)
 	{
- 	//·¹º§ 1 °íºí¸°
+ 	//ë ˆë²¨ 1 ê³ ë¸”ë¦°
 	while(f == 1)
 	{
-		printf("[°íºí¸° Ã¼·Â : %d / %d]\n",mobhp,mobmhp);
-		printf("[³ªÀÇ Ã¼·Â : %d / %d]\n",hp,mhp);
-		printf("[Æ÷¼Ç °³¼ö : %d]\n",potion);
-		printf("[1]°ø°İ\n[2]µµ¸Á\n[3]Æ÷¼Ç\n"); if(job >= 1){printf("[4]½ºÅ³\n");}
+		printf("[ê³ ë¸”ë¦° ì²´ë ¥ : %d / %d]\n",mobhp,mobmhp);
+		printf("[ë‚˜ì˜ ì²´ë ¥ : %d / %d]\n",hp,mhp);
+		printf("[í¬ì…˜ ê°œìˆ˜ : %d]\n",potion);
+		printf("[1]ê³µê²©\n[2]ë„ë§\n[3]í¬ì…˜\n"); if(job >= 1){printf("[4]ìŠ¤í‚¬\n");}
 		scanf("%d",&choose);
 
 		if(choose == 1)
 		{
 			system("cls");
-			printf("[°ø°İÇÏ¿´´Ù]\n");
+			printf("[ê³µê²©í•˜ì˜€ë‹¤]\n");
 			Sleep(2000);
 			randattack = rand() % str+1;
 			mobhp -= randattack + str;
@@ -539,9 +540,9 @@ int main(void)
 			{
 			hp -= mobattack - dex;
             }
-			printf("[°íºí¸°¿¡°Ô %dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			printf("[ê³ ë¸”ë¦°ì—ê²Œ %dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			Sleep(1000);
-			printf("[°íºí¸°¿¡°Ô %dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			printf("[ê³ ë¸”ë¦°ì—ê²Œ %dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
             Sleep(1000);
 			system("cls");
 		}
@@ -551,9 +552,9 @@ int main(void)
             f = 0;
 			system("cls");
 			Sleep(2000);
-			printf("[°íºí¸°¿¡°Ô¼­ µµ¸ÁÃÆ´Ù]\n");
+			printf("[ê³ ë¸”ë¦°ì—ê²Œì„œ ë„ë§ì³¤ë‹¤]\n");
 			Sleep(2000);
-			printf("[ÄğÅ¸ÀÓ 10ÃÊ]\n");
+			printf("[ì¿¨íƒ€ì„ 10ì´ˆ]\n");
 			Sleep(10000);
 			system("cls");
 		}
@@ -563,7 +564,7 @@ int main(void)
 			if(potion >= 1)
 			{
 				system("cls");
-				printf("[Æ÷¼ÇÀ» »ç¿ëÇÏ¿´½À´Ï´Ù]\n");
+				printf("[í¬ì…˜ì„ ì‚¬ìš©í•˜ì˜€ìŠµë‹ˆë‹¤]\n");
 
 				Sleep(2000);
 
@@ -693,7 +694,7 @@ int main(void)
 			else
 			{
 				system("cls");
-				printf("[Æ÷¼ÇÀÌ ¾ø½À´Ï´Ù]\n");
+				printf("[í¬ì…˜ì´ ì—†ìŠµë‹ˆë‹¤]\n");
 				Sleep(2000);
 				system("cls");
 			}
@@ -704,11 +705,11 @@ int main(void)
                   if(job == 1 || job == 2)
                   {
                          system("cls");
-                         printf("[»ç¿ëÇÒ ½ºÅ³À» °í¸£¼¼¿ä]\n");
-                         if(twoattack == 1){printf("[1]ÀÌ´ÜÄŞº¸ - hp 200 ¼Ò¸ğ\n");}
-                         if(threeattack == 1){printf("[2]»ï´Ü°¡¸£±â - hp 1500 ¼Ò¸ğ\n");}
-                         if(killattack == 1){printf("[3]ÆÄ¸êÀÇÈçÀû - hp 10000 ¼Ò¸ğ\n");}
-                         printf("[4]³ª°¡±â\n");
+                         printf("[ì‚¬ìš©í•  ìŠ¤í‚¬ì„ ê³ ë¥´ì„¸ìš”]\n");
+                         if(twoattack == 1){printf("[1]ì´ë‹¨ì½¤ë³´ - hp 200 ì†Œëª¨\n");}
+                         if(threeattack == 1){printf("[2]ì‚¼ë‹¨ê°€ë¥´ê¸° - hp 1500 ì†Œëª¨\n");}
+                         if(killattack == 1){printf("[3]íŒŒë©¸ì˜í”ì  - hp 10000 ì†Œëª¨\n");}
+                         printf("[4]ë‚˜ê°€ê¸°\n");
                          scanf("%d",&skillc);
 
                          if(twoattack != 1 && threeattack != 1 && killattack != 1)
@@ -716,8 +717,8 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -725,8 +726,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -734,8 +735,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -746,7 +747,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -756,9 +757,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -766,8 +767,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -775,8 +776,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -787,7 +788,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -797,9 +798,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -807,15 +808,15 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[»ï´Ü °¡¸£±â ¹ßµ¿!]\n");
+                                      printf("[ì‚¼ë‹¨ ê°€ë¥´ê¸° ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
@@ -825,9 +826,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -835,8 +836,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -847,7 +848,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -857,9 +858,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -867,15 +868,15 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[»ï´Ü °¡¸£±â ¹ßµ¿!]\n");
+                                      printf("[ì‚¼ë‹¨ ê°€ë¥´ê¸° ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
@@ -885,9 +886,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -895,18 +896,18 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[ÆÄ¸êÀÇÈçÀû ¹ßµ¿!]\n");
+                                      printf("[íŒŒë©¸ì˜í”ì  ë°œë™!]\n");
                                       Sleep(2000);
                                       system("cls");
-                                      printf("ÆÄ!\n");
+                                      printf("íŒŒ!\n");
                                       Sleep(500);
-                                      printf("¸ê!\n");
+                                      printf("ë©¸!\n");
                                       Sleep(500);
-                                      printf("ÀÇ!\n");
+                                      printf("ì˜!\n");
                                       Sleep(500);
-                                      printf("Èç!\n");
+                                      printf("í”!\n");
                                       Sleep(500);
-                                      printf("Àû!\n");
+                                      printf("ì !\n");
                                       Sleep(500);
                                       Sleep(2000);
                                       randattack = rand() % str+1;
@@ -917,9 +918,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 10000;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*20);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*20);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -929,11 +930,11 @@ int main(void)
                   if(job == 3 || job == 4)
                   {
                          system("cls");
-                         printf("[»ç¿ëÇÒ ½ºÅ³À» °í¸£¼¼¿ä]\n");
-                         if(shot == 1){printf("[1]´õºí¼¦ - hp 200 ¼Ò¸ğ\n");}
-                         if(firebomb == 1){printf("[2]ÆÄÀÌ¾î º½ - hp 1500 ¼Ò¸ğ\n");}
-                         if(killing == 1){printf("[3]Å³¸µ ¾Ö·Î¿ì - hp 10000 ¼Ò¸ğ\n");}
-                         printf("[4]³ª°¡±â\n");
+                         printf("[ì‚¬ìš©í•  ìŠ¤í‚¬ì„ ê³ ë¥´ì„¸ìš”]\n");
+                         if(shot == 1){printf("[1]ë”ë¸”ìƒ· - hp 200 ì†Œëª¨\n");}
+                         if(firebomb == 1){printf("[2]íŒŒì´ì–´ ë´„ - hp 1500 ì†Œëª¨\n");}
+                         if(killing == 1){printf("[3]í‚¬ë§ ì• ë¡œìš° - hp 10000 ì†Œëª¨\n");}
+                         printf("[4]ë‚˜ê°€ê¸°\n");
                          scanf("%d",&skillc);
 
                          if(shot != 1 && firebomb != 1 && killing != 1)
@@ -941,8 +942,8 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -950,8 +951,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -959,8 +960,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -971,12 +972,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -985,9 +986,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -995,8 +996,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -1004,8 +1005,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -1016,12 +1017,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -1030,9 +1031,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -1040,7 +1041,7 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[ÆÄÀÌ¾î º½ ¹ßµ¿!]\n");
+                                      printf("[íŒŒì´ì–´ ë´„ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*4 + str;
@@ -1050,9 +1051,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*4);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*4);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -1060,8 +1061,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -1072,12 +1073,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
 									  system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -1086,9 +1087,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -1096,7 +1097,7 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[ÆÄÀÌ¾î º½ ¹ßµ¿!]\n");
+                                      printf("[íŒŒì´ì–´ ë´„ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*4 + str;
@@ -1106,9 +1107,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*4);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*4);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -1116,61 +1117,61 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Å³¸µ¾Ö·Î¿ì ¹ßµ¿!]\n");
+                                      printf("[í‚¬ë§ì• ë¡œìš° ë°œë™!]\n");
                                       Sleep(2000);
                                       system("cls");
-                                      printf("Å³!\n");
+                                      printf("í‚¬!\n");
                                       Sleep(500);
-                                      printf("¸µ!\n");
+                                      printf("ë§!\n");
                                       Sleep(500);
-                                      printf("¾Ö!\n");
+                                      printf("ì• !\n");
                                       Sleep(500);
-                                      printf("·Î!\n");
+                                      printf("ë¡œ!\n");
                                       Sleep(500);
-                                      printf("¿ì!\n");
+                                      printf("ìš°!\n");
                                       Sleep(500);
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(1000);
-			                          printf("[¸¶Áö¸· ÀÌ´å!]\n");
+			                          printf("[ë§ˆì§€ë§‰ ì´ë‹·!]\n");
                                       Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*10 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*10);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*10);
 			                          Sleep(1000);
 			                          mobattack = rand() % 50+1;
 			                          if(mobattack-dex >= 0)
@@ -1178,7 +1179,7 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 10000;
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -1192,8 +1193,8 @@ int main(void)
 		{
             f = 0;
 			system("cls");
-			printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-			printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+			printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+			printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
 			gold -= gold/2;
 			Sleep(2000);
 			system("cls");
@@ -1205,8 +1206,8 @@ int main(void)
 		{
             f = 0;
 			system("cls");
-			printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-			printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+			printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+			printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
 			gold -= gold/2;
 			Sleep(2000);
 			system("cls");
@@ -1218,10 +1219,10 @@ int main(void)
             f = 0;
 			system("cls");
 			Sleep(2000);
-			printf("[½Â¸®ÇÏ¿´½À´Ï´Ù]");
+			printf("[ìŠ¹ë¦¬í•˜ì˜€ìŠµë‹ˆë‹¤]");
 			getgold = rand() % 40+1;
 			getexp = rand() % 40+1;
-			printf("[°ñµå + %d / °æÇèÄ¡ + %d È¹µæ]\n",getgold,getexp);
+			printf("[ê³¨ë“œ + %d / ê²½í—˜ì¹˜ + %d íšë“]\n",getgold,getexp);
 			gold += getgold;
 			exp += getexp;
 			if(q == 1)
@@ -1229,7 +1230,7 @@ int main(void)
 				if(q2 < 5)
 				{
 					q2 += 1;
-					printf("Äù½ºÆ® : [%d / 5]\n",q2);
+					printf("í€˜ìŠ¤íŠ¸ : [%d / 5]\n",q2);
 				}
 			}
 			Sleep(2000);
@@ -1240,26 +1241,26 @@ int main(void)
 		{
               system("cls");
               Sleep(1000);
-              printf("[´ç½ÅÀº Á×¾ú½À´Ï´Ù]");
+              printf("[ë‹¹ì‹ ì€ ì£½ì—ˆìŠµë‹ˆë‹¤]");
               Sleep(1000);
               system("cls");
               f = 0;
         }
 	}
 
- 	//·¹º§ 2 °íºí¸°ÅõÃ´º´
+ 	//ë ˆë²¨ 2 ê³ ë¸”ë¦°íˆ¬ì²™ë³‘
 	while(f == 2)
 	{
-		printf("[°íºí¸°ÅõÃ´º´ Ã¼·Â : %d / %d]\n",mobhp,mobmhp);
-		printf("[³ªÀÇ Ã¼·Â : %d / %d]\n",hp,mhp);
-		printf("[Æ÷¼Ç °³¼ö : %d]\n",potion);
-		printf("[1]°ø°İ\n[2]µµ¸Á\n[3]Æ÷¼Ç\n"); if(job >= 1){printf("[4]½ºÅ³\n");}
+		printf("[ê³ ë¸”ë¦°íˆ¬ì²™ë³‘ ì²´ë ¥ : %d / %d]\n",mobhp,mobmhp);
+		printf("[ë‚˜ì˜ ì²´ë ¥ : %d / %d]\n",hp,mhp);
+		printf("[í¬ì…˜ ê°œìˆ˜ : %d]\n",potion);
+		printf("[1]ê³µê²©\n[2]ë„ë§\n[3]í¬ì…˜\n"); if(job >= 1){printf("[4]ìŠ¤í‚¬\n");}
 		scanf("%d",&choose);
 
 		if(choose == 1)
 		{
 			system("cls");
-			printf("[°ø°İÇÏ¿´´Ù]\n");
+			printf("[ê³µê²©í•˜ì˜€ë‹¤]\n");
 
 			Sleep(2000);
 			randattack = rand() % str+1;
@@ -1269,9 +1270,9 @@ int main(void)
 			{
 			hp -= mobattack - dex;
             }
-			printf("[°íºí¸°ÅõÃ´º´¿¡°Ô %dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			printf("[ê³ ë¸”ë¦°íˆ¬ì²™ë³‘ì—ê²Œ %dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			Sleep(1000);
-			printf("[°íºí¸°ÅõÃ´º´¿¡°Ô %dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			printf("[ê³ ë¸”ë¦°íˆ¬ì²™ë³‘ì—ê²Œ %dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
             Sleep(1000);
 			system("cls");
 		}
@@ -1281,9 +1282,9 @@ int main(void)
             f = 0;
 			system("cls");
 			Sleep(2000);
-			printf("[°íºí¸°ÅõÃ´º´¿¡°Ô¼­ µµ¸ÁÃÆ´Ù]\n");
+			printf("[ê³ ë¸”ë¦°íˆ¬ì²™ë³‘ì—ê²Œì„œ ë„ë§ì³¤ë‹¤]\n");
 			Sleep(2000);
-			printf("[ÄğÅ¸ÀÓ 10ÃÊ]\n");
+			printf("[ì¿¨íƒ€ì„ 10ì´ˆ]\n");
 			Sleep(10000);
 			system("cls");
 		}
@@ -1293,7 +1294,7 @@ int main(void)
 			if(potion >= 1)
 			{
 				system("cls");
-				printf("[Æ÷¼ÇÀ» »ç¿ëÇÏ¿´½À´Ï´Ù]\n");
+				printf("[í¬ì…˜ì„ ì‚¬ìš©í•˜ì˜€ìŠµë‹ˆë‹¤]\n");
 
 				Sleep(2000);
 
@@ -1423,7 +1424,7 @@ int main(void)
 			else
 			{
 				system("cls");
-				printf("[Æ÷¼ÇÀÌ ¾ø½À´Ï´Ù]\n");
+				printf("[í¬ì…˜ì´ ì—†ìŠµë‹ˆë‹¤]\n");
 				Sleep(2000);
 				system("cls");
 			}
@@ -1434,11 +1435,11 @@ int main(void)
                   if(job == 1 || job == 2)
                   {
                          system("cls");
-                         printf("[»ç¿ëÇÒ ½ºÅ³À» °í¸£¼¼¿ä]\n");
-                         if(twoattack == 1){printf("[1]ÀÌ´ÜÄŞº¸ - hp 200 ¼Ò¸ğ\n");}
-                         if(threeattack == 1){printf("[2]»ï´Ü°¡¸£±â - hp 1500 ¼Ò¸ğ\n");}
-                         if(killattack == 1){printf("[3]ÆÄ¸êÀÇÈçÀû - hp 10000 ¼Ò¸ğ\n");}
-                         printf("[4]³ª°¡±â\n");
+                         printf("[ì‚¬ìš©í•  ìŠ¤í‚¬ì„ ê³ ë¥´ì„¸ìš”]\n");
+                         if(twoattack == 1){printf("[1]ì´ë‹¨ì½¤ë³´ - hp 200 ì†Œëª¨\n");}
+                         if(threeattack == 1){printf("[2]ì‚¼ë‹¨ê°€ë¥´ê¸° - hp 1500 ì†Œëª¨\n");}
+                         if(killattack == 1){printf("[3]íŒŒë©¸ì˜í”ì  - hp 10000 ì†Œëª¨\n");}
+                         printf("[4]ë‚˜ê°€ê¸°\n");
                          scanf("%d",&skillc);
 
                          if(twoattack != 1 && threeattack != 1 && killattack != 1)
@@ -1446,8 +1447,8 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -1455,8 +1456,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -1464,8 +1465,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -1476,7 +1477,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -1486,9 +1487,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -1496,8 +1497,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -1505,8 +1506,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -1517,7 +1518,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -1527,9 +1528,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -1537,15 +1538,15 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[»ï´Ü °¡¸£±â ¹ßµ¿!]\n");
+                                      printf("[ì‚¼ë‹¨ ê°€ë¥´ê¸° ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
@@ -1555,9 +1556,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -1565,8 +1566,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -1577,7 +1578,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -1587,9 +1588,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -1597,15 +1598,15 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[»ï´Ü °¡¸£±â ¹ßµ¿!]\n");
+                                      printf("[ì‚¼ë‹¨ ê°€ë¥´ê¸° ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
@@ -1615,9 +1616,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -1625,18 +1626,18 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[ÆÄ¸êÀÇÈçÀû ¹ßµ¿!]\n");
+                                      printf("[íŒŒë©¸ì˜í”ì  ë°œë™!]\n");
                                       Sleep(2000);
                                       system("cls");
-                                      printf("ÆÄ!\n");
+                                      printf("íŒŒ!\n");
                                       Sleep(500);
-                                      printf("¸ê!\n");
+                                      printf("ë©¸!\n");
                                       Sleep(500);
-                                      printf("ÀÇ!\n");
+                                      printf("ì˜!\n");
                                       Sleep(500);
-                                      printf("Èç!\n");
+                                      printf("í”!\n");
                                       Sleep(500);
-                                      printf("Àû!\n");
+                                      printf("ì !\n");
                                       Sleep(500);
                                       Sleep(2000);
                                       randattack = rand() % str+1;
@@ -1647,9 +1648,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 10000;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*20);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*20);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -1659,11 +1660,11 @@ int main(void)
                   if(job == 3 || job == 4)
                   {
                          system("cls");
-                         printf("[»ç¿ëÇÒ ½ºÅ³À» °í¸£¼¼¿ä]\n");
-                         if(shot == 1){printf("[1]´õºí¼¦ - hp 200 ¼Ò¸ğ\n");}
-                         if(firebomb == 1){printf("[2]ÆÄÀÌ¾î º½ - hp 1500 ¼Ò¸ğ\n");}
-                         if(killing == 1){printf("[3]Å³¸µ ¾Ö·Î¿ì - hp 10000 ¼Ò¸ğ\n");}
-                         printf("[4]³ª°¡±â\n");
+                         printf("[ì‚¬ìš©í•  ìŠ¤í‚¬ì„ ê³ ë¥´ì„¸ìš”]\n");
+                         if(shot == 1){printf("[1]ë”ë¸”ìƒ· - hp 200 ì†Œëª¨\n");}
+                         if(firebomb == 1){printf("[2]íŒŒì´ì–´ ë´„ - hp 1500 ì†Œëª¨\n");}
+                         if(killing == 1){printf("[3]í‚¬ë§ ì• ë¡œìš° - hp 10000 ì†Œëª¨\n");}
+                         printf("[4]ë‚˜ê°€ê¸°\n");
                          scanf("%d",&skillc);
 
                          if(shot != 1 && firebomb != 1 && killing != 1)
@@ -1671,8 +1672,8 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -1680,8 +1681,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -1689,8 +1690,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -1701,12 +1702,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -1715,9 +1716,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -1725,8 +1726,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -1734,8 +1735,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -1746,12 +1747,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -1760,9 +1761,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -1770,7 +1771,7 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[ÆÄÀÌ¾î º½ ¹ßµ¿!]\n");
+                                      printf("[íŒŒì´ì–´ ë´„ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*4 + str;
@@ -1780,9 +1781,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*4);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*4);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -1790,8 +1791,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -1802,12 +1803,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -1816,9 +1817,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -1826,7 +1827,7 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[ÆÄÀÌ¾î º½ ¹ßµ¿!]\n");
+                                      printf("[íŒŒì´ì–´ ë´„ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*4 + str;
@@ -1836,9 +1837,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*4);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*4);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -1846,61 +1847,61 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Å³¸µ¾Ö·Î¿ì ¹ßµ¿!]\n");
+                                      printf("[í‚¬ë§ì• ë¡œìš° ë°œë™!]\n");
                                       Sleep(2000);
                                       system("cls");
-                                      printf("Å³!\n");
+                                      printf("í‚¬!\n");
                                       Sleep(500);
-                                      printf("¸µ!\n");
+                                      printf("ë§!\n");
                                       Sleep(500);
-                                      printf("¾Ö!\n");
+                                      printf("ì• !\n");
                                       Sleep(500);
-                                      printf("·Î!\n");
+                                      printf("ë¡œ!\n");
                                       Sleep(500);
-                                      printf("¿ì!\n");
+                                      printf("ìš°!\n");
                                       Sleep(500);
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(1000);
-			                          printf("[¸¶Áö¸· ÀÌ´å!]\n");
+			                          printf("[ë§ˆì§€ë§‰ ì´ë‹·!]\n");
                                       Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*10 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*10);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*10);
 			                          Sleep(1000);
 			                          mobattack = rand() % 50+1;
 			                          if(mobattack-dex >= 0)
@@ -1908,7 +1909,7 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 10000;
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -1922,8 +1923,8 @@ int main(void)
 		{
             f = 0;
 			system("cls");
-			printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-			printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+			printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+			printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
 			gold -= gold/2;
 			Sleep(2000);
 			system("cls");
@@ -1935,8 +1936,8 @@ int main(void)
 		{
             f = 0;
 			system("cls");
-			printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-			printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+			printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+			printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
 			gold -= gold/2;
 			Sleep(2000);
 			system("cls");
@@ -1948,10 +1949,10 @@ int main(void)
             f = 0;
 			system("cls");
 			Sleep(2000);
-			printf("[½Â¸®ÇÏ¿´½À´Ï´Ù]");
+			printf("[ìŠ¹ë¦¬í•˜ì˜€ìŠµë‹ˆë‹¤]");
 			getgold = rand() % 70+1;
 			getexp = rand() % 80+1;
-			printf("[°ñµå + %d / °æÇèÄ¡ + %d È¹µæ]\n",getgold,getexp);
+			printf("[ê³¨ë“œ + %d / ê²½í—˜ì¹˜ + %d íšë“]\n",getgold,getexp);
 			gold += getgold;
 			exp += getexp;
 			Sleep(2000);
@@ -1962,26 +1963,26 @@ int main(void)
 		{
               system("cls");
               Sleep(1000);
-              printf("[´ç½ÅÀº Á×¾ú½À´Ï´Ù]");
+              printf("[ë‹¹ì‹ ì€ ì£½ì—ˆìŠµë‹ˆë‹¤]");
               Sleep(1000);
               system("cls");
               f = 0;
         }
 	}
 
-	//·¹º§ 3 °íºí¸°½ÊÀå
+	//ë ˆë²¨ 3 ê³ ë¸”ë¦°ì‹­ì¥
 	while(f == 3)
 	{
-		printf("[°íºí¸°½ÊÀå Ã¼·Â : %d / %d]\n",mobhp,mobmhp);
-		printf("[³ªÀÇ Ã¼·Â : %d / %d]\n",hp,mhp);
-		printf("[Æ÷¼Ç °³¼ö : %d]\n",potion);
-		printf("[1]°ø°İ\n[2]µµ¸Á\n[3]Æ÷¼Ç\n"); if(job >= 1){printf("[4]½ºÅ³\n");}
+		printf("[ê³ ë¸”ë¦°ì‹­ì¥ ì²´ë ¥ : %d / %d]\n",mobhp,mobmhp);
+		printf("[ë‚˜ì˜ ì²´ë ¥ : %d / %d]\n",hp,mhp);
+		printf("[í¬ì…˜ ê°œìˆ˜ : %d]\n",potion);
+		printf("[1]ê³µê²©\n[2]ë„ë§\n[3]í¬ì…˜\n"); if(job >= 1){printf("[4]ìŠ¤í‚¬\n");}
 		scanf("%d",&choose);
 
 		if(choose == 1)
 		{
 			system("cls");
-			printf("[°ø°İÇÏ¿´´Ù]\n");
+			printf("[ê³µê²©í•˜ì˜€ë‹¤]\n");
 
 			Sleep(2000);
 			randattack = rand() % str+1;
@@ -1991,9 +1992,9 @@ int main(void)
 			{
 			hp -= mobattack - dex;
             }
-			printf("[°íºí¸°½ÊÀå¿¡°Ô %dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			printf("[ê³ ë¸”ë¦°ì‹­ì¥ì—ê²Œ %dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			Sleep(1000);
-			printf("[°íºí¸°½ÊÀå¿¡°Ô %dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			printf("[ê³ ë¸”ë¦°ì‹­ì¥ì—ê²Œ %dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
             Sleep(1000);
 			system("cls");
 		}
@@ -2003,9 +2004,9 @@ int main(void)
             f = 0;
 			system("cls");
 			Sleep(2000);
-			printf("[°íºí¸°½ÊÀå¿¡°Ô¼­ µµ¸ÁÃÆ´Ù]\n");
+			printf("[ê³ ë¸”ë¦°ì‹­ì¥ì—ê²Œì„œ ë„ë§ì³¤ë‹¤]\n");
 			Sleep(2000);
-			printf("[ÄğÅ¸ÀÓ 10ÃÊ]\n");
+			printf("[ì¿¨íƒ€ì„ 10ì´ˆ]\n");
 			Sleep(10000);
 			system("cls");
 		}
@@ -2015,7 +2016,7 @@ int main(void)
 			if(potion >= 1)
 			{
 				system("cls");
-				printf("[Æ÷¼ÇÀ» »ç¿ëÇÏ¿´½À´Ï´Ù]\n");
+				printf("[í¬ì…˜ì„ ì‚¬ìš©í•˜ì˜€ìŠµë‹ˆë‹¤]\n");
 
 				Sleep(2000);
 
@@ -2145,7 +2146,7 @@ int main(void)
 			else
 			{
 				system("cls");
-				printf("[Æ÷¼ÇÀÌ ¾ø½À´Ï´Ù]\n");
+				printf("[í¬ì…˜ì´ ì—†ìŠµë‹ˆë‹¤]\n");
 				Sleep(2000);
 				system("cls");
 			}
@@ -2156,11 +2157,11 @@ int main(void)
                   if(job == 1 || job == 2)
                   {
                          system("cls");
-                         printf("[»ç¿ëÇÒ ½ºÅ³À» °í¸£¼¼¿ä]\n");
-                         if(twoattack == 1){printf("[1]ÀÌ´ÜÄŞº¸ - hp 200 ¼Ò¸ğ\n");}
-                         if(threeattack == 1){printf("[2]»ï´Ü°¡¸£±â - hp 1500 ¼Ò¸ğ\n");}
-                         if(killattack == 1){printf("[3]ÆÄ¸êÀÇÈçÀû - hp 10000 ¼Ò¸ğ\n");}
-                         printf("[4]³ª°¡±â\n");
+                         printf("[ì‚¬ìš©í•  ìŠ¤í‚¬ì„ ê³ ë¥´ì„¸ìš”]\n");
+                         if(twoattack == 1){printf("[1]ì´ë‹¨ì½¤ë³´ - hp 200 ì†Œëª¨\n");}
+                         if(threeattack == 1){printf("[2]ì‚¼ë‹¨ê°€ë¥´ê¸° - hp 1500 ì†Œëª¨\n");}
+                         if(killattack == 1){printf("[3]íŒŒë©¸ì˜í”ì  - hp 10000 ì†Œëª¨\n");}
+                         printf("[4]ë‚˜ê°€ê¸°\n");
                          scanf("%d",&skillc);
 
                          if(twoattack != 1 && threeattack != 1 && killattack != 1)
@@ -2168,8 +2169,8 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -2177,8 +2178,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -2186,8 +2187,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -2198,7 +2199,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -2208,9 +2209,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -2218,8 +2219,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -2227,8 +2228,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -2239,7 +2240,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -2249,9 +2250,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -2259,15 +2260,15 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[»ï´Ü °¡¸£±â ¹ßµ¿!]\n");
+                                      printf("[ì‚¼ë‹¨ ê°€ë¥´ê¸° ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
@@ -2277,9 +2278,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -2287,8 +2288,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -2299,7 +2300,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -2309,9 +2310,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -2319,15 +2320,15 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[»ï´Ü °¡¸£±â ¹ßµ¿!]\n");
+                                      printf("[ì‚¼ë‹¨ ê°€ë¥´ê¸° ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
@@ -2337,9 +2338,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -2347,18 +2348,18 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[ÆÄ¸êÀÇÈçÀû ¹ßµ¿!]\n");
+                                      printf("[íŒŒë©¸ì˜í”ì  ë°œë™!]\n");
                                       Sleep(2000);
                                       system("cls");
-                                      printf("ÆÄ!\n");
+                                      printf("íŒŒ!\n");
                                       Sleep(500);
-                                      printf("¸ê!\n");
+                                      printf("ë©¸!\n");
                                       Sleep(500);
-                                      printf("ÀÇ!\n");
+                                      printf("ì˜!\n");
                                       Sleep(500);
-                                      printf("Èç!\n");
+                                      printf("í”!\n");
                                       Sleep(500);
-                                      printf("Àû!\n");
+                                      printf("ì !\n");
                                       Sleep(500);
                                       Sleep(2000);
                                       randattack = rand() % str+1;
@@ -2369,9 +2370,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 10000;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*20);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*20);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -2381,11 +2382,11 @@ int main(void)
                   if(job == 3 || job == 4)
                   {
                          system("cls");
-                         printf("[»ç¿ëÇÒ ½ºÅ³À» °í¸£¼¼¿ä]\n");
-                         if(shot == 1){printf("[1]´õºí¼¦ - hp 200 ¼Ò¸ğ\n");}
-                         if(firebomb == 1){printf("[2]ÆÄÀÌ¾î º½ - hp 1500 ¼Ò¸ğ\n");}
-                         if(killing == 1){printf("[3]Å³¸µ ¾Ö·Î¿ì - hp 10000 ¼Ò¸ğ\n");}
-                         printf("[4]³ª°¡±â\n");
+                         printf("[ì‚¬ìš©í•  ìŠ¤í‚¬ì„ ê³ ë¥´ì„¸ìš”]\n");
+                         if(shot == 1){printf("[1]ë”ë¸”ìƒ· - hp 200 ì†Œëª¨\n");}
+                         if(firebomb == 1){printf("[2]íŒŒì´ì–´ ë´„ - hp 1500 ì†Œëª¨\n");}
+                         if(killing == 1){printf("[3]í‚¬ë§ ì• ë¡œìš° - hp 10000 ì†Œëª¨\n");}
+                         printf("[4]ë‚˜ê°€ê¸°\n");
                          scanf("%d",&skillc);
 
                          if(shot != 1 && firebomb != 1 && killing != 1)
@@ -2393,8 +2394,8 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -2402,8 +2403,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -2411,8 +2412,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -2423,12 +2424,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -2437,9 +2438,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -2447,8 +2448,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -2456,8 +2457,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -2468,12 +2469,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -2482,9 +2483,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -2492,7 +2493,7 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[ÆÄÀÌ¾î º½ ¹ßµ¿!]\n");
+                                      printf("[íŒŒì´ì–´ ë´„ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*4 + str;
@@ -2502,9 +2503,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*4);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*4);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -2512,8 +2513,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -2524,12 +2525,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -2538,9 +2539,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -2548,7 +2549,7 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[ÆÄÀÌ¾î º½ ¹ßµ¿!]\n");
+                                      printf("[íŒŒì´ì–´ ë´„ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*4 + str;
@@ -2558,9 +2559,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*4);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*4);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -2568,61 +2569,61 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Å³¸µ¾Ö·Î¿ì ¹ßµ¿!]\n");
+                                      printf("[í‚¬ë§ì• ë¡œìš° ë°œë™!]\n");
                                       Sleep(2000);
                                       system("cls");
-                                      printf("Å³!\n");
+                                      printf("í‚¬!\n");
                                       Sleep(500);
-                                      printf("¸µ!\n");
+                                      printf("ë§!\n");
                                       Sleep(500);
-                                      printf("¾Ö!\n");
+                                      printf("ì• !\n");
                                       Sleep(500);
-                                      printf("·Î!\n");
+                                      printf("ë¡œ!\n");
                                       Sleep(500);
-                                      printf("¿ì!\n");
+                                      printf("ìš°!\n");
                                       Sleep(500);
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(1000);
-			                          printf("[¸¶Áö¸· ÀÌ´å!]\n");
+			                          printf("[ë§ˆì§€ë§‰ ì´ë‹·!]\n");
                                       Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*10 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*10);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*10);
 			                          Sleep(1000);
 			                          mobattack = rand() % 50+1;
 			                          if(mobattack-dex >= 0)
@@ -2630,7 +2631,7 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 10000;
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -2644,8 +2645,8 @@ int main(void)
 		{
             f = 0;
 			system("cls");
-			printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-			printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+			printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+			printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
 			gold -= gold/2;
 			Sleep(2000);
 			system("cls");
@@ -2657,8 +2658,8 @@ int main(void)
 		{
             f = 0;
 			system("cls");
-			printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-			printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+			printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+			printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
 			gold -= gold/2;
 			Sleep(2000);
 			system("cls");
@@ -2670,10 +2671,10 @@ int main(void)
             f = 0;
 			system("cls");
 			Sleep(2000);
-			printf("[½Â¸®ÇÏ¿´½À´Ï´Ù]");
+			printf("[ìŠ¹ë¦¬í•˜ì˜€ìŠµë‹ˆë‹¤]");
 			getgold = rand() % 100+1;
 			getexp = rand() % 120+1;
-			printf("[°ñµå + %d / °æÇèÄ¡ + %d È¹µæ]\n",getgold,getexp);
+			printf("[ê³¨ë“œ + %d / ê²½í—˜ì¹˜ + %d íšë“]\n",getgold,getexp);
 			gold += getgold;
 			exp += getexp;
 			Sleep(2000);
@@ -2684,26 +2685,26 @@ int main(void)
 		{
               system("cls");
               Sleep(1000);
-              printf("[´ç½ÅÀº Á×¾ú½À´Ï´Ù]");
+              printf("[ë‹¹ì‹ ì€ ì£½ì—ˆìŠµë‹ˆë‹¤]");
               Sleep(1000);
               system("cls");
               f = 0;
         }
 	}
 
-	//·¹º§ 3 ÄÚº¼Æ®
+	//ë ˆë²¨ 3 ì½”ë³¼íŠ¸
 	while(f == 4)
 	{
-		printf("[ÄÚº¼Æ® Ã¼·Â : %d / %d]\n",mobhp,mobmhp);
-		printf("[³ªÀÇ Ã¼·Â : %d / %d]\n",hp,mhp);
-		printf("[Æ÷¼Ç °³¼ö : %d]\n",potion);
-		printf("[1]°ø°İ\n[2]µµ¸Á\n[3]Æ÷¼Ç\n"); if(job >= 1){printf("[4]½ºÅ³\n");}
+		printf("[ì½”ë³¼íŠ¸ ì²´ë ¥ : %d / %d]\n",mobhp,mobmhp);
+		printf("[ë‚˜ì˜ ì²´ë ¥ : %d / %d]\n",hp,mhp);
+		printf("[í¬ì…˜ ê°œìˆ˜ : %d]\n",potion);
+		printf("[1]ê³µê²©\n[2]ë„ë§\n[3]í¬ì…˜\n"); if(job >= 1){printf("[4]ìŠ¤í‚¬\n");}
 		scanf("%d",&choose);
 
 		if(choose == 1)
 		{
 			system("cls");
-			printf("[°ø°İÇÏ¿´´Ù]\n");
+			printf("[ê³µê²©í•˜ì˜€ë‹¤]\n");
 
 			Sleep(2000);
 			randattack = rand() % str+1;
@@ -2713,9 +2714,9 @@ int main(void)
 			{
 			hp -= mobattack - dex;
             }
-			printf("[ÄÚº¼Æ®¿¡°Ô %dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			printf("[ì½”ë³¼íŠ¸ì—ê²Œ %dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			Sleep(1000);
-			printf("[ÄÚº¼Æ®¿¡°Ô %dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			printf("[ì½”ë³¼íŠ¸ì—ê²Œ %dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
             Sleep(1000);
 			system("cls");
 		}
@@ -2725,9 +2726,9 @@ int main(void)
             f = 0;
 			system("cls");
 			Sleep(2000);
-			printf("[ÄÚº¼Æ®¿¡°Ô¼­ µµ¸ÁÃÆ´Ù]\n");
+			printf("[ì½”ë³¼íŠ¸ì—ê²Œì„œ ë„ë§ì³¤ë‹¤]\n");
 			Sleep(2000);
-			printf("[ÄğÅ¸ÀÓ 10ÃÊ]\n");
+			printf("[ì¿¨íƒ€ì„ 10ì´ˆ]\n");
 			Sleep(10000);
 			system("cls");
 		}
@@ -2737,7 +2738,7 @@ int main(void)
 			if(potion >= 1)
 			{
 				system("cls");
-				printf("[Æ÷¼ÇÀ» »ç¿ëÇÏ¿´½À´Ï´Ù]\n");
+				printf("[í¬ì…˜ì„ ì‚¬ìš©í•˜ì˜€ìŠµë‹ˆë‹¤]\n");
 
 				Sleep(2000);
 
@@ -2867,7 +2868,7 @@ int main(void)
 			else
 			{
 				system("cls");
-				printf("[Æ÷¼ÇÀÌ ¾ø½À´Ï´Ù]\n");
+				printf("[í¬ì…˜ì´ ì—†ìŠµë‹ˆë‹¤]\n");
 				Sleep(2000);
 				system("cls");
 			}
@@ -2878,11 +2879,11 @@ int main(void)
                   if(job == 1 || job == 2)
                   {
                          system("cls");
-                         printf("[»ç¿ëÇÒ ½ºÅ³À» °í¸£¼¼¿ä]\n");
-                         if(twoattack == 1){printf("[1]ÀÌ´ÜÄŞº¸ - hp 200 ¼Ò¸ğ\n");}
-                         if(threeattack == 1){printf("[2]»ï´Ü°¡¸£±â - hp 1500 ¼Ò¸ğ\n");}
-                         if(killattack == 1){printf("[3]ÆÄ¸êÀÇÈçÀû - hp 10000 ¼Ò¸ğ\n");}
-                         printf("[4]³ª°¡±â\n");
+                         printf("[ì‚¬ìš©í•  ìŠ¤í‚¬ì„ ê³ ë¥´ì„¸ìš”]\n");
+                         if(twoattack == 1){printf("[1]ì´ë‹¨ì½¤ë³´ - hp 200 ì†Œëª¨\n");}
+                         if(threeattack == 1){printf("[2]ì‚¼ë‹¨ê°€ë¥´ê¸° - hp 1500 ì†Œëª¨\n");}
+                         if(killattack == 1){printf("[3]íŒŒë©¸ì˜í”ì  - hp 10000 ì†Œëª¨\n");}
+                         printf("[4]ë‚˜ê°€ê¸°\n");
                          scanf("%d",&skillc);
 
                          if(twoattack != 1 && threeattack != 1 && killattack != 1)
@@ -2890,8 +2891,8 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -2899,8 +2900,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -2908,8 +2909,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -2920,7 +2921,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -2930,9 +2931,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -2940,8 +2941,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -2949,8 +2950,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -2961,7 +2962,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -2971,9 +2972,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -2981,15 +2982,15 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[»ï´Ü °¡¸£±â ¹ßµ¿!]\n");
+                                      printf("[ì‚¼ë‹¨ ê°€ë¥´ê¸° ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
@@ -2999,9 +3000,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -3009,8 +3010,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -3021,7 +3022,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -3031,9 +3032,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -3041,15 +3042,15 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[»ï´Ü °¡¸£±â ¹ßµ¿!]\n");
+                                      printf("[ì‚¼ë‹¨ ê°€ë¥´ê¸° ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
@@ -3059,9 +3060,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -3069,18 +3070,18 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[ÆÄ¸êÀÇÈçÀû ¹ßµ¿!]\n");
+                                      printf("[íŒŒë©¸ì˜í”ì  ë°œë™!]\n");
                                       Sleep(2000);
                                       system("cls");
-                                      printf("ÆÄ!\n");
+                                      printf("íŒŒ!\n");
                                       Sleep(500);
-                                      printf("¸ê!\n");
+                                      printf("ë©¸!\n");
                                       Sleep(500);
-                                      printf("ÀÇ!\n");
+                                      printf("ì˜!\n");
                                       Sleep(500);
-                                      printf("Èç!\n");
+                                      printf("í”!\n");
                                       Sleep(500);
-                                      printf("Àû!\n");
+                                      printf("ì !\n");
                                       Sleep(500);
                                       Sleep(2000);
                                       randattack = rand() % str+1;
@@ -3091,9 +3092,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 10000;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*20);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*20);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -3103,11 +3104,11 @@ int main(void)
                   if(job == 3 || job == 4)
                   {
                          system("cls");
-                         printf("[»ç¿ëÇÒ ½ºÅ³À» °í¸£¼¼¿ä]\n");
-                         if(shot == 1){printf("[1]´õºí¼¦ - hp 200 ¼Ò¸ğ\n");}
-                         if(firebomb == 1){printf("[2]ÆÄÀÌ¾î º½ - hp 1500 ¼Ò¸ğ\n");}
-                         if(killing == 1){printf("[3]Å³¸µ ¾Ö·Î¿ì - hp 10000 ¼Ò¸ğ\n");}
-                         printf("[4]³ª°¡±â\n");
+                         printf("[ì‚¬ìš©í•  ìŠ¤í‚¬ì„ ê³ ë¥´ì„¸ìš”]\n");
+                         if(shot == 1){printf("[1]ë”ë¸”ìƒ· - hp 200 ì†Œëª¨\n");}
+                         if(firebomb == 1){printf("[2]íŒŒì´ì–´ ë´„ - hp 1500 ì†Œëª¨\n");}
+                         if(killing == 1){printf("[3]í‚¬ë§ ì• ë¡œìš° - hp 10000 ì†Œëª¨\n");}
+                         printf("[4]ë‚˜ê°€ê¸°\n");
                          scanf("%d",&skillc);
 
                          if(shot != 1 && firebomb != 1 && killing != 1)
@@ -3115,8 +3116,8 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -3124,8 +3125,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -3133,8 +3134,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -3145,12 +3146,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -3159,9 +3160,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -3169,8 +3170,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -3178,8 +3179,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -3190,12 +3191,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -3204,9 +3205,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -3214,7 +3215,7 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[ÆÄÀÌ¾î º½ ¹ßµ¿!]\n");
+                                      printf("[íŒŒì´ì–´ ë´„ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*4 + str;
@@ -3224,9 +3225,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*4);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*4);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -3234,8 +3235,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -3246,12 +3247,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -3260,9 +3261,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -3270,7 +3271,7 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[ÆÄÀÌ¾î º½ ¹ßµ¿!]\n");
+                                      printf("[íŒŒì´ì–´ ë´„ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*4 + str;
@@ -3280,9 +3281,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*4);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*4);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -3290,61 +3291,61 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Å³¸µ¾Ö·Î¿ì ¹ßµ¿!]\n");
+                                      printf("[í‚¬ë§ì• ë¡œìš° ë°œë™!]\n");
                                       Sleep(2000);
                                       system("cls");
-                                      printf("Å³!\n");
+                                      printf("í‚¬!\n");
                                       Sleep(500);
-                                      printf("¸µ!\n");
+                                      printf("ë§!\n");
                                       Sleep(500);
-                                      printf("¾Ö!\n");
+                                      printf("ì• !\n");
                                       Sleep(500);
-                                      printf("·Î!\n");
+                                      printf("ë¡œ!\n");
                                       Sleep(500);
-                                      printf("¿ì!\n");
+                                      printf("ìš°!\n");
                                       Sleep(500);
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(1000);
-			                          printf("[¸¶Áö¸· ÀÌ´å!]\n");
+			                          printf("[ë§ˆì§€ë§‰ ì´ë‹·!]\n");
                                       Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*10 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*10);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*10);
 			                          Sleep(1000);
 			                          mobattack = rand() % 50+1;
 			                          if(mobattack-dex >= 0)
@@ -3352,7 +3353,7 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 10000;
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -3366,8 +3367,8 @@ int main(void)
 		{
             f = 0;
 			system("cls");
-			printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-			printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+			printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+			printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
 			gold -= gold/2;
 			Sleep(2000);
 			system("cls");
@@ -3379,8 +3380,8 @@ int main(void)
 		{
             f = 0;
 			system("cls");
-			printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-			printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+			printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+			printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
 			gold -= gold/2;
 			Sleep(2000);
 			system("cls");
@@ -3392,10 +3393,10 @@ int main(void)
             f = 0;
 			system("cls");
 			Sleep(2000);
-			printf("[½Â¸®ÇÏ¿´½À´Ï´Ù]");
+			printf("[ìŠ¹ë¦¬í•˜ì˜€ìŠµë‹ˆë‹¤]");
 			getgold = rand() % 120+1;
 			getexp = rand() % 130+1;
-			printf("[°ñµå + %d / °æÇèÄ¡ + %d È¹µæ]\n",getgold+50,getexp+50);
+			printf("[ê³¨ë“œ + %d / ê²½í—˜ì¹˜ + %d íšë“]\n",getgold+50,getexp+50);
 			gold += 50+getgold;
 			exp += 50+getexp;
 			Sleep(2000);
@@ -3406,26 +3407,26 @@ int main(void)
 		{
               system("cls");
               Sleep(1000);
-              printf("[´ç½ÅÀº Á×¾ú½À´Ï´Ù]");
+              printf("[ë‹¹ì‹ ì€ ì£½ì—ˆìŠµë‹ˆë‹¤]");
               Sleep(1000);
               system("cls");
               f = 0;
         }
 	}
 
-	//·¹º§ 5 ÄÚº¼Æ®ÀüÅõº´
+	//ë ˆë²¨ 5 ì½”ë³¼íŠ¸ì „íˆ¬ë³‘
 	while(f == 5)
 	{
-		printf("[ÄÚº¼Æ®ÀüÅõº´ Ã¼·Â : %d / %d]\n",mobhp,mobmhp);
-		printf("[³ªÀÇ Ã¼·Â : %d / %d]\n",hp,mhp);
-		printf("[Æ÷¼Ç °³¼ö : %d]\n",potion);
-		printf("[1]°ø°İ\n[2]µµ¸Á\n[3]Æ÷¼Ç\n"); if(job >= 1){printf("[4]½ºÅ³\n");}
+		printf("[ì½”ë³¼íŠ¸ì „íˆ¬ë³‘ ì²´ë ¥ : %d / %d]\n",mobhp,mobmhp);
+		printf("[ë‚˜ì˜ ì²´ë ¥ : %d / %d]\n",hp,mhp);
+		printf("[í¬ì…˜ ê°œìˆ˜ : %d]\n",potion);
+		printf("[1]ê³µê²©\n[2]ë„ë§\n[3]í¬ì…˜\n"); if(job >= 1){printf("[4]ìŠ¤í‚¬\n");}
 		scanf("%d",&choose);
 
 		if(choose == 1)
 		{
 			system("cls");
-			printf("[°ø°İÇÏ¿´´Ù]\n");
+			printf("[ê³µê²©í•˜ì˜€ë‹¤]\n");
 
 			Sleep(2000);
 			if(weapon == 0){randattack = rand() % str+1;}
@@ -3435,9 +3436,9 @@ int main(void)
 			{
 			hp -= mobattack - dex;
             }
-			printf("[ÄÚº¼Æ®ÀüÅõº´¿¡°Ô %dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			printf("[ì½”ë³¼íŠ¸ì „íˆ¬ë³‘ì—ê²Œ %dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			Sleep(1000);
-			printf("[ÄÚº¼Æ®ÀüÅõº´¿¡°Ô %dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			printf("[ì½”ë³¼íŠ¸ì „íˆ¬ë³‘ì—ê²Œ %dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
             Sleep(1000);
 			system("cls");
 		}
@@ -3447,9 +3448,9 @@ int main(void)
             f = 0;
 			system("cls");
 			Sleep(2000);
-			printf("[ÄÚº¼Æ®ÀüÅõº´¿¡°Ô¼­ µµ¸ÁÃÆ´Ù]\n");
+			printf("[ì½”ë³¼íŠ¸ì „íˆ¬ë³‘ì—ê²Œì„œ ë„ë§ì³¤ë‹¤]\n");
 			Sleep(2000);
-			printf("[ÄğÅ¸ÀÓ 10ÃÊ]\n");
+			printf("[ì¿¨íƒ€ì„ 10ì´ˆ]\n");
 			Sleep(10000);
 			system("cls");
 		}
@@ -3459,7 +3460,7 @@ int main(void)
 			if(potion >= 1)
 			{
 				system("cls");
-				printf("[Æ÷¼ÇÀ» »ç¿ëÇÏ¿´½À´Ï´Ù]\n");
+				printf("[í¬ì…˜ì„ ì‚¬ìš©í•˜ì˜€ìŠµë‹ˆë‹¤]\n");
 
 				Sleep(2000);
 
@@ -3589,7 +3590,7 @@ int main(void)
 			else
 			{
 				system("cls");
-				printf("[Æ÷¼ÇÀÌ ¾ø½À´Ï´Ù]\n");
+				printf("[í¬ì…˜ì´ ì—†ìŠµë‹ˆë‹¤]\n");
 				Sleep(2000);
 				system("cls");
 			}
@@ -3600,11 +3601,11 @@ int main(void)
                   if(job == 1 || job == 2)
                   {
                          system("cls");
-                         printf("[»ç¿ëÇÒ ½ºÅ³À» °í¸£¼¼¿ä]\n");
-                         if(twoattack == 1){printf("[1]ÀÌ´ÜÄŞº¸ - hp 200 ¼Ò¸ğ\n");}
-                         if(threeattack == 1){printf("[2]»ï´Ü°¡¸£±â - hp 1500 ¼Ò¸ğ\n");}
-                         if(killattack == 1){printf("[3]ÆÄ¸êÀÇÈçÀû - hp 10000 ¼Ò¸ğ\n");}
-                         printf("[4]³ª°¡±â\n");
+                         printf("[ì‚¬ìš©í•  ìŠ¤í‚¬ì„ ê³ ë¥´ì„¸ìš”]\n");
+                         if(twoattack == 1){printf("[1]ì´ë‹¨ì½¤ë³´ - hp 200 ì†Œëª¨\n");}
+                         if(threeattack == 1){printf("[2]ì‚¼ë‹¨ê°€ë¥´ê¸° - hp 1500 ì†Œëª¨\n");}
+                         if(killattack == 1){printf("[3]íŒŒë©¸ì˜í”ì  - hp 10000 ì†Œëª¨\n");}
+                         printf("[4]ë‚˜ê°€ê¸°\n");
                          scanf("%d",&skillc);
 
                          if(twoattack != 1 && threeattack != 1 && killattack != 1)
@@ -3612,8 +3613,8 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -3621,8 +3622,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -3630,8 +3631,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -3642,7 +3643,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -3652,9 +3653,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -3662,8 +3663,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -3671,8 +3672,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -3683,7 +3684,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -3693,9 +3694,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -3703,15 +3704,15 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[»ï´Ü °¡¸£±â ¹ßµ¿!]\n");
+                                      printf("[ì‚¼ë‹¨ ê°€ë¥´ê¸° ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
@@ -3721,9 +3722,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -3731,8 +3732,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -3743,7 +3744,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -3753,9 +3754,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -3763,15 +3764,15 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[»ï´Ü °¡¸£±â ¹ßµ¿!]\n");
+                                      printf("[ì‚¼ë‹¨ ê°€ë¥´ê¸° ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
@@ -3781,9 +3782,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -3791,18 +3792,18 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[ÆÄ¸êÀÇÈçÀû ¹ßµ¿!]\n");
+                                      printf("[íŒŒë©¸ì˜í”ì  ë°œë™!]\n");
                                       Sleep(2000);
                                       system("cls");
-                                      printf("ÆÄ!\n");
+                                      printf("íŒŒ!\n");
                                       Sleep(500);
-                                      printf("¸ê!\n");
+                                      printf("ë©¸!\n");
                                       Sleep(500);
-                                      printf("ÀÇ!\n");
+                                      printf("ì˜!\n");
                                       Sleep(500);
-                                      printf("Èç!\n");
+                                      printf("í”!\n");
                                       Sleep(500);
-                                      printf("Àû!\n");
+                                      printf("ì !\n");
                                       Sleep(500);
                                       Sleep(2000);
                                       randattack = rand() % str+1;
@@ -3813,9 +3814,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 10000;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*20);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*20);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -3825,11 +3826,11 @@ int main(void)
                   if(job == 3 || job == 4)
                   {
                          system("cls");
-                         printf("[»ç¿ëÇÒ ½ºÅ³À» °í¸£¼¼¿ä]\n");
-                         if(shot == 1){printf("[1]´õºí¼¦ - hp 200 ¼Ò¸ğ\n");}
-                         if(firebomb == 1){printf("[2]ÆÄÀÌ¾î º½ - hp 1500 ¼Ò¸ğ\n");}
-                         if(killing == 1){printf("[3]Å³¸µ ¾Ö·Î¿ì - hp 10000 ¼Ò¸ğ\n");}
-                         printf("[4]³ª°¡±â\n");
+                         printf("[ì‚¬ìš©í•  ìŠ¤í‚¬ì„ ê³ ë¥´ì„¸ìš”]\n");
+                         if(shot == 1){printf("[1]ë”ë¸”ìƒ· - hp 200 ì†Œëª¨\n");}
+                         if(firebomb == 1){printf("[2]íŒŒì´ì–´ ë´„ - hp 1500 ì†Œëª¨\n");}
+                         if(killing == 1){printf("[3]í‚¬ë§ ì• ë¡œìš° - hp 10000 ì†Œëª¨\n");}
+                         printf("[4]ë‚˜ê°€ê¸°\n");
                          scanf("%d",&skillc);
 
                          if(shot != 1 && firebomb != 1 && killing != 1)
@@ -3837,8 +3838,8 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -3846,8 +3847,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -3855,8 +3856,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -3867,12 +3868,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -3881,9 +3882,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -3891,8 +3892,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -3900,8 +3901,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -3912,12 +3913,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -3926,9 +3927,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -3936,7 +3937,7 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[ÆÄÀÌ¾î º½ ¹ßµ¿!]\n");
+                                      printf("[íŒŒì´ì–´ ë´„ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*4 + str;
@@ -3946,9 +3947,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*4);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*4);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -3956,8 +3957,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -3968,12 +3969,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -3982,9 +3983,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -3992,7 +3993,7 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[ÆÄÀÌ¾î º½ ¹ßµ¿!]\n");
+                                      printf("[íŒŒì´ì–´ ë´„ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*4 + str;
@@ -4002,9 +4003,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*4);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*4);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -4012,61 +4013,61 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Å³¸µ¾Ö·Î¿ì ¹ßµ¿!]\n");
+                                      printf("[í‚¬ë§ì• ë¡œìš° ë°œë™!]\n");
                                       Sleep(2000);
                                       system("cls");
-                                      printf("Å³!\n");
+                                      printf("í‚¬!\n");
                                       Sleep(500);
-                                      printf("¸µ!\n");
+                                      printf("ë§!\n");
                                       Sleep(500);
-                                      printf("¾Ö!\n");
+                                      printf("ì• !\n");
                                       Sleep(500);
-                                      printf("·Î!\n");
+                                      printf("ë¡œ!\n");
                                       Sleep(500);
-                                      printf("¿ì!\n");
+                                      printf("ìš°!\n");
                                       Sleep(500);
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(1000);
-			                          printf("[¸¶Áö¸· ÀÌ´å!]\n");
+			                          printf("[ë§ˆì§€ë§‰ ì´ë‹·!]\n");
                                       Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*10 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*10);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*10);
 			                          Sleep(1000);
 			                          mobattack = rand() % 50+1;
 			                          if(mobattack-dex >= 0)
@@ -4074,7 +4075,7 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 10000;
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -4088,8 +4089,8 @@ int main(void)
 		{
             f = 0;
 			system("cls");
-			printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-			printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+			printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+			printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
 			gold -= gold/2;
 			Sleep(2000);
 			system("cls");
@@ -4101,8 +4102,8 @@ int main(void)
 		{
             f = 0;
 			system("cls");
-			printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-			printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+			printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+			printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
 			gold -= gold/2;
 			Sleep(2000);
 			system("cls");
@@ -4114,10 +4115,10 @@ int main(void)
             f = 0;
 			system("cls");
 			Sleep(2000);
-			printf("[½Â¸®ÇÏ¿´½À´Ï´Ù]");
+			printf("[ìŠ¹ë¦¬í•˜ì˜€ìŠµë‹ˆë‹¤]");
 			getgold = rand() % 150+1;
 			getexp = rand() % 140+1;
-			printf("[°ñµå + %d / °æÇèÄ¡ + %d È¹µæ]\n",getgold+60,getexp+60);
+			printf("[ê³¨ë“œ + %d / ê²½í—˜ì¹˜ + %d íšë“]\n",getgold+60,getexp+60);
 			gold += 60+getgold;
 			exp += 60+getexp;
 			Sleep(2000);
@@ -4128,26 +4129,26 @@ int main(void)
 		{
               system("cls");
               Sleep(1000);
-              printf("[´ç½ÅÀº Á×¾ú½À´Ï´Ù]");
+              printf("[ë‹¹ì‹ ì€ ì£½ì—ˆìŠµë‹ˆë‹¤]");
               Sleep(1000);
               system("cls");
               f = 0;
         }
 	}
 
-	//·¹º§ 6 ÄÚº¼Æ®ºÎ´ëÀå
+	//ë ˆë²¨ 6 ì½”ë³¼íŠ¸ë¶€ëŒ€ì¥
 	while(f == 6)
 	{
-		printf("[ÄÚº¼Æ®ºÎ´ëÀå Ã¼·Â : %d / %d]\n",mobhp,mobmhp);
-		printf("[³ªÀÇ Ã¼·Â : %d / %d]\n",hp,mhp);
-		printf("[Æ÷¼Ç °³¼ö : %d]\n",potion);
-		printf("[1]°ø°İ\n[2]µµ¸Á\n[3]Æ÷¼Ç\n"); if(job >= 1){printf("[4]½ºÅ³\n");}
+		printf("[ì½”ë³¼íŠ¸ë¶€ëŒ€ì¥ ì²´ë ¥ : %d / %d]\n",mobhp,mobmhp);
+		printf("[ë‚˜ì˜ ì²´ë ¥ : %d / %d]\n",hp,mhp);
+		printf("[í¬ì…˜ ê°œìˆ˜ : %d]\n",potion);
+		printf("[1]ê³µê²©\n[2]ë„ë§\n[3]í¬ì…˜\n"); if(job >= 1){printf("[4]ìŠ¤í‚¬\n");}
 		scanf("%d",&choose);
 
 		if(choose == 1)
 		{
 			system("cls");
-			printf("[°ø°İÇÏ¿´´Ù]\n");
+			printf("[ê³µê²©í•˜ì˜€ë‹¤]\n");
 
 			Sleep(2000);
 			randattack = rand() % str+1;
@@ -4157,9 +4158,9 @@ int main(void)
 			{
 			hp -= mobattack - dex;
             }
-			printf("[ÄÚº¼Æ®ºÎ´ëÀå¿¡°Ô %dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			printf("[ì½”ë³¼íŠ¸ë¶€ëŒ€ì¥ì—ê²Œ %dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			Sleep(1000);
-			printf("[ÄÚº¼Æ®ºÎ´ëÀå¿¡°Ô %dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			printf("[ì½”ë³¼íŠ¸ë¶€ëŒ€ì¥ì—ê²Œ %dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
             Sleep(1000);
 			system("cls");
 		}
@@ -4169,9 +4170,9 @@ int main(void)
             f = 0;
 			system("cls");
 			Sleep(2000);
-			printf("[ÄÚº¼Æ®ºÎ´ëÀå¿¡°Ô¼­ µµ¸ÁÃÆ´Ù]\n");
+			printf("[ì½”ë³¼íŠ¸ë¶€ëŒ€ì¥ì—ê²Œì„œ ë„ë§ì³¤ë‹¤]\n");
 			Sleep(2000);
-			printf("[ÄğÅ¸ÀÓ 10ÃÊ]\n");
+			printf("[ì¿¨íƒ€ì„ 10ì´ˆ]\n");
 			Sleep(10000);
 			system("cls");
 		}
@@ -4181,7 +4182,7 @@ int main(void)
 			if(potion >= 1)
 			{
 				system("cls");
-				printf("[Æ÷¼ÇÀ» »ç¿ëÇÏ¿´½À´Ï´Ù]\n");
+				printf("[í¬ì…˜ì„ ì‚¬ìš©í•˜ì˜€ìŠµë‹ˆë‹¤]\n");
 
 				Sleep(2000);
 
@@ -4311,7 +4312,7 @@ int main(void)
 			else
 			{
 				system("cls");
-				printf("[Æ÷¼ÇÀÌ ¾ø½À´Ï´Ù]\n");
+				printf("[í¬ì…˜ì´ ì—†ìŠµë‹ˆë‹¤]\n");
 				Sleep(2000);
 				system("cls");
 			}
@@ -4322,11 +4323,11 @@ int main(void)
                   if(job == 1 || job == 2)
                   {
                          system("cls");
-                         printf("[»ç¿ëÇÒ ½ºÅ³À» °í¸£¼¼¿ä]\n");
-                         if(twoattack == 1){printf("[1]ÀÌ´ÜÄŞº¸ - hp 200 ¼Ò¸ğ\n");}
-                         if(threeattack == 1){printf("[2]»ï´Ü°¡¸£±â - hp 1500 ¼Ò¸ğ\n");}
-                         if(killattack == 1){printf("[3]ÆÄ¸êÀÇÈçÀû - hp 10000 ¼Ò¸ğ\n");}
-                         printf("[4]³ª°¡±â\n");
+                         printf("[ì‚¬ìš©í•  ìŠ¤í‚¬ì„ ê³ ë¥´ì„¸ìš”]\n");
+                         if(twoattack == 1){printf("[1]ì´ë‹¨ì½¤ë³´ - hp 200 ì†Œëª¨\n");}
+                         if(threeattack == 1){printf("[2]ì‚¼ë‹¨ê°€ë¥´ê¸° - hp 1500 ì†Œëª¨\n");}
+                         if(killattack == 1){printf("[3]íŒŒë©¸ì˜í”ì  - hp 10000 ì†Œëª¨\n");}
+                         printf("[4]ë‚˜ê°€ê¸°\n");
                          scanf("%d",&skillc);
 
                          if(twoattack != 1 && threeattack != 1 && killattack != 1)
@@ -4334,8 +4335,8 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -4343,8 +4344,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -4352,8 +4353,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -4364,7 +4365,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -4374,9 +4375,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -4384,8 +4385,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -4393,8 +4394,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -4405,7 +4406,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -4415,9 +4416,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -4425,15 +4426,15 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[»ï´Ü °¡¸£±â ¹ßµ¿!]\n");
+                                      printf("[ì‚¼ë‹¨ ê°€ë¥´ê¸° ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
@@ -4443,9 +4444,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -4453,8 +4454,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -4465,7 +4466,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -4475,9 +4476,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -4485,15 +4486,15 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[»ï´Ü °¡¸£±â ¹ßµ¿!]\n");
+                                      printf("[ì‚¼ë‹¨ ê°€ë¥´ê¸° ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
@@ -4503,9 +4504,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -4513,18 +4514,18 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[ÆÄ¸êÀÇÈçÀû ¹ßµ¿!]\n");
+                                      printf("[íŒŒë©¸ì˜í”ì  ë°œë™!]\n");
                                       Sleep(2000);
                                       system("cls");
-                                      printf("ÆÄ!\n");
+                                      printf("íŒŒ!\n");
                                       Sleep(500);
-                                      printf("¸ê!\n");
+                                      printf("ë©¸!\n");
                                       Sleep(500);
-                                      printf("ÀÇ!\n");
+                                      printf("ì˜!\n");
                                       Sleep(500);
-                                      printf("Èç!\n");
+                                      printf("í”!\n");
                                       Sleep(500);
-                                      printf("Àû!\n");
+                                      printf("ì !\n");
                                       Sleep(500);
                                       Sleep(2000);
                                       randattack = rand() % str+1;
@@ -4535,9 +4536,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 10000;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*20);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*20);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -4547,11 +4548,11 @@ int main(void)
                   if(job == 3 || job == 4)
                   {
                          system("cls");
-                         printf("[»ç¿ëÇÒ ½ºÅ³À» °í¸£¼¼¿ä]\n");
-                         if(shot == 1){printf("[1]´õºí¼¦ - hp 200 ¼Ò¸ğ\n");}
-                         if(firebomb == 1){printf("[2]ÆÄÀÌ¾î º½ - hp 1500 ¼Ò¸ğ\n");}
-                         if(killing == 1){printf("[3]Å³¸µ ¾Ö·Î¿ì - hp 10000 ¼Ò¸ğ\n");}
-                         printf("[4]³ª°¡±â\n");
+                         printf("[ì‚¬ìš©í•  ìŠ¤í‚¬ì„ ê³ ë¥´ì„¸ìš”]\n");
+                         if(shot == 1){printf("[1]ë”ë¸”ìƒ· - hp 200 ì†Œëª¨\n");}
+                         if(firebomb == 1){printf("[2]íŒŒì´ì–´ ë´„ - hp 1500 ì†Œëª¨\n");}
+                         if(killing == 1){printf("[3]í‚¬ë§ ì• ë¡œìš° - hp 10000 ì†Œëª¨\n");}
+                         printf("[4]ë‚˜ê°€ê¸°\n");
                          scanf("%d",&skillc);
 
                          if(shot != 1 && firebomb != 1 && killing != 1)
@@ -4559,8 +4560,8 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -4568,8 +4569,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -4577,8 +4578,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -4589,12 +4590,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -4603,9 +4604,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -4613,8 +4614,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -4622,8 +4623,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -4634,12 +4635,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -4648,9 +4649,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -4658,7 +4659,7 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[ÆÄÀÌ¾î º½ ¹ßµ¿!]\n");
+                                      printf("[íŒŒì´ì–´ ë´„ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*4 + str;
@@ -4668,9 +4669,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*4);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*4);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -4678,8 +4679,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -4690,12 +4691,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -4704,9 +4705,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -4714,7 +4715,7 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[ÆÄÀÌ¾î º½ ¹ßµ¿!]\n");
+                                      printf("[íŒŒì´ì–´ ë´„ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*4 + str;
@@ -4724,9 +4725,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*4);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*4);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -4734,61 +4735,61 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Å³¸µ¾Ö·Î¿ì ¹ßµ¿!]\n");
+                                      printf("[í‚¬ë§ì• ë¡œìš° ë°œë™!]\n");
                                       Sleep(2000);
                                       system("cls");
-                                      printf("Å³!\n");
+                                      printf("í‚¬!\n");
                                       Sleep(500);
-                                      printf("¸µ!\n");
+                                      printf("ë§!\n");
                                       Sleep(500);
-                                      printf("¾Ö!\n");
+                                      printf("ì• !\n");
                                       Sleep(500);
-                                      printf("·Î!\n");
+                                      printf("ë¡œ!\n");
                                       Sleep(500);
-                                      printf("¿ì!\n");
+                                      printf("ìš°!\n");
                                       Sleep(500);
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(1000);
-			                          printf("[¸¶Áö¸· ÀÌ´å!]\n");
+			                          printf("[ë§ˆì§€ë§‰ ì´ë‹·!]\n");
                                       Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*10 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*10);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*10);
 			                          Sleep(1000);
 			                          mobattack = rand() % 50+1;
 			                          if(mobattack-dex >= 0)
@@ -4796,7 +4797,7 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 10000;
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -4810,8 +4811,8 @@ int main(void)
 		{
             f = 0;
 			system("cls");
-			printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-			printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+			printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+			printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
 			gold -= gold/2;
 			Sleep(2000);
 			system("cls");
@@ -4823,8 +4824,8 @@ int main(void)
 		{
             f = 0;
 			system("cls");
-			printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-			printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+			printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+			printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
 			gold -= gold/2;
 			Sleep(2000);
 			system("cls");
@@ -4836,10 +4837,10 @@ int main(void)
             f = 0;
 			system("cls");
 			Sleep(2000);
-			printf("[½Â¸®ÇÏ¿´½À´Ï´Ù]");
+			printf("[ìŠ¹ë¦¬í•˜ì˜€ìŠµë‹ˆë‹¤]");
 			getgold = rand() % 200+1;
 			getexp = rand() % 180+1;
-			printf("[°ñµå + %d / °æÇèÄ¡ + %d È¹µæ]\n",getgold+150,getexp+150);
+			printf("[ê³¨ë“œ + %d / ê²½í—˜ì¹˜ + %d íšë“]\n",getgold+150,getexp+150);
 			gold += 150+getgold;
 			exp += 150+getexp;
 			Sleep(2000);
@@ -4850,26 +4851,26 @@ int main(void)
 		{
               system("cls");
               Sleep(1000);
-              printf("[´ç½ÅÀº Á×¾ú½À´Ï´Ù]");
+              printf("[ë‹¹ì‹ ì€ ì£½ì—ˆìŠµë‹ˆë‹¤]");
               Sleep(1000);
               system("cls");
               f = 0;
         }
 	}
 
-	//·¹º§ 7 ÄÚº¼Æ®´ëÀå
+	//ë ˆë²¨ 7 ì½”ë³¼íŠ¸ëŒ€ì¥
 	while(f == 7)
 	{
-		printf("[ÄÚº¼Æ®´ëÀå Ã¼·Â : %d / %d]\n",mobhp,mobmhp);
-		printf("[³ªÀÇ Ã¼·Â : %d / %d]\n",hp,mhp);
-		printf("[Æ÷¼Ç °³¼ö : %d]\n",potion);
-		printf("[1]°ø°İ\n[2]µµ¸Á\n[3]Æ÷¼Ç\n"); if(job >= 1){printf("[1]°ø°İ\n[2]µµ¸Á\n[3]Æ÷¼Ç\n[4]½ºÅ³\n");}
+		printf("[ì½”ë³¼íŠ¸ëŒ€ì¥ ì²´ë ¥ : %d / %d]\n",mobhp,mobmhp);
+		printf("[ë‚˜ì˜ ì²´ë ¥ : %d / %d]\n",hp,mhp);
+		printf("[í¬ì…˜ ê°œìˆ˜ : %d]\n",potion);
+		printf("[1]ê³µê²©\n[2]ë„ë§\n[3]í¬ì…˜\n"); if(job >= 1){printf("[1]ê³µê²©\n[2]ë„ë§\n[3]í¬ì…˜\n[4]ìŠ¤í‚¬\n");}
 		scanf("%d",&choose);
 
 		if(choose == 1)
 		{
 			system("cls");
-			printf("[°ø°İÇÏ¿´´Ù]\n");
+			printf("[ê³µê²©í•˜ì˜€ë‹¤]\n");
 
 			Sleep(2000);
 			randattack = rand() % str+1;
@@ -4879,9 +4880,9 @@ int main(void)
 			{
 			hp -= mobattack - dex;
             }
-			printf("[ÄÚº¼Æ®´ëÀå¿¡°Ô %dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			printf("[ì½”ë³¼íŠ¸ëŒ€ì¥ì—ê²Œ %dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			Sleep(1000);
-			printf("[ÄÚº¼Æ®´ëÀå¿¡°Ô %dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			printf("[ì½”ë³¼íŠ¸ëŒ€ì¥ì—ê²Œ %dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
             Sleep(1000);
 			system("cls");
 		}
@@ -4891,9 +4892,9 @@ int main(void)
             f = 0;
 			system("cls");
 			Sleep(2000);
-			printf("[ÄÚº¼Æ®´ëÀå¿¡°Ô¼­ µµ¸ÁÃÆ´Ù]\n");
+			printf("[ì½”ë³¼íŠ¸ëŒ€ì¥ì—ê²Œì„œ ë„ë§ì³¤ë‹¤]\n");
 			Sleep(2000);
-			printf("[ÄğÅ¸ÀÓ 10ÃÊ]\n");
+			printf("[ì¿¨íƒ€ì„ 10ì´ˆ]\n");
 			Sleep(10000);
 			system("cls");
 		}
@@ -4903,7 +4904,7 @@ int main(void)
 			if(potion >= 1)
 			{
 				system("cls");
-				printf("[Æ÷¼ÇÀ» »ç¿ëÇÏ¿´½À´Ï´Ù]\n");
+				printf("[í¬ì…˜ì„ ì‚¬ìš©í•˜ì˜€ìŠµë‹ˆë‹¤]\n");
 
 				Sleep(2000);
 
@@ -5033,7 +5034,7 @@ int main(void)
 			else
 			{
 				system("cls");
-				printf("[Æ÷¼ÇÀÌ ¾ø½À´Ï´Ù]\n");
+				printf("[í¬ì…˜ì´ ì—†ìŠµë‹ˆë‹¤]\n");
 				Sleep(2000);
 				system("cls");
 			}
@@ -5044,11 +5045,11 @@ int main(void)
                   if(job == 1 || job == 2)
                   {
                          system("cls");
-                         printf("[»ç¿ëÇÒ ½ºÅ³À» °í¸£¼¼¿ä]\n");
-                         if(twoattack == 1){printf("[1]ÀÌ´ÜÄŞº¸ - hp 200 ¼Ò¸ğ\n");}
-                         if(threeattack == 1){printf("[2]»ï´Ü°¡¸£±â - hp 1500 ¼Ò¸ğ\n");}
-                         if(killattack == 1){printf("[3]ÆÄ¸êÀÇÈçÀû - hp 10000 ¼Ò¸ğ\n");}
-                         printf("[4]³ª°¡±â\n");
+                         printf("[ì‚¬ìš©í•  ìŠ¤í‚¬ì„ ê³ ë¥´ì„¸ìš”]\n");
+                         if(twoattack == 1){printf("[1]ì´ë‹¨ì½¤ë³´ - hp 200 ì†Œëª¨\n");}
+                         if(threeattack == 1){printf("[2]ì‚¼ë‹¨ê°€ë¥´ê¸° - hp 1500 ì†Œëª¨\n");}
+                         if(killattack == 1){printf("[3]íŒŒë©¸ì˜í”ì  - hp 10000 ì†Œëª¨\n");}
+                         printf("[4]ë‚˜ê°€ê¸°\n");
                          scanf("%d",&skillc);
 
                          if(twoattack != 1 && threeattack != 1 && killattack != 1)
@@ -5056,8 +5057,8 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -5065,8 +5066,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -5074,8 +5075,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -5086,7 +5087,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -5096,9 +5097,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -5106,8 +5107,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -5115,8 +5116,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -5127,7 +5128,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -5137,9 +5138,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -5147,15 +5148,15 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[»ï´Ü °¡¸£±â ¹ßµ¿!]\n");
+                                      printf("[ì‚¼ë‹¨ ê°€ë¥´ê¸° ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
@@ -5165,9 +5166,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -5175,8 +5176,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -5187,7 +5188,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -5197,9 +5198,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -5207,15 +5208,15 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[»ï´Ü °¡¸£±â ¹ßµ¿!]\n");
+                                      printf("[ì‚¼ë‹¨ ê°€ë¥´ê¸° ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
@@ -5225,9 +5226,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -5235,18 +5236,18 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[ÆÄ¸êÀÇÈçÀû ¹ßµ¿!]\n");
+                                      printf("[íŒŒë©¸ì˜í”ì  ë°œë™!]\n");
                                       Sleep(2000);
                                       system("cls");
-                                      printf("ÆÄ!\n");
+                                      printf("íŒŒ!\n");
                                       Sleep(500);
-                                      printf("¸ê!\n");
+                                      printf("ë©¸!\n");
                                       Sleep(500);
-                                      printf("ÀÇ!\n");
+                                      printf("ì˜!\n");
                                       Sleep(500);
-                                      printf("Èç!\n");
+                                      printf("í”!\n");
                                       Sleep(500);
-                                      printf("Àû!\n");
+                                      printf("ì !\n");
                                       Sleep(500);
                                       Sleep(2000);
                                       randattack = rand() % str+1;
@@ -5257,9 +5258,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 10000;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*20);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*20);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -5269,11 +5270,11 @@ int main(void)
                   if(job == 3 || job == 4)
                   {
                          system("cls");
-                         printf("[»ç¿ëÇÒ ½ºÅ³À» °í¸£¼¼¿ä]\n");
-                         if(shot == 1){printf("[1]´õºí¼¦ - hp 200 ¼Ò¸ğ\n");}
-                         if(firebomb == 1){printf("[2]ÆÄÀÌ¾î º½ - hp 1500 ¼Ò¸ğ\n");}
-                         if(killing == 1){printf("[3]Å³¸µ ¾Ö·Î¿ì - hp 10000 ¼Ò¸ğ\n");}
-                         printf("[4]³ª°¡±â\n");
+                         printf("[ì‚¬ìš©í•  ìŠ¤í‚¬ì„ ê³ ë¥´ì„¸ìš”]\n");
+                         if(shot == 1){printf("[1]ë”ë¸”ìƒ· - hp 200 ì†Œëª¨\n");}
+                         if(firebomb == 1){printf("[2]íŒŒì´ì–´ ë´„ - hp 1500 ì†Œëª¨\n");}
+                         if(killing == 1){printf("[3]í‚¬ë§ ì• ë¡œìš° - hp 10000 ì†Œëª¨\n");}
+                         printf("[4]ë‚˜ê°€ê¸°\n");
                          scanf("%d",&skillc);
 
                          if(shot != 1 && firebomb != 1 && killing != 1)
@@ -5281,8 +5282,8 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -5290,8 +5291,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -5299,8 +5300,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -5311,12 +5312,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -5325,9 +5326,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -5335,8 +5336,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -5344,8 +5345,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -5356,12 +5357,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -5370,9 +5371,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -5380,7 +5381,7 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[ÆÄÀÌ¾î º½ ¹ßµ¿!]\n");
+                                      printf("[íŒŒì´ì–´ ë´„ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*4 + str;
@@ -5390,9 +5391,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*4);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*4);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -5400,8 +5401,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -5412,12 +5413,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -5426,9 +5427,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -5436,7 +5437,7 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[ÆÄÀÌ¾î º½ ¹ßµ¿!]\n");
+                                      printf("[íŒŒì´ì–´ ë´„ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*4 + str;
@@ -5446,9 +5447,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*4);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*4);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -5456,61 +5457,61 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Å³¸µ¾Ö·Î¿ì ¹ßµ¿!]\n");
+                                      printf("[í‚¬ë§ì• ë¡œìš° ë°œë™!]\n");
                                       Sleep(2000);
                                       system("cls");
-                                      printf("Å³!\n");
+                                      printf("í‚¬!\n");
                                       Sleep(500);
-                                      printf("¸µ!\n");
+                                      printf("ë§!\n");
                                       Sleep(500);
-                                      printf("¾Ö!\n");
+                                      printf("ì• !\n");
                                       Sleep(500);
-                                      printf("·Î!\n");
+                                      printf("ë¡œ!\n");
                                       Sleep(500);
-                                      printf("¿ì!\n");
+                                      printf("ìš°!\n");
                                       Sleep(500);
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(1000);
-			                          printf("[¸¶Áö¸· ÀÌ´å!]\n");
+			                          printf("[ë§ˆì§€ë§‰ ì´ë‹·!]\n");
                                       Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*10 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*10);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*10);
 			                          Sleep(1000);
 			                          mobattack = rand() % 50+1;
 			                          if(mobattack-dex >= 0)
@@ -5518,7 +5519,7 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 10000;
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -5532,8 +5533,8 @@ int main(void)
 		{
             f = 0;
 			system("cls");
-			printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-			printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+			printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+			printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
 			gold -= gold/2;
 			Sleep(2000);
 			system("cls");
@@ -5545,8 +5546,8 @@ int main(void)
 		{
             f = 0;
 			system("cls");
-			printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-			printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+			printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+			printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
 			gold -= gold/2;
 			Sleep(2000);
 			system("cls");
@@ -5558,10 +5559,10 @@ int main(void)
             f = 0;
 			system("cls");
 			Sleep(2000);
-			printf("[½Â¸®ÇÏ¿´½À´Ï´Ù]");
+			printf("[ìŠ¹ë¦¬í•˜ì˜€ìŠµë‹ˆë‹¤]");
 			getgold = rand() % 250+1;
 			getexp = rand() % 200+1;
-			printf("[°ñµå + %d / °æÇèÄ¡ + %d È¹µæ]\n",getgold+200,getexp+200);
+			printf("[ê³¨ë“œ + %d / ê²½í—˜ì¹˜ + %d íšë“]\n",getgold+200,getexp+200);
 			gold += 200+getgold;
 			exp += 200+getexp;
 			Sleep(2000);
@@ -5572,26 +5573,26 @@ int main(void)
 		{
               system("cls");
               Sleep(1000);
-              printf("[´ç½ÅÀº Á×¾ú½À´Ï´Ù]");
+              printf("[ë‹¹ì‹ ì€ ì£½ì—ˆìŠµë‹ˆë‹¤]");
               Sleep(1000);
               system("cls");
               f = 0;
         }
 	}
 
-	//·¹º§ 5 ¸¶·ÂÀÌ ¾àÇÑ ¿äÁ¤
+	//ë ˆë²¨ 5 ë§ˆë ¥ì´ ì•½í•œ ìš”ì •
 	while(f == 8)
 	{
-		printf("[¸¶·ÂÀÌ ¾àÇÑ ¿äÁ¤ Ã¼·Â : %d / %d]\n",mobhp,mobmhp);
-		printf("[³ªÀÇ Ã¼·Â : %d / %d]\n",hp,mhp);
-		printf("[Æ÷¼Ç °³¼ö : %d]\n",potion);
-		printf("[1]°ø°İ\n[2]µµ¸Á\n[3]Æ÷¼Ç\n"); if(job >= 1){printf("[4]½ºÅ³\n");}
+		printf("[ë§ˆë ¥ì´ ì•½í•œ ìš”ì • ì²´ë ¥ : %d / %d]\n",mobhp,mobmhp);
+		printf("[ë‚˜ì˜ ì²´ë ¥ : %d / %d]\n",hp,mhp);
+		printf("[í¬ì…˜ ê°œìˆ˜ : %d]\n",potion);
+		printf("[1]ê³µê²©\n[2]ë„ë§\n[3]í¬ì…˜\n"); if(job >= 1){printf("[4]ìŠ¤í‚¬\n");}
 		scanf("%d",&choose);
 
 		if(choose == 1)
 		{
 			system("cls");
-			printf("[°ø°İÇÏ¿´´Ù]\n");
+			printf("[ê³µê²©í•˜ì˜€ë‹¤]\n");
 
 			Sleep(2000);
 			randattack = rand() % str+1;
@@ -5601,9 +5602,9 @@ int main(void)
 			{
 			hp -= mobattack - dex;
             }
-			printf("[¸¶·ÂÀÌ ¾àÇÑ ¿äÁ¤¿¡°Ô %dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			printf("[ë§ˆë ¥ì´ ì•½í•œ ìš”ì •ì—ê²Œ %dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			Sleep(1000);
-			printf("[¸¶·ÂÀÌ ¾àÇÑ ¿äÁ¤¿¡°Ô %dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			printf("[ë§ˆë ¥ì´ ì•½í•œ ìš”ì •ì—ê²Œ %dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
             Sleep(1000);
 			system("cls");
 		}
@@ -5613,9 +5614,9 @@ int main(void)
             f = 0;
 			system("cls");
 			Sleep(2000);
-			printf("[¸¶·ÂÀÌ ¾àÇÑ ¿äÁ¤¿¡°Ô¼­ µµ¸ÁÃÆ´Ù]\n");
+			printf("[ë§ˆë ¥ì´ ì•½í•œ ìš”ì •ì—ê²Œì„œ ë„ë§ì³¤ë‹¤]\n");
 			Sleep(2000);
-			printf("[ÄğÅ¸ÀÓ 10ÃÊ]\n");
+			printf("[ì¿¨íƒ€ì„ 10ì´ˆ]\n");
 			Sleep(10000);
 			system("cls");
 		}
@@ -5625,7 +5626,7 @@ int main(void)
 			if(potion >= 1)
 			{
 				system("cls");
-				printf("[Æ÷¼ÇÀ» »ç¿ëÇÏ¿´½À´Ï´Ù]\n");
+				printf("[í¬ì…˜ì„ ì‚¬ìš©í•˜ì˜€ìŠµë‹ˆë‹¤]\n");
 
 				Sleep(2000);
 
@@ -5755,7 +5756,7 @@ int main(void)
 			else
 			{
 				system("cls");
-				printf("[Æ÷¼ÇÀÌ ¾ø½À´Ï´Ù]\n");
+				printf("[í¬ì…˜ì´ ì—†ìŠµë‹ˆë‹¤]\n");
 				Sleep(2000);
 				system("cls");
 			}
@@ -5766,11 +5767,11 @@ int main(void)
                   if(job == 1 || job == 2)
                   {
                          system("cls");
-                         printf("[»ç¿ëÇÒ ½ºÅ³À» °í¸£¼¼¿ä]\n");
-                         if(twoattack == 1){printf("[1]ÀÌ´ÜÄŞº¸ - hp 200 ¼Ò¸ğ\n");}
-                         if(threeattack == 1){printf("[2]»ï´Ü°¡¸£±â - hp 1500 ¼Ò¸ğ\n");}
-                         if(killattack == 1){printf("[3]ÆÄ¸êÀÇÈçÀû - hp 10000 ¼Ò¸ğ\n");}
-                         printf("[4]³ª°¡±â\n");
+                         printf("[ì‚¬ìš©í•  ìŠ¤í‚¬ì„ ê³ ë¥´ì„¸ìš”]\n");
+                         if(twoattack == 1){printf("[1]ì´ë‹¨ì½¤ë³´ - hp 200 ì†Œëª¨\n");}
+                         if(threeattack == 1){printf("[2]ì‚¼ë‹¨ê°€ë¥´ê¸° - hp 1500 ì†Œëª¨\n");}
+                         if(killattack == 1){printf("[3]íŒŒë©¸ì˜í”ì  - hp 10000 ì†Œëª¨\n");}
+                         printf("[4]ë‚˜ê°€ê¸°\n");
                          scanf("%d",&skillc);
 
                          if(twoattack != 1 && threeattack != 1 && killattack != 1)
@@ -5778,8 +5779,8 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -5787,8 +5788,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -5796,8 +5797,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -5808,7 +5809,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -5818,9 +5819,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -5828,8 +5829,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -5837,8 +5838,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -5849,7 +5850,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -5859,9 +5860,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -5869,15 +5870,15 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[»ï´Ü °¡¸£±â ¹ßµ¿!]\n");
+                                      printf("[ì‚¼ë‹¨ ê°€ë¥´ê¸° ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
@@ -5887,9 +5888,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -5897,8 +5898,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -5909,7 +5910,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -5919,9 +5920,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -5929,15 +5930,15 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[»ï´Ü °¡¸£±â ¹ßµ¿!]\n");
+                                      printf("[ì‚¼ë‹¨ ê°€ë¥´ê¸° ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
@@ -5947,9 +5948,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -5957,18 +5958,18 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[ÆÄ¸êÀÇÈçÀû ¹ßµ¿!]\n");
+                                      printf("[íŒŒë©¸ì˜í”ì  ë°œë™!]\n");
                                       Sleep(2000);
                                       system("cls");
-                                      printf("ÆÄ!\n");
+                                      printf("íŒŒ!\n");
                                       Sleep(500);
-                                      printf("¸ê!\n");
+                                      printf("ë©¸!\n");
                                       Sleep(500);
-                                      printf("ÀÇ!\n");
+                                      printf("ì˜!\n");
                                       Sleep(500);
-                                      printf("Èç!\n");
+                                      printf("í”!\n");
                                       Sleep(500);
-                                      printf("Àû!\n");
+                                      printf("ì !\n");
                                       Sleep(500);
                                       Sleep(2000);
                                       randattack = rand() % str+1;
@@ -5979,9 +5980,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 10000;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*20);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*20);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -5991,11 +5992,11 @@ int main(void)
                   if(job == 3 || job == 4)
                   {
                          system("cls");
-                         printf("[»ç¿ëÇÒ ½ºÅ³À» °í¸£¼¼¿ä]\n");
-                         if(shot == 1){printf("[1]´õºí¼¦ - hp 200 ¼Ò¸ğ\n");}
-                         if(firebomb == 1){printf("[2]ÆÄÀÌ¾î º½ - hp 1500 ¼Ò¸ğ\n");}
-                         if(killing == 1){printf("[3]Å³¸µ ¾Ö·Î¿ì - hp 10000 ¼Ò¸ğ\n");}
-                         printf("[4]³ª°¡±â\n");
+                         printf("[ì‚¬ìš©í•  ìŠ¤í‚¬ì„ ê³ ë¥´ì„¸ìš”]\n");
+                         if(shot == 1){printf("[1]ë”ë¸”ìƒ· - hp 200 ì†Œëª¨\n");}
+                         if(firebomb == 1){printf("[2]íŒŒì´ì–´ ë´„ - hp 1500 ì†Œëª¨\n");}
+                         if(killing == 1){printf("[3]í‚¬ë§ ì• ë¡œìš° - hp 10000 ì†Œëª¨\n");}
+                         printf("[4]ë‚˜ê°€ê¸°\n");
                          scanf("%d",&skillc);
 
                          if(shot != 1 && firebomb != 1 && killing != 1)
@@ -6003,8 +6004,8 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -6012,8 +6013,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -6021,8 +6022,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -6033,12 +6034,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -6047,9 +6048,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -6057,8 +6058,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -6066,8 +6067,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -6078,12 +6079,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -6092,9 +6093,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -6102,7 +6103,7 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[ÆÄÀÌ¾î º½ ¹ßµ¿!]\n");
+                                      printf("[íŒŒì´ì–´ ë´„ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*4 + str;
@@ -6112,9 +6113,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*4);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*4);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -6122,8 +6123,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -6134,12 +6135,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -6148,9 +6149,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -6158,7 +6159,7 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[ÆÄÀÌ¾î º½ ¹ßµ¿!]\n");
+                                      printf("[íŒŒì´ì–´ ë´„ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*4 + str;
@@ -6168,9 +6169,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*4);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*4);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -6178,61 +6179,61 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Å³¸µ¾Ö·Î¿ì ¹ßµ¿!]\n");
+                                      printf("[í‚¬ë§ì• ë¡œìš° ë°œë™!]\n");
                                       Sleep(2000);
                                       system("cls");
-                                      printf("Å³!\n");
+                                      printf("í‚¬!\n");
                                       Sleep(500);
-                                      printf("¸µ!\n");
+                                      printf("ë§!\n");
                                       Sleep(500);
-                                      printf("¾Ö!\n");
+                                      printf("ì• !\n");
                                       Sleep(500);
-                                      printf("·Î!\n");
+                                      printf("ë¡œ!\n");
                                       Sleep(500);
-                                      printf("¿ì!\n");
+                                      printf("ìš°!\n");
                                       Sleep(500);
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(1000);
-			                          printf("[¸¶Áö¸· ÀÌ´å!]\n");
+			                          printf("[ë§ˆì§€ë§‰ ì´ë‹·!]\n");
                                       Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*10 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*10);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*10);
 			                          Sleep(1000);
 			                          mobattack = rand() % 50+1;
 			                          if(mobattack-dex >= 0)
@@ -6240,7 +6241,7 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 10000;
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -6254,8 +6255,8 @@ int main(void)
 		{
             f = 0;
 			system("cls");
-			printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-			printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+			printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+			printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
 			gold -= gold/2;
 			Sleep(2000);
 			system("cls");
@@ -6267,8 +6268,8 @@ int main(void)
 		{
             f = 0;
 			system("cls");
-			printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-			printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+			printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+			printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
 			gold -= gold/2;
 			Sleep(2000);
 			system("cls");
@@ -6280,10 +6281,10 @@ int main(void)
             f = 0;
 			system("cls");
 			Sleep(2000);
-			printf("[½Â¸®ÇÏ¿´½À´Ï´Ù]");
+			printf("[ìŠ¹ë¦¬í•˜ì˜€ìŠµë‹ˆë‹¤]");
 			getgold = rand() % 300+1;
 			getexp = rand() % 250+1;
-			printf("[°ñµå + %d / °æÇèÄ¡ + %d È¹µæ]\n",getgold+250,getexp+250);
+			printf("[ê³¨ë“œ + %d / ê²½í—˜ì¹˜ + %d íšë“]\n",getgold+250,getexp+250);
 			gold += 250+getgold;
 			exp += 250+getexp;
 			Sleep(2000);
@@ -6294,26 +6295,26 @@ int main(void)
 		{
               system("cls");
               Sleep(1000);
-              printf("[´ç½ÅÀº Á×¾ú½À´Ï´Ù]");
+              printf("[ë‹¹ì‹ ì€ ì£½ì—ˆìŠµë‹ˆë‹¤]");
               Sleep(1000);
               system("cls");
               f = 0;
         }
 	}
 
-	//·¹º§ 6 ¸¶·ÂÀÌ °­ÇÑ ¿äÁ¤
+	//ë ˆë²¨ 6 ë§ˆë ¥ì´ ê°•í•œ ìš”ì •
 	while(f == 9)
 	{
-		printf("[¸¶·ÂÀÌ °­ÇÑ ¿äÁ¤ Ã¼·Â : %d / %d]\n",mobhp,mobmhp);
-		printf("[³ªÀÇ Ã¼·Â : %d / %d]\n",hp,mhp);
-		printf("[Æ÷¼Ç °³¼ö : %d]\n",potion);
-		printf("[1]°ø°İ\n[2]µµ¸Á\n[3]Æ÷¼Ç\n"); if(job >= 1){printf("[4]½ºÅ³\n");}
+		printf("[ë§ˆë ¥ì´ ê°•í•œ ìš”ì • ì²´ë ¥ : %d / %d]\n",mobhp,mobmhp);
+		printf("[ë‚˜ì˜ ì²´ë ¥ : %d / %d]\n",hp,mhp);
+		printf("[í¬ì…˜ ê°œìˆ˜ : %d]\n",potion);
+		printf("[1]ê³µê²©\n[2]ë„ë§\n[3]í¬ì…˜\n"); if(job >= 1){printf("[4]ìŠ¤í‚¬\n");}
 		scanf("%d",&choose);
 
 		if(choose == 1)
 		{
 			system("cls");
-			printf("[°ø°İÇÏ¿´´Ù]\n");
+			printf("[ê³µê²©í•˜ì˜€ë‹¤]\n");
 
 			Sleep(2000);
 			randattack = rand() % str+1;
@@ -6323,9 +6324,9 @@ int main(void)
 			{
 			hp -= mobattack - dex;
             }
-			printf("[¸¶·ÂÀÌ °­ÇÑ ¿äÁ¤¿¡°Ô %dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			printf("[ë§ˆë ¥ì´ ê°•í•œ ìš”ì •ì—ê²Œ %dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			Sleep(1000);
-			printf("[¸¶·ÂÀÌ °­ÇÑ ¿äÁ¤¿¡°Ô %dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			printf("[ë§ˆë ¥ì´ ê°•í•œ ìš”ì •ì—ê²Œ %dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
             Sleep(1000);
 			system("cls");
 		}
@@ -6335,9 +6336,9 @@ int main(void)
             f = 0;
 			system("cls");
 			Sleep(2000);
-			printf("[¸¶·ÂÀÌ °­ÇÑ ¿äÁ¤¿¡°Ô¼­ µµ¸ÁÃÆ´Ù]\n");
+			printf("[ë§ˆë ¥ì´ ê°•í•œ ìš”ì •ì—ê²Œì„œ ë„ë§ì³¤ë‹¤]\n");
 			Sleep(2000);
-			printf("[ÄğÅ¸ÀÓ 10ÃÊ]\n");
+			printf("[ì¿¨íƒ€ì„ 10ì´ˆ]\n");
 			Sleep(10000);
 			system("cls");
 		}
@@ -6347,7 +6348,7 @@ int main(void)
 			if(potion >= 1)
 			{
 				system("cls");
-				printf("[Æ÷¼ÇÀ» »ç¿ëÇÏ¿´½À´Ï´Ù]\n");
+				printf("[í¬ì…˜ì„ ì‚¬ìš©í•˜ì˜€ìŠµë‹ˆë‹¤]\n");
 
 				Sleep(2000);
 
@@ -6477,7 +6478,7 @@ int main(void)
 			else
 			{
 				system("cls");
-				printf("[Æ÷¼ÇÀÌ ¾ø½À´Ï´Ù]\n");
+				printf("[í¬ì…˜ì´ ì—†ìŠµë‹ˆë‹¤]\n");
 				Sleep(2000);
 				system("cls");
 			}
@@ -6488,11 +6489,11 @@ int main(void)
                   if(job == 1 || job == 2)
                   {
                          system("cls");
-                         printf("[»ç¿ëÇÒ ½ºÅ³À» °í¸£¼¼¿ä]\n");
-                         if(twoattack == 1){printf("[1]ÀÌ´ÜÄŞº¸ - hp 200 ¼Ò¸ğ\n");}
-                         if(threeattack == 1){printf("[2]»ï´Ü°¡¸£±â - hp 1500 ¼Ò¸ğ\n");}
-                         if(killattack == 1){printf("[3]ÆÄ¸êÀÇÈçÀû - hp 10000 ¼Ò¸ğ\n");}
-                         printf("[4]³ª°¡±â\n");
+                         printf("[ì‚¬ìš©í•  ìŠ¤í‚¬ì„ ê³ ë¥´ì„¸ìš”]\n");
+                         if(twoattack == 1){printf("[1]ì´ë‹¨ì½¤ë³´ - hp 200 ì†Œëª¨\n");}
+                         if(threeattack == 1){printf("[2]ì‚¼ë‹¨ê°€ë¥´ê¸° - hp 1500 ì†Œëª¨\n");}
+                         if(killattack == 1){printf("[3]íŒŒë©¸ì˜í”ì  - hp 10000 ì†Œëª¨\n");}
+                         printf("[4]ë‚˜ê°€ê¸°\n");
                          scanf("%d",&skillc);
 
                          if(twoattack != 1 && threeattack != 1 && killattack != 1)
@@ -6500,8 +6501,8 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -6509,8 +6510,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -6518,8 +6519,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -6530,7 +6531,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -6540,9 +6541,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -6550,8 +6551,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -6559,8 +6560,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -6571,7 +6572,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -6581,9 +6582,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -6591,15 +6592,15 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[»ï´Ü °¡¸£±â ¹ßµ¿!]\n");
+                                      printf("[ì‚¼ë‹¨ ê°€ë¥´ê¸° ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
@@ -6609,9 +6610,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -6619,8 +6620,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -6631,7 +6632,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -6641,9 +6642,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -6651,15 +6652,15 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[»ï´Ü °¡¸£±â ¹ßµ¿!]\n");
+                                      printf("[ì‚¼ë‹¨ ê°€ë¥´ê¸° ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
@@ -6669,9 +6670,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -6679,18 +6680,18 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[ÆÄ¸êÀÇÈçÀû ¹ßµ¿!]\n");
+                                      printf("[íŒŒë©¸ì˜í”ì  ë°œë™!]\n");
                                       Sleep(2000);
                                       system("cls");
-                                      printf("ÆÄ!\n");
+                                      printf("íŒŒ!\n");
                                       Sleep(500);
-                                      printf("¸ê!\n");
+                                      printf("ë©¸!\n");
                                       Sleep(500);
-                                      printf("ÀÇ!\n");
+                                      printf("ì˜!\n");
                                       Sleep(500);
-                                      printf("Èç!\n");
+                                      printf("í”!\n");
                                       Sleep(500);
-                                      printf("Àû!\n");
+                                      printf("ì !\n");
                                       Sleep(500);
                                       Sleep(2000);
                                       randattack = rand() % str+1;
@@ -6701,9 +6702,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 10000;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*20);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*20);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -6713,11 +6714,11 @@ int main(void)
                   if(job == 3 || job == 4)
                   {
                          system("cls");
-                         printf("[»ç¿ëÇÒ ½ºÅ³À» °í¸£¼¼¿ä]\n");
-                         if(shot == 1){printf("[1]´õºí¼¦ - hp 200 ¼Ò¸ğ\n");}
-                         if(firebomb == 1){printf("[2]ÆÄÀÌ¾î º½ - hp 1500 ¼Ò¸ğ\n");}
-                         if(killing == 1){printf("[3]Å³¸µ ¾Ö·Î¿ì - hp 10000 ¼Ò¸ğ\n");}
-                         printf("[4]³ª°¡±â\n");
+                         printf("[ì‚¬ìš©í•  ìŠ¤í‚¬ì„ ê³ ë¥´ì„¸ìš”]\n");
+                         if(shot == 1){printf("[1]ë”ë¸”ìƒ· - hp 200 ì†Œëª¨\n");}
+                         if(firebomb == 1){printf("[2]íŒŒì´ì–´ ë´„ - hp 1500 ì†Œëª¨\n");}
+                         if(killing == 1){printf("[3]í‚¬ë§ ì• ë¡œìš° - hp 10000 ì†Œëª¨\n");}
+                         printf("[4]ë‚˜ê°€ê¸°\n");
                          scanf("%d",&skillc);
 
                          if(shot != 1 && firebomb != 1 && killing != 1)
@@ -6725,8 +6726,8 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -6734,8 +6735,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -6743,8 +6744,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -6755,12 +6756,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -6769,9 +6770,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -6779,8 +6780,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -6788,8 +6789,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -6800,12 +6801,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -6814,9 +6815,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -6824,7 +6825,7 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[ÆÄÀÌ¾î º½ ¹ßµ¿!]\n");
+                                      printf("[íŒŒì´ì–´ ë´„ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*4 + str;
@@ -6834,9 +6835,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*4);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*4);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -6844,8 +6845,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -6856,12 +6857,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -6870,9 +6871,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -6880,7 +6881,7 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[ÆÄÀÌ¾î º½ ¹ßµ¿!]\n");
+                                      printf("[íŒŒì´ì–´ ë´„ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*4 + str;
@@ -6890,9 +6891,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*4);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*4);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -6900,61 +6901,61 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Å³¸µ¾Ö·Î¿ì ¹ßµ¿!]\n");
+                                      printf("[í‚¬ë§ì• ë¡œìš° ë°œë™!]\n");
                                       Sleep(2000);
                                       system("cls");
-                                      printf("Å³!\n");
+                                      printf("í‚¬!\n");
                                       Sleep(500);
-                                      printf("¸µ!\n");
+                                      printf("ë§!\n");
                                       Sleep(500);
-                                      printf("¾Ö!\n");
+                                      printf("ì• !\n");
                                       Sleep(500);
-                                      printf("·Î!\n");
+                                      printf("ë¡œ!\n");
                                       Sleep(500);
-                                      printf("¿ì!\n");
+                                      printf("ìš°!\n");
                                       Sleep(500);
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(1000);
-			                          printf("[¸¶Áö¸· ÀÌ´å!]\n");
+			                          printf("[ë§ˆì§€ë§‰ ì´ë‹·!]\n");
                                       Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*10 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*10);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*10);
 			                          Sleep(1000);
 			                          mobattack = rand() % 50+1;
 			                          if(mobattack-dex >= 0)
@@ -6962,7 +6963,7 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 10000;
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -6976,8 +6977,8 @@ int main(void)
 		{
             f = 0;
 			system("cls");
-			printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-			printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+			printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+			printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
 			gold -= gold/2;
 			Sleep(2000);
 			system("cls");
@@ -6989,8 +6990,8 @@ int main(void)
 		{
             f = 0;
 			system("cls");
-			printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-			printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+			printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+			printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
 			gold -= gold/2;
 			Sleep(2000);
 			system("cls");
@@ -7002,10 +7003,10 @@ int main(void)
             f = 0;
 			system("cls");
 			Sleep(2000);
-			printf("[½Â¸®ÇÏ¿´½À´Ï´Ù]");
+			printf("[ìŠ¹ë¦¬í•˜ì˜€ìŠµë‹ˆë‹¤]");
 			getgold = rand() % 350+1;
 			getexp = rand() % 300+1;
-			printf("[°ñµå + %d / °æÇèÄ¡ + %d È¹µæ]\n",getgold,getexp);
+			printf("[ê³¨ë“œ + %d / ê²½í—˜ì¹˜ + %d íšë“]\n",getgold,getexp);
 			gold += getgold;
 			exp += getexp;
 			Sleep(2000);
@@ -7016,26 +7017,26 @@ int main(void)
 		{
               system("cls");
               Sleep(1000);
-              printf("[´ç½ÅÀº Á×¾ú½À´Ï´Ù]");
+              printf("[ë‹¹ì‹ ì€ ì£½ì—ˆìŠµë‹ˆë‹¤]");
               Sleep(1000);
               system("cls");
               f = 0;
         }
 	}
 
-	//·¹º§ 7 Èæ¿äÁ¤
+	//ë ˆë²¨ 7 í‘ìš”ì •
 	while(f == 10)
 	{
-		printf("[Èæ¿äÁ¤ Ã¼·Â : %d / %d]\n",mobhp,mobmhp);
-		printf("[³ªÀÇ Ã¼·Â : %d / %d]\n",hp,mhp);
-		printf("[Æ÷¼Ç °³¼ö : %d]\n",potion);
-		printf("[1]°ø°İ\n[2]µµ¸Á\n[3]Æ÷¼Ç\n"); if(job >= 1){printf("[4]½ºÅ³\n");}
+		printf("[í‘ìš”ì • ì²´ë ¥ : %d / %d]\n",mobhp,mobmhp);
+		printf("[ë‚˜ì˜ ì²´ë ¥ : %d / %d]\n",hp,mhp);
+		printf("[í¬ì…˜ ê°œìˆ˜ : %d]\n",potion);
+		printf("[1]ê³µê²©\n[2]ë„ë§\n[3]í¬ì…˜\n"); if(job >= 1){printf("[4]ìŠ¤í‚¬\n");}
 		scanf("%d",&choose);
 
 		if(choose == 1)
 		{
 			system("cls");
-			printf("[°ø°İÇÏ¿´´Ù]\n");
+			printf("[ê³µê²©í•˜ì˜€ë‹¤]\n");
 
 			Sleep(2000);
 			randattack = rand() % str+1;
@@ -7045,9 +7046,9 @@ int main(void)
 			{
 			hp -= mobattack - dex;
             }
-			printf("[Èæ¿äÁ¤¿¡°Ô %dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			printf("[í‘ìš”ì •ì—ê²Œ %dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			Sleep(1000);
-			printf("[Èæ¿äÁ¤¿¡°Ô %dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			printf("[í‘ìš”ì •ì—ê²Œ %dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
             Sleep(1000);
 			system("cls");
 		}
@@ -7057,9 +7058,9 @@ int main(void)
             f = 0;
 			system("cls");
 			Sleep(2000);
-			printf("[Èæ¿äÁ¤¿¡°Ô¼­ µµ¸ÁÃÆ´Ù]\n");
+			printf("[í‘ìš”ì •ì—ê²Œì„œ ë„ë§ì³¤ë‹¤]\n");
 			Sleep(2000);
-			printf("[ÄğÅ¸ÀÓ 10ÃÊ]\n");
+			printf("[ì¿¨íƒ€ì„ 10ì´ˆ]\n");
 			Sleep(10000);
 			system("cls");
 		}
@@ -7069,7 +7070,7 @@ int main(void)
 			if(potion >= 1)
 			{
 				system("cls");
-				printf("[Æ÷¼ÇÀ» »ç¿ëÇÏ¿´½À´Ï´Ù]\n");
+				printf("[í¬ì…˜ì„ ì‚¬ìš©í•˜ì˜€ìŠµë‹ˆë‹¤]\n");
 
 				Sleep(2000);
 
@@ -7199,7 +7200,7 @@ int main(void)
 			else
 			{
 				system("cls");
-				printf("[Æ÷¼ÇÀÌ ¾ø½À´Ï´Ù]\n");
+				printf("[í¬ì…˜ì´ ì—†ìŠµë‹ˆë‹¤]\n");
 				Sleep(2000);
 				system("cls");
 			}
@@ -7210,11 +7211,11 @@ int main(void)
                   if(job == 1 || job == 2)
                   {
                          system("cls");
-                         printf("[»ç¿ëÇÒ ½ºÅ³À» °í¸£¼¼¿ä]\n");
-                         if(twoattack == 1){printf("[1]ÀÌ´ÜÄŞº¸ - hp 200 ¼Ò¸ğ\n");}
-                         if(threeattack == 1){printf("[2]»ï´Ü°¡¸£±â - hp 1500 ¼Ò¸ğ\n");}
-                         if(killattack == 1){printf("[3]ÆÄ¸êÀÇÈçÀû - hp 10000 ¼Ò¸ğ\n");}
-                         printf("[4]³ª°¡±â\n");
+                         printf("[ì‚¬ìš©í•  ìŠ¤í‚¬ì„ ê³ ë¥´ì„¸ìš”]\n");
+                         if(twoattack == 1){printf("[1]ì´ë‹¨ì½¤ë³´ - hp 200 ì†Œëª¨\n");}
+                         if(threeattack == 1){printf("[2]ì‚¼ë‹¨ê°€ë¥´ê¸° - hp 1500 ì†Œëª¨\n");}
+                         if(killattack == 1){printf("[3]íŒŒë©¸ì˜í”ì  - hp 10000 ì†Œëª¨\n");}
+                         printf("[4]ë‚˜ê°€ê¸°\n");
                          scanf("%d",&skillc);
 
                          if(twoattack != 1 && threeattack != 1 && killattack != 1)
@@ -7222,8 +7223,8 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -7231,8 +7232,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -7240,8 +7241,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -7252,7 +7253,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -7262,9 +7263,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -7272,8 +7273,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -7281,8 +7282,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -7293,7 +7294,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -7303,9 +7304,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -7313,15 +7314,15 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[»ï´Ü °¡¸£±â ¹ßµ¿!]\n");
+                                      printf("[ì‚¼ë‹¨ ê°€ë¥´ê¸° ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
@@ -7331,9 +7332,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -7341,8 +7342,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -7353,7 +7354,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -7363,9 +7364,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -7373,15 +7374,15 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[»ï´Ü °¡¸£±â ¹ßµ¿!]\n");
+                                      printf("[ì‚¼ë‹¨ ê°€ë¥´ê¸° ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
@@ -7391,9 +7392,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -7401,18 +7402,18 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[ÆÄ¸êÀÇÈçÀû ¹ßµ¿!]\n");
+                                      printf("[íŒŒë©¸ì˜í”ì  ë°œë™!]\n");
                                       Sleep(2000);
                                       system("cls");
-                                      printf("ÆÄ!\n");
+                                      printf("íŒŒ!\n");
                                       Sleep(500);
-                                      printf("¸ê!\n");
+                                      printf("ë©¸!\n");
                                       Sleep(500);
-                                      printf("ÀÇ!\n");
+                                      printf("ì˜!\n");
                                       Sleep(500);
-                                      printf("Èç!\n");
+                                      printf("í”!\n");
                                       Sleep(500);
-                                      printf("Àû!\n");
+                                      printf("ì !\n");
                                       Sleep(500);
                                       Sleep(2000);
                                       randattack = rand() % str+1;
@@ -7423,9 +7424,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 10000;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*20);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*20);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -7435,11 +7436,11 @@ int main(void)
                   if(job == 3 || job == 4)
                   {
                          system("cls");
-                         printf("[»ç¿ëÇÒ ½ºÅ³À» °í¸£¼¼¿ä]\n");
-                         if(shot == 1){printf("[1]´õºí¼¦ - hp 200 ¼Ò¸ğ\n");}
-                         if(firebomb == 1){printf("[2]ÆÄÀÌ¾î º½ - hp 1500 ¼Ò¸ğ\n");}
-                         if(killing == 1){printf("[3]Å³¸µ ¾Ö·Î¿ì - hp 10000 ¼Ò¸ğ\n");}
-                         printf("[4]³ª°¡±â\n");
+                         printf("[ì‚¬ìš©í•  ìŠ¤í‚¬ì„ ê³ ë¥´ì„¸ìš”]\n");
+                         if(shot == 1){printf("[1]ë”ë¸”ìƒ· - hp 200 ì†Œëª¨\n");}
+                         if(firebomb == 1){printf("[2]íŒŒì´ì–´ ë´„ - hp 1500 ì†Œëª¨\n");}
+                         if(killing == 1){printf("[3]í‚¬ë§ ì• ë¡œìš° - hp 10000 ì†Œëª¨\n");}
+                         printf("[4]ë‚˜ê°€ê¸°\n");
                          scanf("%d",&skillc);
 
                          if(shot != 1 && firebomb != 1 && killing != 1)
@@ -7447,8 +7448,8 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -7456,8 +7457,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -7465,8 +7466,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -7477,12 +7478,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -7491,9 +7492,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -7501,8 +7502,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -7510,8 +7511,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -7522,12 +7523,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -7536,9 +7537,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -7546,7 +7547,7 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[ÆÄÀÌ¾î º½ ¹ßµ¿!]\n");
+                                      printf("[íŒŒì´ì–´ ë´„ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*4 + str;
@@ -7556,9 +7557,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*4);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*4);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -7566,8 +7567,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -7578,12 +7579,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -7592,9 +7593,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -7602,7 +7603,7 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[ÆÄÀÌ¾î º½ ¹ßµ¿!]\n");
+                                      printf("[íŒŒì´ì–´ ë´„ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*4 + str;
@@ -7612,9 +7613,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*4);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*4);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -7622,61 +7623,61 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Å³¸µ¾Ö·Î¿ì ¹ßµ¿!]\n");
+                                      printf("[í‚¬ë§ì• ë¡œìš° ë°œë™!]\n");
                                       Sleep(2000);
                                       system("cls");
-                                      printf("Å³!\n");
+                                      printf("í‚¬!\n");
                                       Sleep(500);
-                                      printf("¸µ!\n");
+                                      printf("ë§!\n");
                                       Sleep(500);
-                                      printf("¾Ö!\n");
+                                      printf("ì• !\n");
                                       Sleep(500);
-                                      printf("·Î!\n");
+                                      printf("ë¡œ!\n");
                                       Sleep(500);
-                                      printf("¿ì!\n");
+                                      printf("ìš°!\n");
                                       Sleep(500);
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(1000);
-			                          printf("[¸¶Áö¸· ÀÌ´å!]\n");
+			                          printf("[ë§ˆì§€ë§‰ ì´ë‹·!]\n");
                                       Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*10 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*10);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*10);
 			                          Sleep(1000);
 			                          mobattack = rand() % 50+1;
 			                          if(mobattack-dex >= 0)
@@ -7684,7 +7685,7 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 10000;
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -7698,8 +7699,8 @@ int main(void)
 		{
             f = 0;
 			system("cls");
-			printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-			printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+			printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+			printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
 			gold -= gold/2;
 			Sleep(2000);
 			system("cls");
@@ -7711,8 +7712,8 @@ int main(void)
 		{
             f = 0;
 			system("cls");
-			printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-			printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+			printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+			printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
 			gold -= gold/2;
 			Sleep(2000);
 			system("cls");
@@ -7724,10 +7725,10 @@ int main(void)
             f = 0;
 			system("cls");
 			Sleep(2000);
-			printf("[½Â¸®ÇÏ¿´½À´Ï´Ù]");
+			printf("[ìŠ¹ë¦¬í•˜ì˜€ìŠµë‹ˆë‹¤]");
 			getgold = rand() % 400+1;
 			getexp = rand() % 320+1;
-			printf("[°ñµå + %d / °æÇèÄ¡ + %d È¹µæ]\n",getgold+500,getexp+500);
+			printf("[ê³¨ë“œ + %d / ê²½í—˜ì¹˜ + %d íšë“]\n",getgold+500,getexp+500);
 			gold += 500+getgold;
 			exp += 500+getexp;
 			Sleep(2000);
@@ -7738,26 +7739,26 @@ int main(void)
 		{
               system("cls");
               Sleep(1000);
-              printf("[´ç½ÅÀº Á×¾ú½À´Ï´Ù]");
+              printf("[ë‹¹ì‹ ì€ ì£½ì—ˆìŠµë‹ˆë‹¤]");
               Sleep(1000);
               system("cls");
               f = 0;
         }
 	}
 
-	//·¹º§ 8 Èæ¿äÁ¤¿Õ
+	//ë ˆë²¨ 8 í‘ìš”ì •ì™•
 	while(f == 11)
 	{
-		printf("[Èæ¿äÁ¤¿Õ Ã¼·Â : %d / %d]\n",mobhp,mobmhp);
-		printf("[³ªÀÇ Ã¼·Â : %d / %d]\n",hp,mhp);
-		printf("[Æ÷¼Ç °³¼ö : %d]\n",potion);
-		printf("[1]°ø°İ\n[2]µµ¸Á\n[3]Æ÷¼Ç\n"); if(job >= 1){printf("[4]½ºÅ³\n");}
+		printf("[í‘ìš”ì •ì™• ì²´ë ¥ : %d / %d]\n",mobhp,mobmhp);
+		printf("[ë‚˜ì˜ ì²´ë ¥ : %d / %d]\n",hp,mhp);
+		printf("[í¬ì…˜ ê°œìˆ˜ : %d]\n",potion);
+		printf("[1]ê³µê²©\n[2]ë„ë§\n[3]í¬ì…˜\n"); if(job >= 1){printf("[4]ìŠ¤í‚¬\n");}
 		scanf("%d",&choose);
 
 		if(choose == 1)
 		{
 			system("cls");
-			printf("[°ø°İÇÏ¿´´Ù]\n");
+			printf("[ê³µê²©í•˜ì˜€ë‹¤]\n");
 
 			Sleep(2000);
 			randattack = rand() % str+1;
@@ -7767,9 +7768,9 @@ int main(void)
 			{
 			hp -= mobattack - dex;
             }
-			printf("[Èæ¿äÁ¤¿Õ¿¡°Ô %dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			printf("[í‘ìš”ì •ì™•ì—ê²Œ %dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			Sleep(1000);
-			printf("[Èæ¿äÁ¤¿Õ¿¡°Ô %dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			printf("[í‘ìš”ì •ì™•ì—ê²Œ %dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
             Sleep(1000);
 			system("cls");
 		}
@@ -7779,9 +7780,9 @@ int main(void)
             f = 0;
 			system("cls");
 			Sleep(2000);
-			printf("[Èæ¿äÁ¤¿Õ¿¡°Ô¼­ µµ¸ÁÃÆ´Ù]\n");
+			printf("[í‘ìš”ì •ì™•ì—ê²Œì„œ ë„ë§ì³¤ë‹¤]\n");
 			Sleep(2000);
-			printf("[ÄğÅ¸ÀÓ 10ÃÊ]\n");
+			printf("[ì¿¨íƒ€ì„ 10ì´ˆ]\n");
 			Sleep(10000);
 			system("cls");
 		}
@@ -7791,7 +7792,7 @@ int main(void)
 			if(potion >= 1)
 			{
 				system("cls");
-				printf("[Æ÷¼ÇÀ» »ç¿ëÇÏ¿´½À´Ï´Ù]\n");
+				printf("[í¬ì…˜ì„ ì‚¬ìš©í•˜ì˜€ìŠµë‹ˆë‹¤]\n");
 
 				Sleep(2000);
 
@@ -7921,7 +7922,7 @@ int main(void)
 			else
 			{
 				system("cls");
-				printf("[Æ÷¼ÇÀÌ ¾ø½À´Ï´Ù]\n");
+				printf("[í¬ì…˜ì´ ì—†ìŠµë‹ˆë‹¤]\n");
 				Sleep(2000);
 				system("cls");
 			}
@@ -7932,11 +7933,11 @@ int main(void)
                   if(job == 1 || job == 2)
                   {
                          system("cls");
-                         printf("[»ç¿ëÇÒ ½ºÅ³À» °í¸£¼¼¿ä]\n");
-                         if(twoattack == 1){printf("[1]ÀÌ´ÜÄŞº¸ - hp 200 ¼Ò¸ğ\n");}
-                         if(threeattack == 1){printf("[2]»ï´Ü°¡¸£±â - hp 1500 ¼Ò¸ğ\n");}
-                         if(killattack == 1){printf("[3]ÆÄ¸êÀÇÈçÀû - hp 10000 ¼Ò¸ğ\n");}
-                         printf("[4]³ª°¡±â\n");
+                         printf("[ì‚¬ìš©í•  ìŠ¤í‚¬ì„ ê³ ë¥´ì„¸ìš”]\n");
+                         if(twoattack == 1){printf("[1]ì´ë‹¨ì½¤ë³´ - hp 200 ì†Œëª¨\n");}
+                         if(threeattack == 1){printf("[2]ì‚¼ë‹¨ê°€ë¥´ê¸° - hp 1500 ì†Œëª¨\n");}
+                         if(killattack == 1){printf("[3]íŒŒë©¸ì˜í”ì  - hp 10000 ì†Œëª¨\n");}
+                         printf("[4]ë‚˜ê°€ê¸°\n");
                          scanf("%d",&skillc);
 
                          if(twoattack != 1 && threeattack != 1 && killattack != 1)
@@ -7944,8 +7945,8 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -7953,8 +7954,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -7962,8 +7963,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -7974,7 +7975,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -7984,9 +7985,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -7994,8 +7995,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -8003,8 +8004,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -8015,7 +8016,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -8025,9 +8026,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -8035,15 +8036,15 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[»ï´Ü °¡¸£±â ¹ßµ¿!]\n");
+                                      printf("[ì‚¼ë‹¨ ê°€ë¥´ê¸° ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
@@ -8053,9 +8054,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -8063,8 +8064,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -8075,7 +8076,7 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[ÀÌÁß ÄŞº¸ ¹ßµ¿!]\n");
+                                      printf("[ì´ì¤‘ ì½¤ë³´ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -8085,9 +8086,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*2);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -8095,15 +8096,15 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[»ï´Ü °¡¸£±â ¹ßµ¿!]\n");
+                                      printf("[ì‚¼ë‹¨ ê°€ë¥´ê¸° ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack + str;
@@ -8113,9 +8114,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -8123,18 +8124,18 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[ÆÄ¸êÀÇÈçÀû ¹ßµ¿!]\n");
+                                      printf("[íŒŒë©¸ì˜í”ì  ë°œë™!]\n");
                                       Sleep(2000);
                                       system("cls");
-                                      printf("ÆÄ!\n");
+                                      printf("íŒŒ!\n");
                                       Sleep(500);
-                                      printf("¸ê!\n");
+                                      printf("ë©¸!\n");
                                       Sleep(500);
-                                      printf("ÀÇ!\n");
+                                      printf("ì˜!\n");
                                       Sleep(500);
-                                      printf("Èç!\n");
+                                      printf("í”!\n");
                                       Sleep(500);
-                                      printf("Àû!\n");
+                                      printf("ì !\n");
                                       Sleep(500);
                                       Sleep(2000);
                                       randattack = rand() % str+1;
@@ -8145,9 +8146,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 10000;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*20);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*20);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -8157,11 +8158,11 @@ int main(void)
                   if(job == 3 || job == 4)
                   {
                          system("cls");
-                         printf("[»ç¿ëÇÒ ½ºÅ³À» °í¸£¼¼¿ä]\n");
-                         if(shot == 1){printf("[1]´õºí¼¦ - hp 200 ¼Ò¸ğ\n");}
-                         if(firebomb == 1){printf("[2]ÆÄÀÌ¾î º½ - hp 1500 ¼Ò¸ğ\n");}
-                         if(killing == 1){printf("[3]Å³¸µ ¾Ö·Î¿ì - hp 10000 ¼Ò¸ğ\n");}
-                         printf("[4]³ª°¡±â\n");
+                         printf("[ì‚¬ìš©í•  ìŠ¤í‚¬ì„ ê³ ë¥´ì„¸ìš”]\n");
+                         if(shot == 1){printf("[1]ë”ë¸”ìƒ· - hp 200 ì†Œëª¨\n");}
+                         if(firebomb == 1){printf("[2]íŒŒì´ì–´ ë´„ - hp 1500 ì†Œëª¨\n");}
+                         if(killing == 1){printf("[3]í‚¬ë§ ì• ë¡œìš° - hp 10000 ì†Œëª¨\n");}
+                         printf("[4]ë‚˜ê°€ê¸°\n");
                          scanf("%d",&skillc);
 
                          if(shot != 1 && firebomb != 1 && killing != 1)
@@ -8169,8 +8170,8 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -8178,8 +8179,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -8187,8 +8188,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -8199,12 +8200,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -8213,9 +8214,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -8223,8 +8224,8 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -8232,8 +8233,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -8244,12 +8245,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -8258,9 +8259,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -8268,7 +8269,7 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[ÆÄÀÌ¾î º½ ¹ßµ¿!]\n");
+                                      printf("[íŒŒì´ì–´ ë´„ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*4 + str;
@@ -8278,9 +8279,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*4);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*4);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -8288,8 +8289,8 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
-                                      printf("[ÆĞ³ÎÆ¼ 10ÃÊ]\n");
+                                      printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
+                                      printf("[íŒ¨ë„í‹° 10ì´ˆ]\n");
                                       Sleep(10000);
                                       system("cls");
                                       }
@@ -8300,12 +8301,12 @@ int main(void)
                                       if(skillc == 1)
                                       {
                                       system("cls");
-                                      printf("[´õºí ¼¦ ¹ßµ¿!]\n");
+                                      printf("[ë”ë¸” ìƒ· ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
                                       hp -= 200;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*2 + str;
@@ -8314,9 +8315,9 @@ int main(void)
 			                          {
 			                          hp -= mobattack - dex;
                                       }
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -8324,7 +8325,7 @@ int main(void)
                                       if(skillc == 2)
                                       {
                                       system("cls");
-                                      printf("[ÆÄÀÌ¾î º½ ¹ßµ¿!]\n");
+                                      printf("[íŒŒì´ì–´ ë´„ ë°œë™!]\n");
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*4 + str;
@@ -8334,9 +8335,9 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 1500;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*4);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*4);
 			                          Sleep(1000);
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -8344,61 +8345,61 @@ int main(void)
                                       if(skillc == 3)
                                       {
                                       system("cls");
-                                      printf("[Å³¸µ¾Ö·Î¿ì ¹ßµ¿!]\n");
+                                      printf("[í‚¬ë§ì• ë¡œìš° ë°œë™!]\n");
                                       Sleep(2000);
                                       system("cls");
-                                      printf("Å³!\n");
+                                      printf("í‚¬!\n");
                                       Sleep(500);
-                                      printf("¸µ!\n");
+                                      printf("ë§!\n");
                                       Sleep(500);
-                                      printf("¾Ö!\n");
+                                      printf("ì• !\n");
                                       Sleep(500);
-                                      printf("·Î!\n");
+                                      printf("ë¡œ!\n");
                                       Sleep(500);
-                                      printf("¿ì!\n");
+                                      printf("ìš°!\n");
                                       Sleep(500);
                                       Sleep(2000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(100);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack/2 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str/2);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str/2);
 			                          Sleep(1000);
-			                          printf("[¸¶Áö¸· ÀÌ´å!]\n");
+			                          printf("[ë§ˆì§€ë§‰ ì´ë‹·!]\n");
                                       Sleep(1000);
                                       randattack = rand() % str+1;
 			                          mobhp -= randattack*10 + str;
-			                          printf("[%dÀÇ µ¥¹ÌÁö¸¦ ÁÖ¾ú´Ù!]\n",randattack+str*10);
+			                          printf("[%dì˜ ë°ë¯¸ì§€ë¥¼ ì£¼ì—ˆë‹¤!]\n",randattack+str*10);
 			                          Sleep(1000);
 			                          mobattack = rand() % 50+1;
 			                          if(mobattack-dex >= 0)
@@ -8406,7 +8407,7 @@ int main(void)
 			                          hp -= mobattack - dex;
                                       }
                                       hp -= 10000;
-			                          printf("[%dÀÇ ÇÇÇØ¸¦ ÀÔ¾ú´Ù!]\n",mobattack-dex);
+			                          printf("[%dì˜ í”¼í•´ë¥¼ ì…ì—ˆë‹¤!]\n",mobattack-dex);
                                       Sleep(1000);
 			                          system("cls");
                                       }
@@ -8420,8 +8421,8 @@ int main(void)
 		{
             f = 0;
 			system("cls");
-			printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-			printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+			printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+			printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
 			gold -= gold/2;
 			Sleep(2000);
 			system("cls");
@@ -8433,8 +8434,8 @@ int main(void)
 		{
             f = 0;
 			system("cls");
-			printf("[Àß¸øµÈ ¼±ÅÃÀÌ¹Ç·Î ÆĞ³ÎÆ¼¸¦ ¹Ş°í µÇµ¹¾Æ°©´Ï´Ù]\n");
-			printf("[ÆĞ³ÎÆ¼ °ñµå ´ë·® °¨¼Ò]\n");
+			printf("[ì˜ëª»ëœ ì„ íƒì´ë¯€ë¡œ íŒ¨ë„í‹°ë¥¼ ë°›ê³  ë˜ëŒì•„ê°‘ë‹ˆë‹¤]\n");
+			printf("[íŒ¨ë„í‹° ê³¨ë“œ ëŒ€ëŸ‰ ê°ì†Œ]\n");
 			gold -= gold/2;
 			Sleep(2000);
 			system("cls");
@@ -8446,10 +8447,10 @@ int main(void)
             f = 0;
 			system("cls");
 			Sleep(2000);
-			printf("[½Â¸®ÇÏ¿´½À´Ï´Ù]");
+			printf("[ìŠ¹ë¦¬í•˜ì˜€ìŠµë‹ˆë‹¤]");
 			getgold = rand() % 500+1;
 			getexp = rand() % 500+1;
-			printf("[°ñµå + %d / °æÇèÄ¡ + %d È¹µæ]\n",getgold+4000,getexp+4000);
+			printf("[ê³¨ë“œ + %d / ê²½í—˜ì¹˜ + %d íšë“]\n",getgold+4000,getexp+4000);
 			gold += 4000+getgold;
 			exp += 4000+getexp;
 			Sleep(2000);
@@ -8460,7 +8461,7 @@ int main(void)
 		{
               system("cls");
               Sleep(1000);
-              printf("[´ç½ÅÀº Á×¾ú½À´Ï´Ù]");
+              printf("[ë‹¹ì‹ ì€ ì£½ì—ˆìŠµë‹ˆë‹¤]");
               Sleep(1000);
               system("cls");
               f = 0;
@@ -8471,7 +8472,7 @@ int main(void)
 	{
 		menu = map(level,hp,mhp,exp,gold,weapon,armor,str,dex,job);
     }
-		//·¹º§ ¾÷
+		//ë ˆë²¨ ì—…
 		if(exp >= 100)
 		{
 			if(lev == 0)
@@ -8678,35 +8679,35 @@ int main(void)
 				sp += 1;
 			}
 		}
-		//·¹º§ ¾÷ ³¡
+		//ë ˆë²¨ ì—… ë
 
-		//´øÀüÀÔÀå
+		//ë˜ì „ì…ì¥
 		if(menu == 1)
 		{
 			system("cls");
 			Sleep(1000);
-			printf("[´øÀüÀ» ¼±ÅÃÇØÁÖ¼¼¿ä]\n\n");
-			printf("[1]°íºí¸°ÀÇ ½£ <1~2>\n");
-			printf("[2]ÄÚº¼Æ® À¯ÀûÁö <2~5>\n");
-			printf("[3]¿äÁ¤ÀÇ ½£ <5~8>\n");
-			printf("[4]³ª°¡±â\n");
+			printf("[ë˜ì „ì„ ì„ íƒí•´ì£¼ì„¸ìš”]\n\n");
+			printf("[1]ê³ ë¸”ë¦°ì˜ ìˆ² <1~2>\n");
+			printf("[2]ì½”ë³¼íŠ¸ ìœ ì ì§€ <2~5>\n");
+			printf("[3]ìš”ì •ì˜ ìˆ² <5~8>\n");
+			printf("[4]ë‚˜ê°€ê¸°\n");
 			scanf("%d",&c);
 
-			//[LV1~LV2]°íºí¸°ÀÇ½£
+			//[LV1~LV2]ê³ ë¸”ë¦°ì˜ìˆ²
 			if(c == 1)
 			{
              	monster = rand() % 3+1;
 				system("cls");
-				printf("´øÀü ÀÔÀå Áß...");
+				printf("ë˜ì „ ì…ì¥ ì¤‘...");
 				Sleep(2500);
-				if(monster == 1){printf("[°íºí¸°ÀÌ ³ªÅ¸³µ½À´Ï´Ù! - LV 0]\n");}if(monster == 2){printf("[°íºí¸°ÅõÃ´º´ÀÌ ³ªÅ¸³µ½À´Ï´Ù! - LV 1]\n");}if(monster == 3){printf("[°íºí¸°½ÊÀåÀÌ ³ªÅ¸³µ½À´Ï´Ù! - LV 2]\n");}
-				printf("[1]½Î¿î´Ù\n[2]µµ¸ÁÄ£´Ù\n");
+				if(monster == 1){printf("[ê³ ë¸”ë¦°ì´ ë‚˜íƒ€ë‚¬ìŠµë‹ˆë‹¤! - LV 0]\n");}if(monster == 2){printf("[ê³ ë¸”ë¦°íˆ¬ì²™ë³‘ì´ ë‚˜íƒ€ë‚¬ìŠµë‹ˆë‹¤! - LV 1]\n");}if(monster == 3){printf("[ê³ ë¸”ë¦°ì‹­ì¥ì´ ë‚˜íƒ€ë‚¬ìŠµë‹ˆë‹¤! - LV 2]\n");}
+				printf("[1]ì‹¸ìš´ë‹¤\n[2]ë„ë§ì¹œë‹¤\n");
 				scanf("%d",&e);
 
-				//½Î¿ìÀÚ
+				//ì‹¸ìš°ì
 				if(e == 1)
 				{
-					//·¹º§1 °íºí¸°
+					//ë ˆë²¨1 ê³ ë¸”ë¦°
 					if(monster == 1)
 					{
                       	mobhp = 50;
@@ -8715,7 +8716,7 @@ int main(void)
 						f = 1;
 					}
 
-					//·¹º§2 °íºí¸°ÅõÃ´º´
+					//ë ˆë²¨2 ê³ ë¸”ë¦°íˆ¬ì²™ë³‘
 					else if(monster == 2)
 					{
                         mobhp = 80;
@@ -8724,7 +8725,7 @@ int main(void)
 						f = 2;
 					}
 
-					//·¹º§3 °íºí¸°½ÊÀå
+					//ë ˆë²¨3 ê³ ë¸”ë¦°ì‹­ì¥
 					else if(monster == 3)
 					{
                         mobhp = 130;
@@ -8734,13 +8735,13 @@ int main(void)
 					}
 				}
 
-				//µµ¸ÁÄ¡ÀÚ
+				//ë„ë§ì¹˜ì
 				if(e == 2)
 				{
 					system("cls");
-					printf("[µµ¸ÁÃÆ´Ù]\n");
+					printf("[ë„ë§ì³¤ë‹¤]\n");
 					Sleep(2000);
-					printf("[ÄğÅ¸ÀÓ 10ÃÊ]\n");
+					printf("[ì¿¨íƒ€ì„ 10ì´ˆ]\n");
 					Sleep(10000);
 					system("cls");
 				}
@@ -8748,30 +8749,30 @@ int main(void)
 				if(e != 1 && e != 2)
 				{
 					system("cls");
-					printf("[Àß¸ø ¼±ÅÃÇÏ¿´½À´Ï´Ù]\n");
+					printf("[ì˜ëª» ì„ íƒí•˜ì˜€ìŠµë‹ˆë‹¤]\n");
 					Sleep(1000);
-					printf("[ÄğÅ¸ÀÓ 10ÃÊ]\n");
+					printf("[ì¿¨íƒ€ì„ 10ì´ˆ]\n");
 					Sleep(10000);
 					system("cls");
 				}
 			}
-			//°íºí¸°ÀÇ ½£ ³¡
+			//ê³ ë¸”ë¦°ì˜ ìˆ² ë
 
-			//[LV2~LV5]ÄÚº¼Æ® À¯ÀûÁö
+			//[LV2~LV5]ì½”ë³¼íŠ¸ ìœ ì ì§€
 			if(c == 2)
 			{
                	monster = rand() % 4+1;
 				system("cls");
-				printf("´øÀü ÀÔÀå Áß...");
+				printf("ë˜ì „ ì…ì¥ ì¤‘...");
 				Sleep(2500);
-				if(monster == 1){printf("[ÄÚº¼Æ® ³ªÅ¸³µ½À´Ï´Ù! - LV 2]\n");}if(monster == 2){printf("[ÄÚº¼Æ®ÀüÅõº´ÀÌ ³ªÅ¸³µ½À´Ï´Ù! - LV 3]\n");}if(monster == 3){printf("[ÄÚº¼Æ®ºÎ´ëÀåÀÌ ³ªÅ¸³µ½À´Ï´Ù!- LV 4]\n");}if(monster == 4){printf("[ÄÚº¼Æ®´ëÀåÀÌ ³ªÅ¸³µ½À´Ï´Ù!- LV 5]\n");}
-				printf("[1]½Î¿î´Ù\n[2]µµ¸ÁÄ£´Ù\n");
+				if(monster == 1){printf("[ì½”ë³¼íŠ¸ ë‚˜íƒ€ë‚¬ìŠµë‹ˆë‹¤! - LV 2]\n");}if(monster == 2){printf("[ì½”ë³¼íŠ¸ì „íˆ¬ë³‘ì´ ë‚˜íƒ€ë‚¬ìŠµë‹ˆë‹¤! - LV 3]\n");}if(monster == 3){printf("[ì½”ë³¼íŠ¸ë¶€ëŒ€ì¥ì´ ë‚˜íƒ€ë‚¬ìŠµë‹ˆë‹¤!- LV 4]\n");}if(monster == 4){printf("[ì½”ë³¼íŠ¸ëŒ€ì¥ì´ ë‚˜íƒ€ë‚¬ìŠµë‹ˆë‹¤!- LV 5]\n");}
+				printf("[1]ì‹¸ìš´ë‹¤\n[2]ë„ë§ì¹œë‹¤\n");
 				scanf("%d",&e);
 
-				//½Î¿ìÀÚ
+				//ì‹¸ìš°ì
 				if(e == 1)
 				{
-					//·¹º§3 ÄÚº¼Æ®
+					//ë ˆë²¨3 ì½”ë³¼íŠ¸
 					if(monster == 1)
 					{
                       	mobhp = 150;
@@ -8780,7 +8781,7 @@ int main(void)
 						f = 4;
 					}
 
-					//·¹º§5 ÄÚº¼Æ®ÀüÅõº´
+					//ë ˆë²¨5 ì½”ë³¼íŠ¸ì „íˆ¬ë³‘
 					else if(monster == 2)
 					{
                         mobhp = 200;
@@ -8789,7 +8790,7 @@ int main(void)
 						f = 5;
 					}
 
-					//·¹º§6 ÄÚº¼Æ®ºÎ´ëÀå
+					//ë ˆë²¨6 ì½”ë³¼íŠ¸ë¶€ëŒ€ì¥
 					else if(monster == 3)
 					{
                         mobhp = 240;
@@ -8798,7 +8799,7 @@ int main(void)
 						f = 6;
 					}
 
-					//·¹º§7 ÄÚº¼Æ®´ëÀå
+					//ë ˆë²¨7 ì½”ë³¼íŠ¸ëŒ€ì¥
 					else if(monster == 4)
 					{
                         mobhp = 270;
@@ -8808,13 +8809,13 @@ int main(void)
 					}
 				}
 
-				//µµ¸ÁÄ¡ÀÚ
+				//ë„ë§ì¹˜ì
 				if(e == 2)
 				{
 					system("cls");
-					printf("[µµ¸ÁÃÆ´Ù]\n");
+					printf("[ë„ë§ì³¤ë‹¤]\n");
 					Sleep(2000);
-					printf("[ÄğÅ¸ÀÓ 10ÃÊ]\n");
+					printf("[ì¿¨íƒ€ì„ 10ì´ˆ]\n");
 					Sleep(10000);
 					system("cls");
 				}
@@ -8822,30 +8823,30 @@ int main(void)
 				if(e != 1 && e != 2)
 				{
 					system("cls");
-					printf("[Àß¸ø ¼±ÅÃÇÏ¿´½À´Ï´Ù]\n");
+					printf("[ì˜ëª» ì„ íƒí•˜ì˜€ìŠµë‹ˆë‹¤]\n");
 					Sleep(1000);
-					printf("[ÄğÅ¸ÀÓ 10ÃÊ]\n");
+					printf("[ì¿¨íƒ€ì„ 10ì´ˆ]\n");
 					Sleep(10000);
 					system("cls");
 				}
 			}
-			//ÄÚº¼Æ® À¯ÀûÁö ³¡
+			//ì½”ë³¼íŠ¸ ìœ ì ì§€ ë
 
-			//[LV5~LV8]¿äÁ¤ÀÇ ½£
+			//[LV5~LV8]ìš”ì •ì˜ ìˆ²
 			if(c == 3)
 			{
                	monster = rand() % 4+1;
 				system("cls");
-				printf("´øÀü ÀÔÀå Áß...");
+				printf("ë˜ì „ ì…ì¥ ì¤‘...");
 				Sleep(2500);
-				if(monster == 1){printf("[¸¶·ÂÀÌ ¾àÇÑ ¿äÁ¤ÀÌ ³ªÅ¸³µ½À´Ï´Ù! - LV 5]\n");}if(monster == 2){printf("[¸¶·ÂÀÌ °­ÇÑ ¿äÁ¤ÀÌ ³ªÅ¸³µ½À´Ï´Ù! - LV 6]\n");}if(monster == 3){printf("[Èæ¿äÁ¤ÀÌ ³ªÅ¸³µ½À´Ï´Ù!- LV 7]\n");}if(monster == 4){printf("[Èæ¿äÁ¤¿ÕÀÌ ³ªÅ¸³µ½À´Ï´Ù!- LV 8]\n");}
-				printf("[1]½Î¿î´Ù\n[2]µµ¸ÁÄ£´Ù\n");
+				if(monster == 1){printf("[ë§ˆë ¥ì´ ì•½í•œ ìš”ì •ì´ ë‚˜íƒ€ë‚¬ìŠµë‹ˆë‹¤! - LV 5]\n");}if(monster == 2){printf("[ë§ˆë ¥ì´ ê°•í•œ ìš”ì •ì´ ë‚˜íƒ€ë‚¬ìŠµë‹ˆë‹¤! - LV 6]\n");}if(monster == 3){printf("[í‘ìš”ì •ì´ ë‚˜íƒ€ë‚¬ìŠµë‹ˆë‹¤!- LV 7]\n");}if(monster == 4){printf("[í‘ìš”ì •ì™•ì´ ë‚˜íƒ€ë‚¬ìŠµë‹ˆë‹¤!- LV 8]\n");}
+				printf("[1]ì‹¸ìš´ë‹¤\n[2]ë„ë§ì¹œë‹¤\n");
 				scanf("%d",&e);
 
-				//½Î¿ìÀÚ
+				//ì‹¸ìš°ì
 				if(e == 1)
 				{
-					//·¹º§5 ¸¶·ÂÀÌ ¾àÇÑ ¿äÁ¤
+					//ë ˆë²¨5 ë§ˆë ¥ì´ ì•½í•œ ìš”ì •
 					if(monster == 1)
 					{
                       	mobhp = 400;
@@ -8854,7 +8855,7 @@ int main(void)
 						f = 8;
 					}
 
-					//·¹º§6 ¸¶·ÂÀÌ °­ÇÑ ¿äÁ¤
+					//ë ˆë²¨6 ë§ˆë ¥ì´ ê°•í•œ ìš”ì •
 					else if(monster == 2)
 					{
                         mobhp = 640;
@@ -8863,7 +8864,7 @@ int main(void)
 						f = 9;
 					}
 
-					//·¹º§7 Èæ¿äÁ¤
+					//ë ˆë²¨7 í‘ìš”ì •
 					else if(monster == 3)
 					{
                         mobhp = 900;
@@ -8872,7 +8873,7 @@ int main(void)
 						f = 10;
 					}
 
-					//·¹º§8 Èæ¿äÁ¤¿Õ
+					//ë ˆë²¨8 í‘ìš”ì •ì™•
 					else if(monster == 4)
 					{
                         mobhp = 1500;
@@ -8882,13 +8883,13 @@ int main(void)
 					}
 				}
 
-				//µµ¸ÁÄ¡ÀÚ
+				//ë„ë§ì¹˜ì
 				if(e == 2)
 				{
 					system("cls");
-					printf("[µµ¸ÁÃÆ´Ù]\n");
+					printf("[ë„ë§ì³¤ë‹¤]\n");
 					Sleep(2000);
-					printf("[ÄğÅ¸ÀÓ 10ÃÊ]\n");
+					printf("[ì¿¨íƒ€ì„ 10ì´ˆ]\n");
 					Sleep(10000);
 					system("cls");
 				}
@@ -8896,51 +8897,51 @@ int main(void)
 				if(e != 1 && e != 2)
 				{
 					system("cls");
-					printf("[Àß¸ø ¼±ÅÃÇÏ¿´½À´Ï´Ù]\n");
+					printf("[ì˜ëª» ì„ íƒí•˜ì˜€ìŠµë‹ˆë‹¤]\n");
 					Sleep(1000);
-					printf("[ÄğÅ¸ÀÓ 10ÃÊ]\n");
+					printf("[ì¿¨íƒ€ì„ 10ì´ˆ]\n");
 					Sleep(10000);
 					system("cls");
 				}
 			}
-			//¿äÁ¤ÀÇ ½£ ³¡
+			//ìš”ì •ì˜ ìˆ² ë
 
 			if(c == 4)
 			{
 				system("cls");
 			}
 
-			//´øÀüÀÔ±¸¿¡¼­ ³ª°¡±â
+			//ë˜ì „ì…êµ¬ì—ì„œ ë‚˜ê°€ê¸°
 			if(c != 1 && c != 2 && c != 3 && c != 4)
 			{
 				system("cls");
-				printf("[Àß¸ø ¼±ÅÃÇÏ¿´½À´Ï´Ù]\n");
+				printf("[ì˜ëª» ì„ íƒí•˜ì˜€ìŠµë‹ˆë‹¤]\n");
 				Sleep(2000);
 				system("cls");
 			}
-			//³¡
+			//ë
 		}
 
-		//¹«±â»óÁ¡
+		//ë¬´ê¸°ìƒì 
 		if(menu == 2)
 		{
 			system("cls");
 			Sleep(1000);
-			printf("[¹«±â»óÁ¡ ÀÔÀåÁß.]\r");
+			printf("[ë¬´ê¸°ìƒì  ì…ì¥ì¤‘.]\r");
 			Sleep(1000);
-			printf("[¹«±â»óÁ¡ ÀÔÀåÁß..]\r");
+			printf("[ë¬´ê¸°ìƒì  ì…ì¥ì¤‘..]\r");
 			Sleep(1000);
-			printf("[¹«±â»óÁ¡ ÀÔÀåÁß...]\r");
+			printf("[ë¬´ê¸°ìƒì  ì…ì¥ì¤‘...]\r");
 			Sleep(1000);
 
 			npc1 = rand() % 3+1;
-			if(npc1 == 1){printf("[¹«±â»óÀÎ : ¾î¼­¿À½Ã°Ô³ª.]\n");} if(npc1 == 2){printf("[¹«±â»óÀÎ : ³» °¡°Ô ¹«±â´Â ÃÖ°íÀÇ ¹«±âµé¸¸ ÀÖÁö]\n");} if(npc1 == 3){printf("[¹«±â»óÀÎ : ¸¸¾à µ·ÀÌ ¾ø´Ù¸é ½â ²¨Áö°Ô³ª.]\n");}
-			printf("[1]Çã¸§ÇÑ°Ë<1·¹º§> - 1000°ñµå\n");
-			printf("[2]¾µ¸¸ÇÑ°Ë<3·¹º§> - 2500°ñµå\n");
-			printf("[3]ºê·ĞÁî¼Òµå<5·¹º§> - 3800°ñµå\n");
-			printf("[4]¾ÆÀÌ¾ğ¼Òµå<8·¹º§> - 5200°ñµå\n");
-			printf("[5]¾Æ¸¸´Ùµğ¿ò¼Òµå<10·¹º§> - 7500°ñµå\n");
-			printf("[6]³ª°¡±â\n");
+			if(npc1 == 1){printf("[ë¬´ê¸°ìƒì¸ : ì–´ì„œì˜¤ì‹œê²Œë‚˜.]\n");} if(npc1 == 2){printf("[ë¬´ê¸°ìƒì¸ : ë‚´ ê°€ê²Œ ë¬´ê¸°ëŠ” ìµœê³ ì˜ ë¬´ê¸°ë“¤ë§Œ ìˆì§€]\n");} if(npc1 == 3){printf("[ë¬´ê¸°ìƒì¸ : ë§Œì•½ ëˆì´ ì—†ë‹¤ë©´ ì© êº¼ì§€ê²Œë‚˜.]\n");}
+			printf("[1]í—ˆë¦„í•œê²€<1ë ˆë²¨> - 1000ê³¨ë“œ\n");
+			printf("[2]ì“¸ë§Œí•œê²€<3ë ˆë²¨> - 2500ê³¨ë“œ\n");
+			printf("[3]ë¸Œë¡ ì¦ˆì†Œë“œ<5ë ˆë²¨> - 3800ê³¨ë“œ\n");
+			printf("[4]ì•„ì´ì–¸ì†Œë“œ<8ë ˆë²¨> - 5200ê³¨ë“œ\n");
+			printf("[5]ì•„ë§Œë‹¤ë””ì›€ì†Œë“œ<10ë ˆë²¨> - 7500ê³¨ë“œ\n");
+			printf("[6]ë‚˜ê°€ê¸°\n");
 			scanf("%d",&store1);
 
 			if(store1 == 1)
@@ -8950,9 +8951,9 @@ int main(void)
 					if(level >= 1)
 					{
 					system("cls");
-					printf("[¹«±â±¸ÀÔÁß...]\n");
+					printf("[ë¬´ê¸°êµ¬ì…ì¤‘...]\n");
 					Sleep(3000);
-					printf("[¹«±â»óÀÎ : »çÁà¼­ °í¸¿³×. Àß°¡°Ô³ª Ä£±¸!]\n");
+					printf("[ë¬´ê¸°ìƒì¸ : ì‚¬ì¤˜ì„œ ê³ ë§™ë„¤. ì˜ê°€ê²Œë‚˜ ì¹œêµ¬!]\n");
 					gold -= 1000;
 					str = 15;
 					weapon = 1;
@@ -8962,7 +8963,7 @@ int main(void)
 					else
 					{
 						system("cls");
-						printf("[·¹º§ÀÌ ¸ÂÁö ¾Ê½À´Ï´Ù]\n");
+						printf("[ë ˆë²¨ì´ ë§ì§€ ì•ŠìŠµë‹ˆë‹¤]\n");
 						Sleep(2000);
 						system("cls");
 					}
@@ -8970,7 +8971,7 @@ int main(void)
 				else
 				{
 					system("cls");
-					printf("[¹«±â»óÀÎ : µ·¾øÀ¸¸é ÀÌ°¡°Ô¿¡¼­ ´çÀå ³ª°¡!]\n");
+					printf("[ë¬´ê¸°ìƒì¸ : ëˆì—†ìœ¼ë©´ ì´ê°€ê²Œì—ì„œ ë‹¹ì¥ ë‚˜ê°€!]\n");
 					Sleep(2000);
 					system("cls");
 				}
@@ -8983,9 +8984,9 @@ int main(void)
 					if(level >= 3)
 					{
 					system("cls");
-					printf("[¹«±â±¸ÀÔÁß...]\n");
+					printf("[ë¬´ê¸°êµ¬ì…ì¤‘...]\n");
 					Sleep(3000);
-					printf("[¹«±â»óÀÎ : »çÁà¼­ °í¸¿³×. Àß°¡°Ô³ª Ä£±¸!]\n");
+					printf("[ë¬´ê¸°ìƒì¸ : ì‚¬ì¤˜ì„œ ê³ ë§™ë„¤. ì˜ê°€ê²Œë‚˜ ì¹œêµ¬!]\n");
 					gold -= 2500;
 					str = 21;
 					weapon = 2;
@@ -8995,7 +8996,7 @@ int main(void)
 					else
 					{
 						system("cls");
-						printf("[·¹º§ÀÌ ¸ÂÁö ¾Ê½À´Ï´Ù]\n");
+						printf("[ë ˆë²¨ì´ ë§ì§€ ì•ŠìŠµë‹ˆë‹¤]\n");
 						Sleep(2000);
 						system("cls");
 					}
@@ -9003,7 +9004,7 @@ int main(void)
 				else
 				{
 					system("cls");
-					printf("[¹«±â»óÀÎ : µ·¾øÀ¸¸é ÀÌ°¡°Ô¿¡¼­ ´çÀå ³ª°¡!]\n");
+					printf("[ë¬´ê¸°ìƒì¸ : ëˆì—†ìœ¼ë©´ ì´ê°€ê²Œì—ì„œ ë‹¹ì¥ ë‚˜ê°€!]\n");
 					Sleep(2000);
 					system("cls");
 				}
@@ -9016,9 +9017,9 @@ int main(void)
 					if(level >= 5)
 					{
 					system("cls");
-					printf("[¹«±â±¸ÀÔÁß...]\n");
+					printf("[ë¬´ê¸°êµ¬ì…ì¤‘...]\n");
 					Sleep(3000);
-					printf("[¹«±â»óÀÎ : »çÁà¼­ °í¸¿³×. Àß°¡°Ô³ª Ä£±¸!]\n");
+					printf("[ë¬´ê¸°ìƒì¸ : ì‚¬ì¤˜ì„œ ê³ ë§™ë„¤. ì˜ê°€ê²Œë‚˜ ì¹œêµ¬!]\n");
 					gold -= 3800;
 					str = 30;
 					weapon = 3;
@@ -9028,7 +9029,7 @@ int main(void)
 					else
 					{
 						system("cls");
-						printf("[·¹º§ÀÌ ¸ÂÁö ¾Ê½À´Ï´Ù]\n");
+						printf("[ë ˆë²¨ì´ ë§ì§€ ì•ŠìŠµë‹ˆë‹¤]\n");
 						Sleep(2000);
 						system("cls");
 					}
@@ -9036,7 +9037,7 @@ int main(void)
 				else
 				{
 					system("cls");
-					printf("[¹«±â»óÀÎ : µ·¾øÀ¸¸é ÀÌ°¡°Ô¿¡¼­ ´çÀå ³ª°¡!]\n");
+					printf("[ë¬´ê¸°ìƒì¸ : ëˆì—†ìœ¼ë©´ ì´ê°€ê²Œì—ì„œ ë‹¹ì¥ ë‚˜ê°€!]\n");
 					Sleep(2000);
 					system("cls");
 				}
@@ -9049,9 +9050,9 @@ int main(void)
 					if(level >= 8)
 					{
 					system("cls");
-					printf("[¹«±â±¸ÀÔÁß...]\n");
+					printf("[ë¬´ê¸°êµ¬ì…ì¤‘...]\n");
 					Sleep(3000);
-					printf("[¹«±â»óÀÎ : »çÁà¼­ °í¸¿³×. Àß°¡°Ô³ª Ä£±¸!]\n");
+					printf("[ë¬´ê¸°ìƒì¸ : ì‚¬ì¤˜ì„œ ê³ ë§™ë„¤. ì˜ê°€ê²Œë‚˜ ì¹œêµ¬!]\n");
 					gold -= 5200;
 					str = 38;
 					weapon = 4;
@@ -9061,7 +9062,7 @@ int main(void)
 					else
 					{
 						system("cls");
-						printf("[·¹º§ÀÌ ¸ÂÁö ¾Ê½À´Ï´Ù]\n");
+						printf("[ë ˆë²¨ì´ ë§ì§€ ì•ŠìŠµë‹ˆë‹¤]\n");
 						Sleep(2000);
 						system("cls");
 					}
@@ -9069,7 +9070,7 @@ int main(void)
 				else
 				{
 					system("cls");
-					printf("[¹«±â»óÀÎ : µ·¾øÀ¸¸é ÀÌ°¡°Ô¿¡¼­ ´çÀå ³ª°¡!]\n");
+					printf("[ë¬´ê¸°ìƒì¸ : ëˆì—†ìœ¼ë©´ ì´ê°€ê²Œì—ì„œ ë‹¹ì¥ ë‚˜ê°€!]\n");
 					Sleep(2000);
 					system("cls");
 				}
@@ -9082,9 +9083,9 @@ int main(void)
 					if(level >= 10)
 					{
 					system("cls");
-					printf("[¹«±â±¸ÀÔÁß...]\n");
+					printf("[ë¬´ê¸°êµ¬ì…ì¤‘...]\n");
 					Sleep(3000);
-					printf("[¹«±â»óÀÎ : »çÁà¼­ °í¸¿³×. Àß°¡°Ô³ª Ä£±¸!]\n");
+					printf("[ë¬´ê¸°ìƒì¸ : ì‚¬ì¤˜ì„œ ê³ ë§™ë„¤. ì˜ê°€ê²Œë‚˜ ì¹œêµ¬!]\n");
 					gold -= 7500;
 					str = 45;
 					weapon = 5;
@@ -9094,7 +9095,7 @@ int main(void)
 					else
 					{
 						system("cls");
-						printf("[·¹º§ÀÌ ¸ÂÁö ¾Ê½À´Ï´Ù]\n");
+						printf("[ë ˆë²¨ì´ ë§ì§€ ì•ŠìŠµë‹ˆë‹¤]\n");
 						Sleep(2000);
 						system("cls");
 					}
@@ -9102,7 +9103,7 @@ int main(void)
 				else
 				{
 					system("cls");
-					printf("[¹«±â»óÀÎ : µ·¾øÀ¸¸é ÀÌ°¡°Ô¿¡¼­ ´çÀå ³ª°¡!]\n");
+					printf("[ë¬´ê¸°ìƒì¸ : ëˆì—†ìœ¼ë©´ ì´ê°€ê²Œì—ì„œ ë‹¹ì¥ ë‚˜ê°€!]\n");
 					Sleep(2000);
 					system("cls");
 				}
@@ -9116,31 +9117,31 @@ int main(void)
 			if(store1 != 1 && store1 != 2 && store1 != 3 && store1 != 4 && store1 != 5 && store1 != 6)
 			{
 				system("cls");
-				printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
+				printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
 				system("cls");
 			}
 		}
-		//¹«±â »óÁ¡ ³¡
+		//ë¬´ê¸° ìƒì  ë
 
-		//¹æ¾î±¸»óÁ¡
+		//ë°©ì–´êµ¬ìƒì 
 		if(menu == 3)
 		{
 			system("cls");
 			Sleep(1000);
-			printf("[¹æ¾î±¸»óÁ¡ ÀÔÀåÁß.]\r");
+			printf("[ë°©ì–´êµ¬ìƒì  ì…ì¥ì¤‘.]\r");
 			Sleep(1000);
-			printf("[¹æ¾î±¸»óÁ¡ ÀÔÀåÁß..]\r");
+			printf("[ë°©ì–´êµ¬ìƒì  ì…ì¥ì¤‘..]\r");
 			Sleep(1000);
-			printf("[¹æ¾î±¸»óÁ¡ ÀÔÀåÁß...]\r");
+			printf("[ë°©ì–´êµ¬ìƒì  ì…ì¥ì¤‘...]\r");
 			Sleep(1000);
 
 			npc2 = rand() % 3+1;
-			if(npc2 == 1){printf("[¹æ¾î±¸»óÀÎ : ¾î¼­¿À¼¼¿ä~]\n");} if(npc2 == 2){printf("[¹æ¾î±¸»óÀÎ : ÀúÈñ °¡°Ô´Â ÃÖ°íÀÇ ¹æ¾î±¸¸¦ ÀÚ¶ûÇÑ´ä´Ï´Ù]\n");} if(npc2 == 3){printf("[¹æ¾î±¸»óÀÎ : ¸¸¾à µ·ÀÌ ¾ø´Ù¸é ³ª°¡ÁÖ¼¼¿ä]\n");}
-			printf("[1]Æò»óº¹<1·¹º§> - 3000°ñµå\n");
-			printf("[2]Çã¸§ÇÑ °©¿Ê<3·¹º§> - 5500°ñµå\n");
-			printf("[3]¾µ¸¸ÇÑ °©¿Ê<5·¹º§> - 9000°ñµå\n");
-			printf("[4]Ã¶ °©¿Ê<8·¹º§> - 12000°ñµå\n");
-			printf("[5]³ª°¡±â\n");
+			if(npc2 == 1){printf("[ë°©ì–´êµ¬ìƒì¸ : ì–´ì„œì˜¤ì„¸ìš”~]\n");} if(npc2 == 2){printf("[ë°©ì–´êµ¬ìƒì¸ : ì €í¬ ê°€ê²ŒëŠ” ìµœê³ ì˜ ë°©ì–´êµ¬ë¥¼ ìë‘í•œë‹µë‹ˆë‹¤]\n");} if(npc2 == 3){printf("[ë°©ì–´êµ¬ìƒì¸ : ë§Œì•½ ëˆì´ ì—†ë‹¤ë©´ ë‚˜ê°€ì£¼ì„¸ìš”]\n");}
+			printf("[1]í‰ìƒë³µ<1ë ˆë²¨> - 3000ê³¨ë“œ\n");
+			printf("[2]í—ˆë¦„í•œ ê°‘ì˜·<3ë ˆë²¨> - 5500ê³¨ë“œ\n");
+			printf("[3]ì“¸ë§Œí•œ ê°‘ì˜·<5ë ˆë²¨> - 9000ê³¨ë“œ\n");
+			printf("[4]ì²  ê°‘ì˜·<8ë ˆë²¨> - 12000ê³¨ë“œ\n");
+			printf("[5]ë‚˜ê°€ê¸°\n");
 			scanf("%d",&store2);
 
 			if(store2 == 1)
@@ -9150,9 +9151,9 @@ int main(void)
 					if(level >= 1)
 					{
 					system("cls");
-					printf("[¹æ¾î±¸±¸ÀÔÁß...]\n");
+					printf("[ë°©ì–´êµ¬êµ¬ì…ì¤‘...]\n");
 					Sleep(3000);
-					printf("[¹æ¾î±¸»óÀÎ : °í¸¿½À´Ï´Ù. ¾È³çÈ÷°¡¼¼¿ä~]\n");
+					printf("[ë°©ì–´êµ¬ìƒì¸ : ê³ ë§™ìŠµë‹ˆë‹¤. ì•ˆë…•íˆê°€ì„¸ìš”~]\n");
 					gold -= 3000;
 					dex = 15;
 					armor = 1;
@@ -9162,7 +9163,7 @@ int main(void)
 					else
 					{
 						system("cls");
-						printf("[·¹º§ÀÌ ¸ÂÁö ¾Ê½À´Ï´Ù]\n");
+						printf("[ë ˆë²¨ì´ ë§ì§€ ì•ŠìŠµë‹ˆë‹¤]\n");
 						Sleep(2000);
 						system("cls");
 					}
@@ -9170,7 +9171,7 @@ int main(void)
 				else
 				{
 					system("cls");
-					printf("[¹æ¾î±¸»óÀÎ : µ·ÀÌ ºÎÁ·ÇÏ½Ã³×¿ä]\n");
+					printf("[ë°©ì–´êµ¬ìƒì¸ : ëˆì´ ë¶€ì¡±í•˜ì‹œë„¤ìš”]\n");
 					Sleep(2000);
 					system("cls");
 				}
@@ -9183,9 +9184,9 @@ int main(void)
 					if(level >= 3)
 					{
 					system("cls");
-					printf("[¹æ¾î±¸±¸ÀÔÁß...]\n");
+					printf("[ë°©ì–´êµ¬êµ¬ì…ì¤‘...]\n");
 					Sleep(3000);
-					printf("[¹æ¾î±¸»óÀÎ : °í¸¿½À´Ï´Ù. ¾È³çÈ÷°¡¼¼¿ä~]\n");
+					printf("[ë°©ì–´êµ¬ìƒì¸ : ê³ ë§™ìŠµë‹ˆë‹¤. ì•ˆë…•íˆê°€ì„¸ìš”~]\n");
 					gold -= 5500;
 					dex = 21;
 					armor = 2;
@@ -9195,7 +9196,7 @@ int main(void)
 					else
 					{
 						system("cls");
-						printf("[·¹º§ÀÌ ¸ÂÁö ¾Ê½À´Ï´Ù]\n");
+						printf("[ë ˆë²¨ì´ ë§ì§€ ì•ŠìŠµë‹ˆë‹¤]\n");
 						Sleep(2000);
 						system("cls");
 					}
@@ -9203,7 +9204,7 @@ int main(void)
 				else
 				{
 					system("cls");
-					printf("[¹æ¾î±¸»óÀÎ : µ·ÀÌ ºÎÁ·ÇÏ½Ã³×¿ä]\n");
+					printf("[ë°©ì–´êµ¬ìƒì¸ : ëˆì´ ë¶€ì¡±í•˜ì‹œë„¤ìš”]\n");
 					Sleep(2000);
 					system("cls");
 				}
@@ -9216,9 +9217,9 @@ int main(void)
 					if(level >= 5)
 					{
 					system("cls");
-					printf("[¹æ¾î±¸±¸ÀÔÁß...]\n");
+					printf("[ë°©ì–´êµ¬êµ¬ì…ì¤‘...]\n");
 					Sleep(3000);
-					printf("[¹æ¾î±¸»óÀÎ : °í¸¿½À´Ï´Ù. ¾È³çÈ÷°¡¼¼¿ä~]\n");
+					printf("[ë°©ì–´êµ¬ìƒì¸ : ê³ ë§™ìŠµë‹ˆë‹¤. ì•ˆë…•íˆê°€ì„¸ìš”~]\n");
 					gold -= 9000;
 					dex = 30;
 					armor = 3;
@@ -9228,7 +9229,7 @@ int main(void)
 					else
 					{
 						system("cls");
-						printf("[·¹º§ÀÌ ¸ÂÁö ¾Ê½À´Ï´Ù]\n");
+						printf("[ë ˆë²¨ì´ ë§ì§€ ì•ŠìŠµë‹ˆë‹¤]\n");
 						Sleep(2000);
 						system("cls");
 					}
@@ -9236,7 +9237,7 @@ int main(void)
 				else
 				{
 					system("cls");
-					printf("[¹æ¾î±¸»óÀÎ : µ·ÀÌ ºÎÁ·ÇÏ½Ã³×¿ä]\n");
+					printf("[ë°©ì–´êµ¬ìƒì¸ : ëˆì´ ë¶€ì¡±í•˜ì‹œë„¤ìš”]\n");
 					Sleep(2000);
 					system("cls");
 				}
@@ -9249,9 +9250,9 @@ int main(void)
 					if(level >= 8)
 					{
 					system("cls");
-					printf("[¹æ¾î±¸±¸ÀÔÁß...]\n");
+					printf("[ë°©ì–´êµ¬êµ¬ì…ì¤‘...]\n");
 					Sleep(3000);
-					printf("[¹æ¾î±¸»óÀÎ : °í¸¿½À´Ï´Ù. ¾È³çÈ÷°¡¼¼¿ä~]\n");
+					printf("[ë°©ì–´êµ¬ìƒì¸ : ê³ ë§™ìŠµë‹ˆë‹¤. ì•ˆë…•íˆê°€ì„¸ìš”~]\n");
 					gold -= 12000;
 					dex = 35;
 					armor = 4;
@@ -9261,7 +9262,7 @@ int main(void)
 					else
 					{
 						system("cls");
-						printf("[·¹º§ÀÌ ¸ÂÁö ¾Ê½À´Ï´Ù]\n");
+						printf("[ë ˆë²¨ì´ ë§ì§€ ì•ŠìŠµë‹ˆë‹¤]\n");
 						Sleep(2000);
 						system("cls");
 					}
@@ -9269,7 +9270,7 @@ int main(void)
 				else
 				{
 					system("cls");
-					printf("[¹æ¾î±¸»óÀÎ : µ·ÀÌ ºÎÁ·ÇÏ½Ã³×¿ä]\n");
+					printf("[ë°©ì–´êµ¬ìƒì¸ : ëˆì´ ë¶€ì¡±í•˜ì‹œë„¤ìš”]\n");
 					Sleep(2000);
 					system("cls");
 				}
@@ -9283,20 +9284,20 @@ int main(void)
 			if(store2 != 1 && store2 != 2 && store2 != 3 && store2 != 4 && store2 != 5)
 			{
 				system("cls");
-				printf("[Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù]\n");
+				printf("[ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤]\n");
 				system("cls");
 			}
 		}
-		//¹æ¾î±¸ »óÁ¡ ³¡
+		//ë°©ì–´êµ¬ ìƒì  ë
 
-		//Æ÷¼Ç»óÁ¡
+		//í¬ì…˜ìƒì 
 		if(menu == 4)
 		{
 			system("cls");
-			printf("[Æ÷¼ÇÀ» ±¸ÀÔÇÏ½Ã°Ú½À´Ï±î?]\n");
-			printf("[1]1°³ - 200°ñµå\n");
-			printf("[2]5°³ = 900°ñµå\n");
-			printf("[3]³ª°¡±â\n");
+			printf("[í¬ì…˜ì„ êµ¬ì…í•˜ì‹œê² ìŠµë‹ˆê¹Œ?]\n");
+			printf("[1]1ê°œ - 200ê³¨ë“œ\n");
+			printf("[2]5ê°œ = 900ê³¨ë“œ\n");
+			printf("[3]ë‚˜ê°€ê¸°\n");
 			scanf("%d",&h);
 
 			if(h == 1)
@@ -9306,7 +9307,7 @@ int main(void)
 				if(gold >= 200)
 				{
 					system("cls");
-					printf("[Æ÷¼Ç 1°³¸¦ ±¸ÀÔÇÏ¿´½À´Ï´Ù]");
+					printf("[í¬ì…˜ 1ê°œë¥¼ êµ¬ì…í•˜ì˜€ìŠµë‹ˆë‹¤]");
 					potion += 1;
 					gold -= 200;
 					Sleep(2000);
@@ -9315,7 +9316,7 @@ int main(void)
 				else
 				{
 					system("cls");
-					printf("[µ·ÀÌ ºÎÁ·ÇÕ´Ï´Ù]");
+					printf("[ëˆì´ ë¶€ì¡±í•©ë‹ˆë‹¤]");
 					Sleep(2000);
 					system("cls");
 				}
@@ -9323,7 +9324,7 @@ int main(void)
                 else
                 {
                     system("cls");
-                    printf("[5°³ ÀÌ»ó ¼ÒÁö½Ã ±¸ÀÔÀÌ ºÒ°¡´É ÇÕ´Ï´Ù]\n");
+                    printf("[5ê°œ ì´ìƒ ì†Œì§€ì‹œ êµ¬ì…ì´ ë¶ˆê°€ëŠ¥ í•©ë‹ˆë‹¤]\n");
                     Sleep(2000);
                     system("cls");
                 }
@@ -9336,7 +9337,7 @@ int main(void)
 				if(gold >= 900)
 				{
 					system("cls");
-					printf("[Æ÷¼Ç 5°³¸¦ ±¸ÀÔÇÏ¿´½À´Ï´Ù]");
+					printf("[í¬ì…˜ 5ê°œë¥¼ êµ¬ì…í•˜ì˜€ìŠµë‹ˆë‹¤]");
 					potion += 5;
 					gold -= 900;
 					Sleep(2000);
@@ -9350,7 +9351,7 @@ int main(void)
 				else
 				{
 					system("cls");
-					printf("[µ·ÀÌ ºÎÁ·ÇÕ´Ï´Ù]");
+					printf("[ëˆì´ ë¶€ì¡±í•©ë‹ˆë‹¤]");
 					Sleep(2000);
 					system("cls");
 				}
@@ -9358,7 +9359,7 @@ int main(void)
                 else
                 {
                     system("cls");
-                    printf("[5°³ ÀÌ»ó ¼ÒÁö½Ã ±¸ÀÔÀÌ ºÒ°¡´É ÇÕ´Ï´Ù]\n");
+                    printf("[5ê°œ ì´ìƒ ì†Œì§€ì‹œ êµ¬ì…ì´ ë¶ˆê°€ëŠ¥ í•©ë‹ˆë‹¤]\n");
                     Sleep(2000);
                     system("cls");
                 }
@@ -9371,21 +9372,21 @@ int main(void)
 			if(h == 1 && h == 2 && h == 3)
 			{
 				system("cls");
-				printf("[Àß¸øÀÔ·ÂÇÏ¼Ì½À´Ï´Ù]");
+				printf("[ì˜ëª»ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤]");
 				Sleep(2000);
 				system("cls");
 			}
 		}
-		//Æ÷¼Ç »óÁ¡ ³¡
+		//í¬ì…˜ ìƒì  ë
 
-		//¿©°ü ÀÔÀå
+		//ì—¬ê´€ ì…ì¥
 		if(menu == 5)
 		{
 			system("cls");
-			printf("[¿©°ü¿¡ ¿À½Å °ÍÀ» È¯¿µÇÕ´Ï´Ù]");
+			printf("[ì—¬ê´€ì— ì˜¤ì‹  ê²ƒì„ í™˜ì˜í•©ë‹ˆë‹¤]");
 			Sleep(2000);
 			system("cls");
-			printf("[½¬´ÂÁß...]");
+			printf("[ì‰¬ëŠ”ì¤‘...]");
 			Sleep(2000);
 			system("cls");
 
@@ -9509,19 +9510,19 @@ int main(void)
 				mhp = 20000;
 			}
 
-			printf("[Ã¼·ÂÀÌ È¸º¹µÇ¾ú½À´Ï´Ù]\n");
+			printf("[ì²´ë ¥ì´ íšŒë³µë˜ì—ˆìŠµë‹ˆë‹¤]\n");
 			Sleep(2000);
 			system("cls");
 		}
-		//¿©°ü ³¡
+		//ì—¬ê´€ ë
 
 		if(menu == 6)
 		{
 			system("cls");
-			printf("[Äù½ºÆ® ¸ñ·Ï]\n");
-			printf("[1]°íºí¸° 5¸¶¸® Ã³Ä¡\n");
-			printf("=º¸»ó - 300°ñµå 50°æÇèÄ¡=\n");
-			printf("[2]³ª°¡±â\n");
+			printf("[í€˜ìŠ¤íŠ¸ ëª©ë¡]\n");
+			printf("[1]ê³ ë¸”ë¦° 5ë§ˆë¦¬ ì²˜ì¹˜\n");
+			printf("=ë³´ìƒ - 300ê³¨ë“œ 50ê²½í—˜ì¹˜=\n");
+			printf("[2]ë‚˜ê°€ê¸°\n");
 			scanf("%d",&quest);
 
 			if(quest == 1)
@@ -9529,9 +9530,9 @@ int main(void)
 				if(q2 == 5)
 				{
 					system("cls");
-					printf("[Äù½ºÆ®¸¦ ¿Ï·áÇÏ¿´½À´Ï´Ù]\n");
+					printf("[í€˜ìŠ¤íŠ¸ë¥¼ ì™„ë£Œí•˜ì˜€ìŠµë‹ˆë‹¤]\n");
 					Sleep(2000);
-					printf("[300 °ñµå 50 °æÇèÄ¡ È¹µæ]\n");
+					printf("[300 ê³¨ë“œ 50 ê²½í—˜ì¹˜ íšë“]\n");
 					gold += 300;
 					exp += 50;
 					q = 0;
@@ -9543,16 +9544,16 @@ int main(void)
 					if(starting == 0)
 					{
 						system("cls");
-						printf("[Äù½ºÆ®¸¦ (´Ù½Ã)¹ŞÀ¸½Ã°Ú½À´Ï±î?]\n");
-						printf("[1]³×\n[2]¾Æ´Ï¿ä\n");
+						printf("[í€˜ìŠ¤íŠ¸ë¥¼ (ë‹¤ì‹œ)ë°›ìœ¼ì‹œê² ìŠµë‹ˆê¹Œ?]\n");
+						printf("[1]ë„¤\n[2]ì•„ë‹ˆìš”\n");
 						scanf("%d",&co);
 
 						if(co == 1)
 						{
 							starting = 1;
-							q = 1; // 1¹øÄù½ºÆ®
-							q2 = 0; // ÀâÀº È½¼ö ÃÊ±âÈ­
-							printf("[Äù½ºÆ®°¡ ½ÃÀÛµÇ¾ú½À´Ï´Ù]\n");
+							q = 1; // 1ë²ˆí€˜ìŠ¤íŠ¸
+							q2 = 0; // ì¡ì€ íšŸìˆ˜ ì´ˆê¸°í™”
+							printf("[í€˜ìŠ¤íŠ¸ê°€ ì‹œì‘ë˜ì—ˆìŠµë‹ˆë‹¤]\n");
 							Sleep(2000);
 							system("cls");
 						}
@@ -9565,7 +9566,7 @@ int main(void)
 						if(co == 1 && co == 2)
 						{
 							system("cls");
-							printf("[Àß¸øÀÔ·ÂÇÏ¼Ì½À´Ï´Ù]\n");
+							printf("[ì˜ëª»ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤]\n");
 							Sleep(2000);
 							system("cls");
 						}
@@ -9573,7 +9574,7 @@ int main(void)
 					else
 					{
 						system("cls");
-						printf("[´Ù¸¥ Äù½ºÆ®°¡ ÁøÇà ÁßÀÔ´Ï´Ù]\n");
+						printf("[ë‹¤ë¥¸ í€˜ìŠ¤íŠ¸ê°€ ì§„í–‰ ì¤‘ì…ë‹ˆë‹¤]\n");
 						Sleep(2000);
 						system("cls");
 					}
@@ -9587,7 +9588,7 @@ int main(void)
 			if(quest == 1 && quest == 2)
 			{
 				system("cls");
-				printf("[Àß¸øÀÔ·ÂÇÏ¼Ì½À´Ï´Ù]\n");
+				printf("[ì˜ëª»ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤]\n");
 				Sleep(2000);
 				system("cls");
 			}
@@ -9596,8 +9597,8 @@ int main(void)
         if(menu == 7)
         {
                 system("cls");
-                printf("[¹«¾ùÀ¸·Î ÀüÁ÷ÇÏ½Ã°Ú½À´Ï±î?]\n");
-                printf("[1]Àü»ç - 1Â÷ÀüÁ÷[5·¹º§]\n[2]ÆÄÀÌÅÍ - °¢¼º[20·¹º§]\n[3]±Ã¼ö - 1Â÷ÀüÁ÷[5·¹º§]\n[4]ÇåÅÍ - °¢¼º[20·¹º§]\n");
+                printf("[ë¬´ì—‡ìœ¼ë¡œ ì „ì§í•˜ì‹œê² ìŠµë‹ˆê¹Œ?]\n");
+                printf("[1]ì „ì‚¬ - 1ì°¨ì „ì§[5ë ˆë²¨]\n[2]íŒŒì´í„° - ê°ì„±[20ë ˆë²¨]\n[3]ê¶ìˆ˜ - 1ì°¨ì „ì§[5ë ˆë²¨]\n[4]í—Œí„° - ê°ì„±[20ë ˆë²¨]\n");
                 scanf("%d",&jobs);
 
                 if(jobs == 1)
@@ -9605,15 +9606,15 @@ int main(void)
                         if(level >= 5)
                         {
                                  system("cls");
-                                 printf("[Àü»ç·Î ÀüÁ÷ÇÏ¿´½À´Ï´Ù]\n");
+                                 printf("[ì „ì‚¬ë¡œ ì „ì§í•˜ì˜€ìŠµë‹ˆë‹¤]\n");
                                  job = 1;
                                  Sleep(2000);
-                                 printf("[½ºÅ³À» ÂïÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù]\n");
+                                 printf("[ìŠ¤í‚¬ì„ ì°ìœ¼ì‹¤ ìˆ˜ ìˆìŠµë‹ˆë‹¤]\n");
                         }
                         else
                         {
                             system("cls");
-                            printf("[·¹º§ÀÌ ¸ÂÁö ¾Ê½À´Ï´Ù]\n");
+                            printf("[ë ˆë²¨ì´ ë§ì§€ ì•ŠìŠµë‹ˆë‹¤]\n");
                             Sleep(2000);
                             system("cls");
                         }
@@ -9626,15 +9627,15 @@ int main(void)
 							if(job == 1)
 							{
                                  system("cls");
-                                 printf("[ÆÄÀÌÅÍ·Î °¢¼ºÇÏ¿´½À´Ï´Ù]\n");
+                                 printf("[íŒŒì´í„°ë¡œ ê°ì„±í•˜ì˜€ìŠµë‹ˆë‹¤]\n");
                                  job = 2;
                                  Sleep(2000);
-                                 printf("[°¢¼º½ºÅ³À» ÂïÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù]\n");
+                                 printf("[ê°ì„±ìŠ¤í‚¬ì„ ì°ìœ¼ì‹¤ ìˆ˜ ìˆìŠµë‹ˆë‹¤]\n");
 							}
 							else
 							{
 								 system("cls");
-								 printf("[ÀüÁ÷À» ¸ÕÀú ÇØÁÖ¼¼¿ä]\n");
+								 printf("[ì „ì§ì„ ë¨¼ì € í•´ì£¼ì„¸ìš”]\n");
 								 Sleep(2000);
 								 system("cls");
 							}
@@ -9642,7 +9643,7 @@ int main(void)
                         else
                         {
                             system("cls");
-                            printf("[·¹º§ÀÌ ¸ÂÁö ¾Ê½À´Ï´Ù]\n");
+                            printf("[ë ˆë²¨ì´ ë§ì§€ ì•ŠìŠµë‹ˆë‹¤]\n");
                             Sleep(2000);
                             system("cls");
                         }
@@ -9653,15 +9654,15 @@ int main(void)
                         if(level >= 5)
                         {
                                  system("cls");
-                                 printf("[±Ã¼ö·Î ÀüÁ÷ÇÏ¿´½À´Ï´Ù]\n");
+                                 printf("[ê¶ìˆ˜ë¡œ ì „ì§í•˜ì˜€ìŠµë‹ˆë‹¤]\n");
                                  job = 3;
                                  Sleep(2000);
-                                 printf("[½ºÅ³À» ÂïÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù]\n");
+                                 printf("[ìŠ¤í‚¬ì„ ì°ìœ¼ì‹¤ ìˆ˜ ìˆìŠµë‹ˆë‹¤]\n");
                         }
                         else
                         {
                             system("cls");
-                            printf("[·¹º§ÀÌ ¸ÂÁö ¾Ê½À´Ï´Ù]\n");
+                            printf("[ë ˆë²¨ì´ ë§ì§€ ì•ŠìŠµë‹ˆë‹¤]\n");
                             Sleep(2000);
                             system("cls");
                         }
@@ -9674,15 +9675,15 @@ int main(void)
 							if(job == 3)
 							{
                                  system("cls");
-                                 printf("[ÇåÅÍ·Î °¢¼ºÇÏ¿´½À´Ï´Ù]\n");
+                                 printf("[í—Œí„°ë¡œ ê°ì„±í•˜ì˜€ìŠµë‹ˆë‹¤]\n");
                                  job = 4;
                                  Sleep(2000);
-                                 printf("[°¢¼º½ºÅ³À» ÂïÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù]\n");
+                                 printf("[ê°ì„±ìŠ¤í‚¬ì„ ì°ìœ¼ì‹¤ ìˆ˜ ìˆìŠµë‹ˆë‹¤]\n");
 							}
 							else
 							{
 								 system("cls");
-								 printf("[ÀüÁ÷À» ¸ÕÀú ÇØÁÖ¼¼¿ä]\n");
+								 printf("[ì „ì§ì„ ë¨¼ì € í•´ì£¼ì„¸ìš”]\n");
 								 Sleep(2000);
 								 system("cls");
 							}
@@ -9690,7 +9691,7 @@ int main(void)
                         else
                         {
                             system("cls");
-                            printf("[·¹º§ÀÌ ¸ÂÁö ¾Ê½À´Ï´Ù]\n");
+                            printf("[ë ˆë²¨ì´ ë§ì§€ ì•ŠìŠµë‹ˆë‹¤]\n");
                             Sleep(2000);
                             system("cls");
                         }
@@ -9699,7 +9700,7 @@ int main(void)
                 if(jobs == 1 && jobs == 2 && jobs == 3 && jobs == 4)
                 {
                         system("cls");
-                        printf("[Àß¸ø¼±ÅÃÇÏ¼Ì½À´Ï´Ù]");
+                        printf("[ì˜ëª»ì„ íƒí•˜ì…¨ìŠµë‹ˆë‹¤]");
                         Sleep(2000);
                         system("cls");
                 }
@@ -9827,25 +9828,25 @@ int main(void)
                 }
 
                 system("cls");
-                printf("[ÀúÀåÁß...]\n");
+                printf("[ì €ì¥ì¤‘...]\n");
                 Sleep(2000);
-                printf("[ÄÚµå¹øÈ£ : %d%d]\n",savelevel,saveexp);
-                printf("[20ÃÊ ÈÄ ²¨Áı´Ï´Ù]");
+                printf("[ì½”ë“œë²ˆí˜¸ : %d%d]\n",savelevel,saveexp);
+                printf("[20ì´ˆ í›„ êº¼ì§‘ë‹ˆë‹¤]");
                 Sleep(20000);
                 break;
         }
-		//½ºÅ³Âï±â
+		//ìŠ¤í‚¬ì°ê¸°
 		if(menu == 9)
 		{
 			if(jobs == 1 || jobs == 2)
 			{
                     system("cls");
-                    printf("[¹«½¼ ½ºÅ³À» ÂïÀ¸½Ã°Ú½À´Ï±î?]\n");
+                    printf("[ë¬´ìŠ¨ ìŠ¤í‚¬ì„ ì°ìœ¼ì‹œê² ìŠµë‹ˆê¹Œ?]\n");
                     printf("[SP : %d]\n",sp);
                     printf("[GOLD : %d]\n",gold);
-                    printf("[1]ÀÌ´ÜÄŞº¸ <SP 3 , GOLD 2000>\n");
-                    printf("[2]»ï´Ü°¡¸£±â <SP 5 , GOLD 5000>\n");
-                    printf("[3]ÆÄ¸êÀÇÈçÀû - °¢¼º <SP 7 , GOLD 20000>\n");
+                    printf("[1]ì´ë‹¨ì½¤ë³´ <SP 3 , GOLD 2000>\n");
+                    printf("[2]ì‚¼ë‹¨ê°€ë¥´ê¸° <SP 5 , GOLD 5000>\n");
+                    printf("[3]íŒŒë©¸ì˜í”ì  - ê°ì„± <SP 7 , GOLD 20000>\n");
                     scanf("%d",&skill);
 
                     if(skill == 1)
@@ -9855,7 +9856,7 @@ int main(void)
                                    if(gold >= 2000)
                                    {
                                            system("cls");
-                                           printf("[½ºÅ³À» ¹è¿ü½À´Ï´Ù]\n");
+                                           printf("[ìŠ¤í‚¬ì„ ë°°ì› ìŠµë‹ˆë‹¤]\n");
                                            twoattack = 1;
                                            sp -= 3;
                                            gold -= 2000;
@@ -9865,7 +9866,7 @@ int main(void)
                                    else
                                    {
                                        system("cls");
-                                       printf("[°ñµå°¡ ºÎÁ·ÇÕ´Ï´Ù]\n");
+                                       printf("[ê³¨ë“œê°€ ë¶€ì¡±í•©ë‹ˆë‹¤]\n");
                                        Sleep(2000);
                                        system("cls");
                                    }
@@ -9873,7 +9874,7 @@ int main(void)
                              else
                              {
                                  system("cls");
-                                 printf("[½ºÅ³Æ÷ÀÎÆ®°¡ ºÎÁ·ÇÕ´Ï´Ù]\n");
+                                 printf("[ìŠ¤í‚¬í¬ì¸íŠ¸ê°€ ë¶€ì¡±í•©ë‹ˆë‹¤]\n");
                                  Sleep(2000);
                                  system("cls");
                              }
@@ -9888,7 +9889,7 @@ int main(void)
                                    if(gold >= 5000)
                                    {
                                            system("cls");
-                                           printf("[½ºÅ³À» ¹è¿ü½À´Ï´Ù]\n");
+                                           printf("[ìŠ¤í‚¬ì„ ë°°ì› ìŠµë‹ˆë‹¤]\n");
                                            threeattack = 1;
                                            sp -= 5;
                                            gold -= 5000;
@@ -9898,7 +9899,7 @@ int main(void)
                                    else
                                    {
                                        system("cls");
-                                       printf("[°ñµå°¡ ºÎÁ·ÇÕ´Ï´Ù]\n");
+                                       printf("[ê³¨ë“œê°€ ë¶€ì¡±í•©ë‹ˆë‹¤]\n");
                                        Sleep(2000);
                                        system("cls");
                                    }
@@ -9906,7 +9907,7 @@ int main(void)
                              else
                              {
                                  system("cls");
-                                 printf("[½ºÅ³Æ÷ÀÎÆ®°¡ ºÎÁ·ÇÕ´Ï´Ù]\n");
+                                 printf("[ìŠ¤í‚¬í¬ì¸íŠ¸ê°€ ë¶€ì¡±í•©ë‹ˆë‹¤]\n");
                                  Sleep(2000);
                                  system("cls");
                              }
@@ -9914,7 +9915,7 @@ int main(void)
                              else
                              {
                                  system("cls");
-                                 printf("[ÀÌÀü ½ºÅ³¸ÕÀú Âï¾îÁÖ¼¼¿ä]\n");
+                                 printf("[ì´ì „ ìŠ¤í‚¬ë¨¼ì € ì°ì–´ì£¼ì„¸ìš”]\n");
                                  Sleep(2000);
                                  system("cls");
                              }
@@ -9929,7 +9930,7 @@ int main(void)
                                    if(gold >= 20000)
                                    {
                                            system("cls");
-                                           printf("[½ºÅ³À» ¹è¿ü½À´Ï´Ù]\n");
+                                           printf("[ìŠ¤í‚¬ì„ ë°°ì› ìŠµë‹ˆë‹¤]\n");
                                            killattack = 1;
                                            sp -= 7;
                                            gold -= 20000;
@@ -9939,7 +9940,7 @@ int main(void)
                                    else
                                    {
                                        system("cls");
-                                       printf("[°ñµå°¡ ºÎÁ·ÇÕ´Ï´Ù]\n");
+                                       printf("[ê³¨ë“œê°€ ë¶€ì¡±í•©ë‹ˆë‹¤]\n");
                                        Sleep(2000);
                                        system("cls");
                                    }
@@ -9947,7 +9948,7 @@ int main(void)
                              else
                              {
                                  system("cls");
-                                 printf("[½ºÅ³Æ÷ÀÎÆ®°¡ ºÎÁ·ÇÕ´Ï´Ù]\n");
+                                 printf("[ìŠ¤í‚¬í¬ì¸íŠ¸ê°€ ë¶€ì¡±í•©ë‹ˆë‹¤]\n");
                                  Sleep(2000);
                                  system("cls");
                              }
@@ -9955,7 +9956,7 @@ int main(void)
                              else
                              {
                                  system("cls");
-                                 printf("[ÀÌÀü ½ºÅ³¸ÕÀú Âï¾îÁÖ¼¼¿ä]\n");
+                                 printf("[ì´ì „ ìŠ¤í‚¬ë¨¼ì € ì°ì–´ì£¼ì„¸ìš”]\n");
                                  Sleep(2000);
                                  system("cls");
                              }
@@ -9964,7 +9965,7 @@ int main(void)
                     if(skill == 1 && skill == 2 && skill == 3)
                     {
                              system("cls");
-                             printf("[Àß¸øµÈ¼±ÅÃÀÔ´Ï´Ù]\n");
+                             printf("[ì˜ëª»ëœì„ íƒì…ë‹ˆë‹¤]\n");
                              Sleep(2000);
                              system("cls");
                     }
@@ -9973,12 +9974,12 @@ int main(void)
             if(jobs == 3 || jobs == 4)
 			{
                     system("cls");
-                    printf("[¹«½¼ ½ºÅ³À» ÂïÀ¸½Ã°Ú½À´Ï±î?]\n");
+                    printf("[ë¬´ìŠ¨ ìŠ¤í‚¬ì„ ì°ìœ¼ì‹œê² ìŠµë‹ˆê¹Œ?]\n");
                     printf("[SP : %d]\n",sp);
                     printf("[GOLD : %d]\n",gold);
-                    printf("[1]´õºí¼¦ <SP 3 , GOLD 2000>\n");
-                    printf("[2]ÆÄÀÌ¾î º½ <SP 5 , GOLD 5000>\n");
-                    printf("[3]Å³¸µ ¾Ö·Î¿ì - °¢¼º <SP 7 , GOLD 20000>\n");
+                    printf("[1]ë”ë¸”ìƒ· <SP 3 , GOLD 2000>\n");
+                    printf("[2]íŒŒì´ì–´ ë´„ <SP 5 , GOLD 5000>\n");
+                    printf("[3]í‚¬ë§ ì• ë¡œìš° - ê°ì„± <SP 7 , GOLD 20000>\n");
                     scanf("%d",&skill);
 
                     if(skill == 1)
@@ -9988,7 +9989,7 @@ int main(void)
                                    if(gold >= 2000)
                                    {
                                            system("cls");
-                                           printf("[½ºÅ³À» ¹è¿ü½À´Ï´Ù]\n");
+                                           printf("[ìŠ¤í‚¬ì„ ë°°ì› ìŠµë‹ˆë‹¤]\n");
                                            shot = 1;
                                            sp -= 3;
                                            gold -= 2000;
@@ -9998,7 +9999,7 @@ int main(void)
                                    else
                                    {
                                        system("cls");
-                                       printf("[°ñµå°¡ ºÎÁ·ÇÕ´Ï´Ù]\n");
+                                       printf("[ê³¨ë“œê°€ ë¶€ì¡±í•©ë‹ˆë‹¤]\n");
                                        Sleep(2000);
                                        system("cls");
                                    }
@@ -10006,7 +10007,7 @@ int main(void)
                              else
                              {
                                  system("cls");
-                                 printf("[½ºÅ³Æ÷ÀÎÆ®°¡ ºÎÁ·ÇÕ´Ï´Ù]\n");
+                                 printf("[ìŠ¤í‚¬í¬ì¸íŠ¸ê°€ ë¶€ì¡±í•©ë‹ˆë‹¤]\n");
                                  Sleep(2000);
                                  system("cls");
                              }
@@ -10021,7 +10022,7 @@ int main(void)
                                    if(gold >= 5000)
                                    {
                                            system("cls");
-                                           printf("[½ºÅ³À» ¹è¿ü½À´Ï´Ù]\n");
+                                           printf("[ìŠ¤í‚¬ì„ ë°°ì› ìŠµë‹ˆë‹¤]\n");
                                            firebomb = 1;
                                            sp -= 5;
                                            gold -= 5000;
@@ -10031,7 +10032,7 @@ int main(void)
                                    else
                                    {
                                        system("cls");
-                                       printf("[°ñµå°¡ ºÎÁ·ÇÕ´Ï´Ù]\n");
+                                       printf("[ê³¨ë“œê°€ ë¶€ì¡±í•©ë‹ˆë‹¤]\n");
                                        Sleep(2000);
                                        system("cls");
                                    }
@@ -10039,7 +10040,7 @@ int main(void)
                              else
                              {
                                  system("cls");
-                                 printf("[½ºÅ³Æ÷ÀÎÆ®°¡ ºÎÁ·ÇÕ´Ï´Ù]\n");
+                                 printf("[ìŠ¤í‚¬í¬ì¸íŠ¸ê°€ ë¶€ì¡±í•©ë‹ˆë‹¤]\n");
                                  Sleep(2000);
                                  system("cls");
                              }
@@ -10047,7 +10048,7 @@ int main(void)
                              else
                              {
                                  system("cls");
-                                 printf("[ÀÌÀü ½ºÅ³¸ÕÀú Âï¾îÁÖ¼¼¿ä]\n");
+                                 printf("[ì´ì „ ìŠ¤í‚¬ë¨¼ì € ì°ì–´ì£¼ì„¸ìš”]\n");
                                  Sleep(2000);
                                  system("cls");
                              }
@@ -10062,7 +10063,7 @@ int main(void)
                                    if(gold >= 20000)
                                    {
                                            system("cls");
-                                           printf("[½ºÅ³À» ¹è¿ü½À´Ï´Ù]\n");
+                                           printf("[ìŠ¤í‚¬ì„ ë°°ì› ìŠµë‹ˆë‹¤]\n");
                                            killing = 1;
                                            sp -= 7;
                                            gold -= 20000;
@@ -10072,7 +10073,7 @@ int main(void)
                                    else
                                    {
                                        system("cls");
-                                       printf("[°ñµå°¡ ºÎÁ·ÇÕ´Ï´Ù]\n");
+                                       printf("[ê³¨ë“œê°€ ë¶€ì¡±í•©ë‹ˆë‹¤]\n");
                                        Sleep(2000);
                                        system("cls");
                                    }
@@ -10080,7 +10081,7 @@ int main(void)
                              else
                              {
                                  system("cls");
-                                 printf("[½ºÅ³Æ÷ÀÎÆ®°¡ ºÎÁ·ÇÕ´Ï´Ù]\n");
+                                 printf("[ìŠ¤í‚¬í¬ì¸íŠ¸ê°€ ë¶€ì¡±í•©ë‹ˆë‹¤]\n");
                                  Sleep(2000);
                                  system("cls");
                              }
@@ -10088,7 +10089,7 @@ int main(void)
                              else
                              {
                                  system("cls");
-                                 printf("[ÀÌÀü ½ºÅ³¸ÕÀú Âï¾îÁÖ¼¼¿ä]\n");
+                                 printf("[ì´ì „ ìŠ¤í‚¬ë¨¼ì € ì°ì–´ì£¼ì„¸ìš”]\n");
                                  Sleep(2000);
                                  system("cls");
                              }
@@ -10097,20 +10098,20 @@ int main(void)
                     if(skill == 1 && skill == 2 && skill == 3)
                     {
                              system("cls");
-                             printf("[Àß¸øµÈ¼±ÅÃÀÔ´Ï´Ù]\n");
+                             printf("[ì˜ëª»ëœì„ íƒì…ë‹ˆë‹¤]\n");
                              Sleep(2000);
                              system("cls");
                     }
             }
 		}
-		//½ºÅ³Âï±â³¡
+		//ìŠ¤í‚¬ì°ê¸°ë
 
         if(jobs == 0)
         {
 		        if(menu == 1 && menu == 2 && menu == 3 && menu == 4 && menu == 5 && menu == 6 && menu == 7 && menu == 8)
 		        {
 			            system("cls");
-			            printf("[Àß¸øÀÔ·ÂÇÏ¼Ì½À´Ï´Ù]");
+			            printf("[ì˜ëª»ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤]");
 			            Sleep(2000);
 			            system("cls");
                 }
@@ -10120,7 +10121,7 @@ int main(void)
                 if(menu == 1 && menu == 2 && menu == 3 && menu == 4 && menu == 5 && menu == 6 && menu == 7 && menu == 8 && menu == 9)
 		        {
 			            system("cls");
-			            printf("[Àß¸øÀÔ·ÂÇÏ¼Ì½À´Ï´Ù]");
+			            printf("[ì˜ëª»ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤]");
 			            Sleep(2000);
 			            system("cls");
                 }
@@ -10128,4 +10129,4 @@ int main(void)
 }
 }
 
-// 10150 ÁÙ
+// 10150 ì¤„
