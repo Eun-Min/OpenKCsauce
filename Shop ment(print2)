@@ -41,3 +41,5 @@ const char *SHOP1 =
 "\n";
 
 #endif
+
+printf(SHOP1);
