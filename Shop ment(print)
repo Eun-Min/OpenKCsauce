@@ -19,3 +19,5 @@ const char *SHOP2 =
 
 
 #endif
+
+printf(SHOP2);
