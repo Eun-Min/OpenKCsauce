@@ -3,16 +3,15 @@ CHOP : chop your monsters and develop your characters! - RPG Game
 
 ## Our Project
 
-● Name of Project  
-
-CHOP
--> it means....  
-1) related team name : pronunciate 'Chup' of KetChup more cute  
-2) related game : strike monsters! in game
+● Name of Project
+  CHOP
+ *-> it means....  
+ *1) related team name : pronunciate 'Chup' of KetChup more cute  
+ *2) related game : strike monsters! in game
 
 
 ● Name of Team
-Open KetChup Sauce
+ *Open KetChup Sauce
 
 
 ## HISTORY
@@ -50,12 +49,13 @@ If you help our project to be developed, Welcome your help.
   
 ● Goal of project
 
--making RPG during this semester(about three months).  
--text based game with text-image map.     
--we are focusing on fighting game.      
-For example, fighting with monsters, getting items through monsters , and developing your own character.
+ *making RPG during this semester(about three months).  
+ *text based game with text-image map.     
+ *we are focusing on fighting game.      
+ *For example, fighting with monsters, getting items through monsters , and developing your own character.
 
 ● Directing point of project
+ *explain in detail about code for beginners of programming
 
 
 ## Code Example
