@@ -45,4 +45,24 @@ const char *DEFEND2 =
 
 #endif
 
-printf(DEFEND2);
+if(menu == 3)
+		{
+			system("cls");
+			Sleep(1000);
+			printf("[방어구상점 입장중.]\r");
+			Sleep(1000);
+			printf("[방어구상점 입장중..]\r");
+			Sleep(1000);
+			printf("[방어구상점 입장중...]\r");
+			Sleep(1000);
+
+			npc2 = rand() % 3+1;
+			if(npc2 == 1){printf(DEFEND2);} if(npc2 == 2){printf(DEFEND2);} if(npc2 == 3){printf(DEFEND2);}
+			printf("[1]평상복<1레벨> - 3000골드\n");
+			printf("[2]허름한 갑옷<3레벨> - 5500골드\n");
+			printf("[3]쓸만한 갑옷<5레벨> - 9000골드\n");
+			printf("[4]철 갑옷<8레벨> - 12000골드\n");
+			printf("[5]나가기\n");
+			scanf("%d",&store2);
+
+
