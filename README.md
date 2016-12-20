@@ -27,21 +27,20 @@ CHOP supports various environments
 
 ## Contributors
 
-<current team members>
+* current team members
 
 -Eun-Min Pak  
 -Yeong-jun Ko  
 -Dong-hyun Kim  
 -Jun-Woo Kim  
 
-<github address>
+* github address
 [Eun-Min Pak](https://Eun-Min.github.io)  
 [Yeong-jun Ko](https://young6900.github.io)  
 [Jun-Woo Kim](https://popple1101.github.io)  
 [Dong-hyun Kim](https://kimDDong.github.io)  
 
-<people who will contribute afterwords>
-
+* people who will contribute afterwords
 If you help our project to be developed, Welcome your help.
 
 
