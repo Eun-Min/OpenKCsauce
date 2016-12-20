@@ -20,6 +20,12 @@ Open KetChup Sauce
 Textcube is based on online publishing platform 'Tattertools,' started by JH in 2004, developed by TNC in 2005 and GPLized in 2006. Tatter Network Foundation (TNF) developed Tattertools with TNC from Apr. 2006. Needlworks/TNF was dedicated to Tattertools' development from Nov. 2006, and started developing 'Project S2' as its successor. 'Textcube' was named by YJ Park, and made its debut in Aug. 2007.
 
 
+## REQUIREMENTS (CURRENT VERSION)
+CHOP supports various environments
+* Language
+ * C
+
+
 ## Contributors
 
 <current team members>
@@ -54,8 +60,10 @@ For example, fighting with monsters, getting items through monsters , and develo
 
 ## Code Example
 
- int attack; // basic attack power
- int randattack; // basic attack power random
+.. code-block:: text
+
+    int attack; // basic attack power
+    int randattack; // basic attack power random
  int a;
  int b;
  int c;
