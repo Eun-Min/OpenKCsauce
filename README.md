@@ -1,7 +1,10 @@
 ## Our Project
 
-● Name of Project
-undefined until now.
+● Name of Project  
+CHOP
+-> it means....  
+1) related team name : pronunciate 'Chup' of KetChup more cute  
+2) related game : strike monsters! in game
 
 ● Name of Team
 Open KetChup Sauce
@@ -13,7 +16,9 @@ Open KetChup Sauce
 -Eun-Min Pak
 -Yeong-jun Ko
 -Dong-hyun Kim
--Jun-Woo Kim
+-Jun-Woo Kim  
+  
+<Github address of team members >
 
 <people who will contribute afterwords>
 
@@ -68,16 +73,22 @@ undefined
 
 ## TODO
 
-- [X] Basic Code Architecture
 - [ ] Opening
-- [X] Monster Data
+- [ ] Basic Code Architecture
+- [ ] Monster Data
 - [ ] Skill Data
 - [ ] Consume Item Data
-- [X] Battle System
-- [X] Item Shop
+- [ ] Battle System
+- [ ] Item Shop
 - [ ] World Map
 - [ ] Save / Restore
 - [ ] Translate
+- [x] Release
+
+## P.s  
+you can confirm the summary version of README in Korean
+
+https://github.com/Eun-Min/OpenKCsauce/wiki
 
 ## License
 
