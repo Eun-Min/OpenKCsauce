@@ -32,7 +32,7 @@ If you help our project to be developed, Welcome your help.
   
 ● Goal of project
 
--making RPG during this semester(about three months).    
+-making RPG during this semester(about three months).  
 -text based game with text-image map.     
 -we are focusing on fighting game.      
 For example, fighting with monsters, getting items through monsters , and developing your own character.
