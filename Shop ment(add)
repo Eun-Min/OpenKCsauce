@@ -19,6 +19,26 @@ const char *SHOP2 =
 "|       무엇을 사실건가?    |\n"
 "|___________________________|\n" 
 "\n";
+		if(menu == 2)
+		{
+			system("cls");
+			Sleep(1000);
+			printf("[무기상점 입장중.]\r");
+			Sleep(1000);
+			printf("[무기상점 입장중..]\r");
+			Sleep(1000);
+			printf("[무기상점 입장중...]\r");
+			Sleep(1000);
+
+			npc1 = rand() % 3+1;
+			if(npc1 == 1){printf(SHOP2);} if(npc1 == 2){printf(SHOP2);} if(npc1 == 3){printf(SHOP2);}
+			printf("[1]허름한검<1레벨> - 1000골드\n");
+			printf("[2]쓸만한검<3레벨> - 2500골드\n");
+			printf("[3]브론즈소드<5레벨> - 3800골드\n");
+			printf("[4]아이언소드<8레벨> - 5200골드\n");
+			printf("[5]아만다디움소드<10레벨> - 7500골드\n");
+			printf("[6]나가기\n");
+			scanf("%d",&store1);
 
 
 #endif
@@ -45,7 +65,7 @@ const char *DEFEND2 =
 
 #endif
 
-if(menu == 3)
+		if(menu == 3)
 		{
 			system("cls");
 			Sleep(1000);
