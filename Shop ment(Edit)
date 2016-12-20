@@ -1,6 +1,9 @@
 #ifndef SHOP
 #define SHOP
 
+#ifndef DEFEND
+#define DEFEND
+
 const char *SHOP2 =
 "       __＼_|_/__  \n"
 "    / /         ＼＼  \n"
@@ -22,7 +25,7 @@ const char *SHOP2 =
 
 printf(SHOP2);
 
-const char *SHOP1 = 
+const char *DEFEND2 = 
 "       _________\n"
 "      /         ＼    \n  "		
 " __/___________＼___  \n"
@@ -42,4 +45,4 @@ const char *SHOP1 =
 
 #endif
 
-printf(SHOP1);
+printf(DEFEND2);
