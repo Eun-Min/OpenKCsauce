@@ -1,3 +1,6 @@
+CHOP : chop your monsters and develop your characters! - RPG Game
+===============================================================
+
 ## Our Project
 
 ● Name of Project  
@@ -10,6 +13,11 @@ CHOP
 
 ● Name of Team
 Open KetChup Sauce
+
+
+## HISTORY
+
+Textcube is based on online publishing platform 'Tattertools,' started by JH in 2004, developed by TNC in 2005 and GPLized in 2006. Tatter Network Foundation (TNF) developed Tattertools with TNC from Apr. 2006. Needlworks/TNF was dedicated to Tattertools' development from Nov. 2006, and started developing 'Project S2' as its successor. 'Textcube' was named by YJ Park, and made its debut in Aug. 2007.
 
 
 ## Contributors
@@ -111,3 +119,4 @@ https://github.com/Eun-Min/OpenKCsauce/wiki
 ## License
 
 [MIT License](LICENSE)
+[![License](https://img.shields.io/badge/license-GPLv2-green.svg)](https://ocw.mit.edu/index.htm)
