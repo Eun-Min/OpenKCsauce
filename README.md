@@ -34,8 +34,8 @@ CHOP supports various environments
 -Yeong-jun Ko  
 -Dong-hyun Kim  
 -Jun-Woo Kim  
-  
-<Github address of team members>  
+
+<github address>
 [Eun-Min Pak](https://Eun-Min.github.io)  
 [Yeong-jun Ko](https://young6900.github.io)  
 [Jun-Woo Kim](https://popple1101.github.io)  
@@ -115,12 +115,9 @@ We develop this game for better qualities in the future (when having a free time
 
 
 ## P.S  
-you can confirm the summary version of README in Korean
-
-https://github.com/Eun-Min/OpenKCsauce/wiki
+you can confirm the summary version of README in Korean, Click [here](https://github.com/Eun-Min/OpenKCsauce/wiki)
 
 
 ## License
 
-[MIT License](LICENSE)
 ![license](https://img.shields.io/github/license/rastapasta/pokemon-go-mitm-node.svg)
