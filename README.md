@@ -21,7 +21,11 @@ Open KetChup Sauce
 -Dong-hyun Kim  
 -Jun-Woo Kim  
   
-<Github address of team members >
+<Github address of team members>  
+[Eun-Min Pak](https://Eun-Min.github.io)
+[Yeong-jun Ko](https://young6900.github.io)
+[Jun-Woo Kim](https://popple1101.github.io)
+[Dong-hyun Kim](https://kimDDong.github.io)  
 
 <people who will contribute afterwords>
 
@@ -78,8 +82,10 @@ We update videos or with other things
 
 ## Future plan 
 
-undefined
-
+We develop this game for better qualities in the future (when having a free time)
+- Implementing appearance of the game character
+- Various maps
+- Ranking each users
 
 ## TODO
 
