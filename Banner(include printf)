@@ -12,3 +12,4 @@ const char *GAME_BANNER2 =
 "\n";
 
 #endif
+printf(GAME_BANNER2);
