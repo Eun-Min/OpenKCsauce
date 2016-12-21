@@ -86,6 +86,18 @@ Enjoy this game Without Installation !
 Recommend using dev c++ program or cmd
 
 
+## How to compile
+
+CHOP_RPG.exe is in the folder.
+But if you want to compile, put "gcc game.c" in command-line.
+
+
+## How to execute
+
+Double click the file CHOP_RPG.exe!
+How easy is it!!!
+
+
 ## Results
 
 We update videos or with other things
