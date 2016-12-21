@@ -1,6 +1,8 @@
 CHOP : chop your monsters and develop your characters! - RPG Game
 ===============================================================
 
+!!! This game can execute in Windows only!!!
+
 ## Our Project
 
 ● Name of Project
